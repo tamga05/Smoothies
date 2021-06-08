@@ -34,40 +34,61 @@
 }
 
 .header__nav-item {
-  list-style-type: none;
 }
 
 .header__nav-link {
   text-decoration: none;
   font-family: Muli;
   font-size: 16px;
+  font-weight: bold;
   letter-spacing: 0.32px;
   color: #ffffff;
 }
 
 .logo {
+  width: 211px;
+  height: 72px;
 }
 
 .header__logo {
+  margin: ;
+  padding: ;
 }
 
-.header__pers {
+.header__personal {
+
 }
 
-.header__pers-list {
+.header__personal-list {
 }
 
-.header__pers-item {
-  list-style-type: none;
+.header__personal-item {
 }
 
-.header__pers-link {
+.header__personal-link {
 }
 
-.header__pers-img {
+.header__searh {
+  width: 20px;
+  height: 20px;
 }
 
-.header__pers-span {
+.header__user {
+  width: 20px;
+  height: 24px;
+}
+
+.header__cart {
+  width: 24px;
+  height: 22px;
+}
+
+.header__span {
+  width: 6px;
+  height: 7px;
+  font-family: Muli;
+  font-size: 10px;
+  color: #000000;
 }
 
 .header__social {
@@ -83,10 +104,23 @@
 .header__social-link {
 }
 
-.header__social-img {
+.header__facebook {
+  width: 10px;
+  height: 17px;
+}
+
+.header__pinterest {
+  width: 16px;
+  height: 19px;
+}
+
+.header__instagram {
+  width: 18px;
+  height: 18px;
 }
 
 .btn {
+  
 }
 
 .header__btn {
@@ -103,6 +137,15 @@
   letter-spacing: -0.48px;
   color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
 
 .smoothies {
   max-width: 1920px;

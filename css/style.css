@@ -1,17 +1,19 @@
 @font-face {
   font-family: "Muli";
-  src: url("/assets/font/woff2/Muli-Bold.woff2"),
-  url("/assets/font/woff2/Muli-BoldItalic.woff2"),
-  url("/assets/font/woff2/Muli-ExtraBold.woff2"),
-  url("/assets/font/woff2/Muli-Italic.woff2"),
-  url("/assets/font/woff2/Muli-Regular.woff2"),
-  url("/assets/font/woff2/Muli-SemiBoldItalic.woff2"),
-  url("/assets/font/woff/Muli-Bold.woff"),
-  url("/assets/font/woff/Muli-BoldItalic.woff"),
-  url("/assets/font/woff/Muli-ExtraBold.woff"),
-  url("/assets/font/woff/Muli-Italic.woff"),
-  url("/assets/font/woff/Muli-Regular.woff"),
-  url("/assets/font/woff/Muli-SemiBoldItalic.woff");
+  src: url("/assets/font/woff2/Muli-Bold.woff2") format("woff2"),
+  url("/assets/font/woff2/Muli-BoldItalic.woff2") format("woff2"),
+  url("/assets/font/woff2/Muli-ExtraBold.woff2") format("woff2"),
+  url("/assets/font/woff2/Muli-Italic.woff2") format("woff2"),
+  url("/assets/font/woff2/Muli-Regular.woff2") format("woff2"),
+  url("/assets/font/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
+  url("/assets/font/woff2/MyriadPro-Regular.woff2") format("woff2"),
+  url("/assets/font/woff/Muli-Bold.woff") format("woff"),
+  url("/assets/font/woff/Muli-BoldItalic.woff") format("woff"),
+  url("/assets/font/woff/Muli-ExtraBold.woff") format("woff"),
+  url("/assets/font/woff/Muli-Italic.woff") format("woff"),
+  url("/assets/font/woff/Muli-Regular.woff") format("woff"),
+  url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff"),
+  url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
 }
 
 .header {
@@ -51,12 +53,9 @@
 }
 
 .header__logo {
-  margin: ;
-  padding: ;
 }
 
 .header__personal {
-
 }
 
 .header__personal-list {
@@ -86,7 +85,7 @@
 .header__span {
   width: 6px;
   height: 7px;
-  font-family: Muli;
+  font-family: Muli-Regular;
   font-size: 10px;
   color: #000000;
 }
@@ -120,32 +119,25 @@
 }
 
 .btn {
-  
-}
-
-.header__btn {
-  text-decoration: none;
   display: block;
-  width: 280px;
-  height: 70px;
-  border-radius: 35px;
-  background-color: #0aa566;
-
-  font-family: Muli;
-  font-size: 24px;
+  text-decoration: none;
+  height: 60px;
+  border-radius: 30px;
+  font-family: Muli-Regular;
   font-weight: 800;
-  letter-spacing: -0.48px;
+  font-size: 21px;
   color: #ffffff;
 }
 
-
-
-
-
-
-
-
-
+.header__btn {
+  width: 280px;
+  height: 70px;
+  border-style:hidden; 
+  border-radius: 35px;
+  background-color: #0aa566;
+  font-size: 24px;
+  letter-spacing: -0.48px;
+  }
 
 .smoothies {
   max-width: 1920px;
@@ -155,10 +147,29 @@
 .smoothies__wrap {
 }
 
+.title {
+  font-family: Muli-Regular;
+  font-size: 50px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #f7ae3b;
+}
+
 .smoothies__title {
+  font-family: MyriadPro-Regular;
+  text-align: center;
+}
+
+.text {
+  font-family: Muli-Regular;
+  font-size: 18px;
+  line-height: 1,94;
+  text-align: center;
+  color: #1e1e1e;
 }
 
 .smoothies__text {
+
 }
 
 .smoothies__block {
@@ -170,7 +181,18 @@
 .smoothies__img {
 }
 
-.smoothies__title {
+.heading {
+font-family: Muli-Regular;
+font-weight: 800;
+letter-spacing: normal;
+text-align: center;
+}
+
+.smoothies__heading {
+font-size: 25px;
+line-height: 1,6;
+letter-spacing: -0,5px;
+color: #f2612d;
 }
 
 .about {
@@ -185,10 +207,14 @@
 .about__img {
 }
 
-.about__cont {
+.about__content {
 }
 
 .about__title {
+  font-size: 55px;
+  line-height: 1,09;
+  letter-spacing: -1,1px;
+  color: #ffffff;
 }
 
 .about__span {
@@ -200,12 +226,13 @@
 .about__item {
 }
 
-.about__str {
+.about__strong {
 }
 
 .about__btn {
-  text-decoration: none;
-}
+  width: 380px;
+  border: solid 2px #f8b231;
+  }
 
 .products {
   max-width: 1920px;
@@ -216,41 +243,45 @@
   display: flex;
 }
 
-.products__chocolate {
-  background-color: #672816;
+.products__cart {
   width: 480px;
   height: 720px;
 }
 
-.products__img {
+.products__cart--brown {
+  background-color: #672816;
 }
 
-.products__title {
+.products__cart--green {
+  background-color: #198370;
+}
+
+.products__cart--yellow {
+  background-color: #f3b139;
+}
+
+.products__cart--orange {
+  background-color: #c04519;
+}
+
+.products__img {
+  
+}
+
+.products__heading {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 0,92;
+  color: #ffffff;
 }
 
 .products__capacity {
 }
 
 .products__btn {
-  text-decoration: none;
-}
-
-.products__lettuce {
-  background-color: #198370;
-  width: 480px;
-  height: 720px;
-}
-
-.products__ginger {
-  background-color: #f3b139;
-  width: 480px;
-  height: 720px;
-}
-
-.products__garlic {
-  background-color: #c04519;
-  width: 480px;
-  height: 720px;
+  width: 204px;
+  border: solid 2px #ffffff;
+  letter-spacing: -0.48px;
 }
 
 .story {
@@ -264,17 +295,20 @@
 .story__img {
 }
 
-.story__cont {
+.story__content {
 }
 
 .story__title {
 }
 
 .story__text {
+  text-align: left;
 }
 
 .story__btn {
-  text-decoration: none;
+  width: 301px;
+  background-color: #0aa566;
+  border-style:hidden; 
 }
 
 .testimonials {
@@ -286,22 +320,28 @@
 .testimonials__wrap {
 }
 
-.testimonials__heading {
+.testimonials__title {
+  text-align: center;
 }
 
-.testimonials__cont {
+.testimonials__span {
+
 }
 
-.testimonials__buyer {
+.testimonials__content {
+}
+
+.testimonials__post {
 }
 
 .testimonials__quote {
+  color: #ffffff;
 }
 
 .testimonials__cite {
 }
 
-.testimonials__img {
+.testimonials__avatar {
 }
 
 .blog {
@@ -312,10 +352,10 @@
 .blog__wrap {
 }
 
-.blog__heading {
+.blog__title {
 }
 
-.blog__cont {
+.blog__content {
 }
 
 .blog__img {
@@ -327,20 +367,26 @@
 .blog__topic {
 }
 
-.blog__title {
+.blog__heading {
+  font-size: 18px;
+  line-height: 1,94;
+  text-align: left;
+  color: #f2612d;
 }
 
 .blog__time {
 }
 
 .blog__text {
+  text-align: left;
 }
 
 .blog__link {
   text-decoration: none;
 }
 
-.blog__str {
+.blog__strong {
+  font-style: italic;
 }
 
 .instagram {
@@ -351,8 +397,12 @@
 .instagram__wrap {
 }
 
-.instagram__heading {
+.instagram__title {
+  font-size: 24px;
+  letter-spacing: -0,48px;
+  color: #0aa566;
 }
+
 
 .instagram__galery {
   display: flex;
@@ -386,6 +436,9 @@
 }
 
 .footer__title {
+  font-size: 26px;
+  letter-spacing: -0,52px;
+  color: #ffffff;
 }
 
 .footer__list {
@@ -419,14 +472,16 @@
 .footer__btn {
 }
 
+.footer-span {
+  font-family: Muli-Regular;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.36px;
+  color: #6d450c;
+}
+
 .footer__social-list {
   margin-bottom: 0;
-}
-
-.products__pic {
-}
-
-.products__pic:nth-child(1) {
 }
 
 .footer__social-item {
@@ -445,6 +500,35 @@
 
 .footer__copyright {
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 .wrapper {

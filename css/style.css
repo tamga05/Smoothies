@@ -6,13 +6,14 @@
   url("/assets/font/woff2/Muli-Italic.woff2") format("woff2"),
   url("/assets/font/woff2/Muli-Regular.woff2") format("woff2"),
   url("/assets/font/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
-  url("/assets/font/woff2/MyriadPro-Regular.woff2") format("woff2"),
   url("/assets/font/woff/Muli-Bold.woff") format("woff"),
   url("/assets/font/woff/Muli-BoldItalic.woff") format("woff"),
   url("/assets/font/woff/Muli-ExtraBold.woff") format("woff"),
   url("/assets/font/woff/Muli-Italic.woff") format("woff"),
   url("/assets/font/woff/Muli-Regular.woff") format("woff"),
-  url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff"),
+  url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff");
+  font-family: "MyriadPro";
+  src: url("/assets/font/woff2/MyriadPro-Regular.woff2") format("woff2"),
   url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
 }
 
@@ -150,11 +151,12 @@
   font-size: 50px;
   letter-spacing: -1px;
   color: #f7ae3b;
-  font-weight: normal;
+  font-weight: 800;
   }
 
 .smoothies__title {
   font-family: MyriadPro-Regular;
+  font-weight: normal;
 }
 
 .text {
@@ -183,7 +185,6 @@
 font-family: Muli-Regular;
 font-weight: 800;
 letter-spacing: normal;
-text-align: center;
 }
 
 .smoothies__heading {
@@ -216,6 +217,7 @@ color: #f2612d;
 }
 
 .about__span {
+  color: #cae941;
 }
 
 .about__list {

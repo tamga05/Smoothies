@@ -83,8 +83,6 @@
 }
 
 .header__span {
-  width: 6px;
-  height: 7px;
   font-family: Muli-Regular;
   font-size: 10px;
   color: #000000;
@@ -151,13 +149,12 @@
   font-family: Muli-Regular;
   font-size: 50px;
   letter-spacing: -1px;
-  text-align: left;
   color: #f7ae3b;
-}
+  font-weight: normal;
+  }
 
 .smoothies__title {
   font-family: MyriadPro-Regular;
-  text-align: center;
 }
 
 .text {
@@ -169,7 +166,8 @@
 }
 
 .smoothies__text {
-
+  width: 915px;
+  height: 122px;
 }
 
 .smoothies__block {
@@ -321,7 +319,6 @@ color: #f2612d;
 }
 
 .testimonials__title {
-  text-align: center;
 }
 
 .testimonials__span {
@@ -467,6 +464,15 @@ color: #f2612d;
 }
 
 .footer__input {
+}
+
+::placeholder { 
+  font-family: Muli-Regular;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: -0.34px;
+  text-align: left;
+  color: #6d450c;
 }
 
 .footer__btn {

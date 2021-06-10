@@ -1,23 +1,23 @@
 @font-face {
   font-family: "Muli";
   src: url("/assets/font/woff2/Muli-Bold.woff2") format("woff2"),
-  url("/assets/font/woff2/Muli-BoldItalic.woff2") format("woff2"),
-  url("/assets/font/woff2/Muli-ExtraBold.woff2") format("woff2"),
-  url("/assets/font/woff2/Muli-Italic.woff2") format("woff2"),
-  url("/assets/font/woff2/Muli-Regular.woff2") format("woff2"),
-  url("/assets/font/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
-  url("/assets/font/woff/Muli-Bold.woff") format("woff"),
-  url("/assets/font/woff/Muli-BoldItalic.woff") format("woff"),
-  url("/assets/font/woff/Muli-ExtraBold.woff") format("woff"),
-  url("/assets/font/woff/Muli-Italic.woff") format("woff"),
-  url("/assets/font/woff/Muli-Regular.woff") format("woff"),
-  url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff");
+    url("/assets/font/woff2/Muli-BoldItalic.woff2") format("woff2"),
+    url("/assets/font/woff2/Muli-ExtraBold.woff2") format("woff2"),
+    url("/assets/font/woff2/Muli-Italic.woff2") format("woff2"),
+    url("/assets/font/woff2/Muli-Regular.woff2") format("woff2"),
+    url("/assets/font/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
+    url("/assets/font/woff/Muli-Bold.woff") format("woff"),
+    url("/assets/font/woff/Muli-BoldItalic.woff") format("woff"),
+    url("/assets/font/woff/Muli-ExtraBold.woff") format("woff"),
+    url("/assets/font/woff/Muli-Italic.woff") format("woff"),
+    url("/assets/font/woff/Muli-Regular.woff") format("woff"),
+    url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff");
 }
 
 @font-face {
   font-family: "MyriadPro";
   src: url("/assets/font/woff2/MyriadPro-Regular.woff2") format("woff2"),
-  url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
+    url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
 }
 
 .header {
@@ -135,12 +135,12 @@
 .header__btn {
   width: 280px;
   height: 70px;
-  border-style:hidden; 
+  border-style: hidden;
   border-radius: 35px;
   background-color: #0aa566;
   font-size: 24px;
   letter-spacing: -0.48px;
-  }
+}
 
 .smoothies {
   max-width: 1920px;
@@ -155,7 +155,7 @@
   font-size: 50px;
   letter-spacing: -1px;
   color: #f7ae3b;
-  }
+}
 
 .smoothies__title {
   font-family: MyriadPro-Regular;
@@ -185,16 +185,16 @@
 }
 
 .heading {
-font-family: Muli-Regular;
-font-weight: 800;
-letter-spacing: normal;
+  font-family: Muli-Regular;
+  font-weight: 800;
+  letter-spacing: normal;
 }
 
 .smoothies__heading {
-font-size: 25px;
-line-height: 1,6;
-letter-spacing: -0,5px;
-color: #f2612d;
+  font-size: 25px;
+  line-height: 1, 6;
+  letter-spacing: -0, 5px;
+  color: #f2612d;
 }
 
 .about {
@@ -214,15 +214,14 @@ color: #f2612d;
 
 .about__title {
   font-size: 55px;
-  line-height: 1,09;
-  letter-spacing: -1,1px;
+  line-height: 1, 09;
+  letter-spacing: -1, 1px;
   color: #ffffff;
 }
 
 .about__span {
   color: #cae941;
 }
-
 
 .about__list {
   list-style-image: url("../assets/img/about/icon.png");
@@ -244,7 +243,7 @@ color: #f2612d;
 .about__btn {
   width: 380px;
   border: solid 2px #f8b231;
-  }
+}
 
 .products {
   max-width: 1920px;
@@ -277,13 +276,12 @@ color: #f2612d;
 }
 
 .products__img {
-  
 }
 
 .products__heading {
   font-size: 24px;
   font-weight: bold;
-  line-height: 0,92;
+  line-height: 0, 92;
   color: #ffffff;
 }
 
@@ -329,7 +327,7 @@ color: #f2612d;
 .story__btn {
   width: 301px;
   background-color: #0aa566;
-  border-style:hidden; 
+  border-style: hidden;
 }
 
 .testimonials {
@@ -395,8 +393,8 @@ color: #f2612d;
 }
 
 .blog__heading {
-  font-size:30px;
-  line-height: 1,33;
+  font-size: 30px;
+  line-height: 1, 33;
   letter-spacing: -0.6px;
   text-align: left;
   color: #f2612d;
@@ -433,14 +431,16 @@ color: #f2612d;
 }
 
 .instagram__wrap {
+  padding-bottom: 5px;
 }
 
 .instagram__title {
   font-size: 24px;
-  letter-spacing: -0,48px;
+  letter-spacing: -0, 48px;
   color: #0aa566;
+  margin: 0;
+  padding-bottom: 45px;
 }
-
 
 .instagram__galery {
   display: flex;
@@ -457,6 +457,7 @@ color: #f2612d;
 }
 
 .footer__wrap {
+  padding-top: 5px;
 }
 
 .footer__top {
@@ -475,14 +476,24 @@ color: #f2612d;
 
 .footer__title {
   font-size: 26px;
-  letter-spacing: -0,52px;
+  letter-spacing: -0, 52px;
   color: #ffffff;
 }
 
 .footer__list {
+  width: 159px;
+  height: 122px;
+  list-style-type: none;
 }
 
 .footer__item {
+  font-family: Muli;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.94;
+  letter-spacing: -0.36px;
+  text-align: left;
+  color: #6d450c;
 }
 
 .footer__link {
@@ -502,12 +513,21 @@ color: #f2612d;
 }
 
 .footer__form {
+  width: 495px;
+  height: 60px;
+  border-radius: 30px;
+  border-style: hidden;
+  background-color: #ffffff;
 }
 
 .footer__input {
+  width: 214px;
+  height: 13px;
+  margin: 23px 218px 24px 63px;
+  border-style: hidden;
 }
 
-::placeholder { 
+::placeholder {
   font-family: Muli-Regular;
   font-size: 17px;
   font-weight: bold;
@@ -517,6 +537,9 @@ color: #f2612d;
 }
 
 .footer__btn {
+  padding: 0;
+  background-color: transparent;
+  border-style: hidden;
 }
 
 .footer-span {
@@ -528,7 +551,8 @@ color: #f2612d;
 }
 
 .footer__social-list {
-  margin-bottom: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
 .footer__social-item {
@@ -543,17 +567,15 @@ color: #f2612d;
 .footer__bottom {
   background-color: #682819;
   min-height: 60px;
+  text-align: center;
 }
 
 .footer__copyright {
+  font-family: Muli;
+  font-size: 13px;
+  letter-spacing: 0.26px;
+  color: #af8a82;
 }
-
-
-
-
-
-
-
 
 
 
@@ -579,5 +601,3 @@ color: #f2612d;
 .header__shop-btn:hover {
   border: 1px solid #000;
 }
-
-

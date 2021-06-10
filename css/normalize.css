@@ -30,6 +30,13 @@ html {
 
 */
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+
 body {
   color: #000;
   font-family: serif;

@@ -345,13 +345,16 @@ color: #f2612d;
 }
 
 .testimonials__span {
-
+  color: #f2612d;
 }
 
 .testimonials__content {
 }
 
 .testimonials__post {
+  width: 455px;
+  height: 130px;
+  text-align: center;
 }
 
 .testimonials__quote {
@@ -359,6 +362,10 @@ color: #f2612d;
 }
 
 .testimonials__cite {
+  font-weight: 600;
+  font-style: italic;
+  line-height: 2.5;
+  color: #f7ae3b;
 }
 
 .testimonials__avatar {
@@ -388,16 +395,26 @@ color: #f2612d;
 }
 
 .blog__heading {
-  font-size: 18px;
-  line-height: 1,94;
+  font-size:30px;
+  line-height: 1,33;
+  letter-spacing: -0.6px;
   text-align: left;
   color: #f2612d;
 }
 
 .blog__time {
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 2.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e1e1e;
 }
 
 .blog__text {
+  width: 472px;
+  height: 122px;
   text-align: left;
 }
 
@@ -406,6 +423,7 @@ color: #f2612d;
 }
 
 .blog__strong {
+  font-weight: 800;
   font-style: italic;
 }
 

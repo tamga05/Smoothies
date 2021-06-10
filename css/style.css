@@ -12,6 +12,9 @@
   url("/assets/font/woff/Muli-Italic.woff") format("woff"),
   url("/assets/font/woff/Muli-Regular.woff") format("woff"),
   url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
   font-family: "MyriadPro";
   src: url("/assets/font/woff2/MyriadPro-Regular.woff2") format("woff2"),
   url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
@@ -24,7 +27,6 @@
 }
 
 .header__wrap {
-
 }
 
 .header__top {
@@ -153,7 +155,6 @@
   font-size: 50px;
   letter-spacing: -1px;
   color: #f7ae3b;
-  font-weight: 800;
   }
 
 .smoothies__title {
@@ -287,6 +288,11 @@ color: #f2612d;
 }
 
 .products__capacity {
+  font-size: 21px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.52;
+  color: #ffffff;
 }
 
 .products__btn {
@@ -304,6 +310,8 @@ color: #f2612d;
 }
 
 .story__img {
+  width: 585px;
+  height: 601px;
 }
 
 .story__content {
@@ -313,6 +321,8 @@ color: #f2612d;
 }
 
 .story__text {
+  width: 511px;
+  height: 118px;
   text-align: left;
 }
 

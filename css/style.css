@@ -27,9 +27,13 @@
 }
 
 .header__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header__top {
+  display: flex;
 }
 
 .header__nav {
@@ -140,6 +144,7 @@
   background-color: #0aa566;
   font-size: 24px;
   letter-spacing: -0.48px;
+  padding: 22px 124px 25px 39px;
 }
 
 .smoothies {
@@ -224,16 +229,18 @@
 }
 
 .about__list {
-  list-style-image: url("../assets/img/about/icon.png");
+  padding-left: 60px;
 }
 
 .about__item {
+  list-style-image: url("../assets/img/about/icon.png");
   font-family: Muli-Regular;
   font-size: 21px;
   line-height: 1.05;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+  padding-left: 19px;
 }
 
 .about__strong {
@@ -243,6 +250,7 @@
 .about__btn {
   width: 380px;
   border: solid 2px #f8b231;
+  padding: 16px 98px 23px 29px;
 }
 
 .products {
@@ -297,6 +305,7 @@
   width: 204px;
   border: solid 2px #ffffff;
   letter-spacing: -0.48px;
+  padding: 16px 130px 24px 36px;
 }
 
 .story {
@@ -328,6 +337,7 @@
   width: 301px;
   background-color: #0aa566;
   border-style: hidden;
+  padding: 20px 147px 24px 30px;
 }
 
 .testimonials {
@@ -567,7 +577,9 @@
 .footer__bottom {
   background-color: #682819;
   min-height: 60px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__copyright {

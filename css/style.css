@@ -27,23 +27,26 @@
 }
 
 .header__wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .header__top {
+  width: 100%;
   display: flex;
+  justify-content:space-between;
   align-items: center;
-  margin-top: 69px;
+  padding: 69px 100px 105px 100px;
 }
 
 .header__nav {
   width: 540px;
-  height: 11px;
-  justify-content: space-between;
 }
 
 .header__nav-list {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .header__nav-item {
@@ -64,11 +67,15 @@
 }
 
 .header__logo {
+
 }
 
-.header__persocial {
+.header__info {
   display: flex;
-
+  justify-content:space-between;
+  align-items: center;
+  width: 418px;
+  margin-right: 100px;
 }
 
 .header__personal {
@@ -102,6 +109,7 @@
 }
 
 .header__span {
+  display: block;
   font-family: Muli-Regular;
   font-size: 10px;
   color: #000000;
@@ -109,14 +117,18 @@
   height: 18px;
   border-radius: 50px;
   background-color: #ffffff;
+  padding-left: 5px;
+  padding-top: 3px;
 }
 
 .header__social {
+  min-width: 126px;
 }
 
 .header__social-list {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .header__social-item {
@@ -125,6 +137,7 @@
   border-radius: 50px;
   background-color:  #ffffff;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -166,9 +179,7 @@
   font-size: 24px;
   letter-spacing: -0.48px;
   padding: 22px 124px 25px 39px;
-  margin-top: 105px;
-  
-}
+  }
 
 .smoothies {
   max-width: 1920px;
@@ -205,7 +216,6 @@
 
 .smoothies__text {
   width: 800px;
-  height: 122px;
   margin-bottom: 61px
 }
 
@@ -218,7 +228,7 @@
 .smoothies__unit {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  flex-basis: 25%;
   justify-content: center;
 }
 
@@ -233,8 +243,8 @@
 
 .smoothies__heading {
   font-size: 25px;
-  line-height: 1, 6;
-  letter-spacing: -0, 5px;
+  line-height: 1,6;
+  letter-spacing: -0,5px;
   color: #f2612d;
   padding-top: 31px;
 }

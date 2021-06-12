@@ -176,6 +176,9 @@
 }
 
 .smoothies__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -188,6 +191,8 @@
 .smoothies__title {
   font-family: MyriadPro-Regular;
   font-weight: normal;
+  margin-top: 98px;
+  margin-bottom: 57px;
 }
 
 .text {
@@ -199,16 +204,22 @@
 }
 
 .smoothies__text {
-  width: 915px;
+  width: 800px;
   height: 122px;
+  margin-bottom: 61px
 }
 
 .smoothies__block {
+  max-width: 1010px;
+  height: 389px;
   display: flex;
+  flex-wrap: wrap;
 }
 .smoothies__unit {
   display: flex;
   flex-direction: column;
+  width: 25%;
+  justify-content: center;
 }
 
 .smoothies__img {
@@ -255,7 +266,7 @@
 }
 
 .about__list {
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .about__item {
@@ -270,7 +281,6 @@
 }
 
 .about__strong {
-  font-weight: 800;
 }
 
 .about__btn {
@@ -397,7 +407,6 @@
 
 .testimonials__cite {
   font-weight: 600;
-  font-style: italic;
   line-height: 2.5;
   color: #f7ae3b;
 }
@@ -457,7 +466,6 @@
 }
 
 .blog__strong {
-  font-weight: 800;
   font-style: italic;
 }
 

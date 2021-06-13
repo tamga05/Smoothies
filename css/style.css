@@ -27,12 +27,14 @@
 }
 
 .header__wrap {
+  width: 1920px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header__top {
-  width: 100%;
+  width: 1920px;
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -40,13 +42,14 @@
 }
 
 .header__nav {
-  width: 540px;
 }
 
 .header__nav-list {
+  width: 540px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__nav-item {
@@ -67,15 +70,14 @@
 }
 
 .header__logo {
-
+  margin-right: 35px;
 }
 
-.header__info {
+.header__buy {
+  width: 418px;
   display: flex;
   justify-content:space-between;
   align-items: center;
-  width: 418px;
-  margin-right: 100px;
 }
 
 .header__personal {
@@ -83,8 +85,10 @@
 
 .header__personal-list {
   list-style-type: none;
+  width: 172px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__personal-item {
@@ -128,8 +132,10 @@
 
 .header__social-list {
   list-style-type: none;
+  width: 126px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__social-item {
@@ -180,7 +186,6 @@
   font-size: 24px;
   letter-spacing: -0.48px;
   padding: 22px 124px 25px 39px;
-  align-self: center;
   }
 
 .smoothies {

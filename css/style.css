@@ -224,9 +224,12 @@
 }
 
 .smoothies__text {
-  width: 800px;
+  width: 807px;
   margin-top: 57px;
   margin-bottom: 61px
+}
+
+.smoothies__text-br {
 }
 
 .smoothies__block {
@@ -396,23 +399,28 @@
 }
 
 .story__wrap {
-}
-
-.story__img {
-  width: 585px;
-  height: 601px;
+  width: 1920px;
+  display: flex;
 }
 
 .story__content {
+  width: 511px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 308px;
+  margin-right: 206px;
 }
 
 .story__title {
+  margin-top: 260px;
+  margin-bottom: 43px;
 }
 
 .story__text {
-  width: 511px;
+  width: 455px;
   height: 118px;
   text-align: left;
+  margin-bottom: 60px;
 }
 
 .story__btn {
@@ -422,6 +430,13 @@
   padding: 20px 147px 24px 30px;
 }
 
+.story__img {
+  width: 585px;
+  height: 601px;
+  margin-top: 120px;
+  margin-right: 310px;
+}
+
 .testimonials {
   background-color: #6b2b20;
   max-width: 1920px;
@@ -429,9 +444,14 @@
 }
 
 .testimonials__wrap {
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonials__title {
+  margin-top: 117px;
 }
 
 .testimonials__span {
@@ -439,12 +459,14 @@
 }
 
 .testimonials__content {
+  display: flex;
 }
 
 .testimonials__post {
-  width: 455px;
+  width: 410px;
   height: 130px;
   text-align: center;
+  margin-top: 183px;
 }
 
 .testimonials__quote {
@@ -458,6 +480,8 @@
 }
 
 .testimonials__avatar {
+  margin-top: 118px;
+  margin-left: 59px;
 }
 
 .blog {
@@ -466,12 +490,23 @@
 }
 
 .blog__wrap {
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog__title {
+  width: 200px;
+  margin-left: 360px;
+  margin-top: 99px; 
+  margin-bottom: 49px;
 }
 
 .blog__content {
+  width: 1200px;
+  height: 400px;
+  margin-left: 360px;
+  display: flex;
 }
 
 .blog__img {
@@ -480,31 +515,32 @@
 .blog__advice {
 }
 
-.blog__topic {
-}
-
 .blog__heading {
   font-size: 30px;
   line-height: 1, 33;
   letter-spacing: -0.6px;
   text-align: left;
   color: #f2612d;
+  margin-top: 132px;
+  margin-left: 61px;
 }
 
 .blog__time {
   font-family: Muli;
   font-size: 16px;
-  font-weight: normal;
   line-height: 2.19;
-  letter-spacing: normal;
   text-align: left;
   color: #1e1e1e;
+  margin-top: 20px;
+  margin-left: 61px;
 }
 
 .blog__text {
-  width: 472px;
+  width: 416px;
   height: 122px;
   text-align: left;
+  margin-top: 45px;
+  margin-left: 124px;
 }
 
 .blog__link {

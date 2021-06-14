@@ -60,6 +60,7 @@
   font-family: Muli;
   font-size: 16px;
   font-weight: bold;
+  line-height: 2.5;
   letter-spacing: 0.32px;
   color: #ffffff;
 }
@@ -117,6 +118,8 @@
   display: block;
   font-family: Muli-Regular;
   font-size: 10px;
+  line-height: 4;
+  letter-spacing: 0.2px;
   color: #000000;
   width: 18px;
   height: 18px;
@@ -185,8 +188,9 @@
   border-radius: 35px;
   background-color: #0aa566;
   font-size: 24px;
+  line-height: 1.67;
   letter-spacing: -0.48px;
-  padding: 22px 124px 25px 39px;
+  padding: 15px 124px 28px 39px;
   }
 
 .smoothies {
@@ -212,13 +216,14 @@
 .smoothies__title {
   font-family: MyriadPro-Regular;
   font-weight: normal;
+  line-height: 0.8;
   margin-top: 98px;
 }
 
 .text {
   font-family: Muli-Regular;
   font-size: 18px;
-  line-height: 1,94;
+  line-height: 1.94;
   text-align: center;
   color: #1e1e1e;
 }
@@ -257,8 +262,8 @@
 
 .smoothies__heading {
   font-size: 25px;
-  line-height: 1,6;
-  letter-spacing: -0,5px;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
   color: #f2612d;
   padding-top: 31px;
 }
@@ -292,8 +297,8 @@
 
 .about__title {
   font-size: 55px;
-  line-height: 1,09;
-  letter-spacing: -1,1px;
+  line-height: 1.09;
+  letter-spacing: -1.1px;
   color: #ffffff;
   margin-bottom: 68px;
 }
@@ -304,7 +309,7 @@
 
 .about__list {
   padding-left: 37px;
-  width: 414px;
+  width: 440px;
   height: 329px;
   display: flex;
   flex-direction: column;
@@ -323,10 +328,12 @@
 }
 
 .about__strong {
+  font-weight: 800;
 }
 
 .about__btn {
   width: 380px;
+  line-height: 1.05;
   border: solid 2px #f8b231;
   padding: 16px 98px 23px 29px;
 }
@@ -373,7 +380,7 @@
 .products__heading {
   font-size: 24px;
   font-weight: bold;
-  line-height: 0,92;
+  line-height: 0.92;
   color: #ffffff;
 }
 
@@ -388,7 +395,7 @@
 .products__btn {
   width: 204px;
   border: solid 2px #ffffff;
-  letter-spacing: -0.48px;
+  line-height: 1.05;
   padding: 16px 130px 24px 36px;
   margin-top: 65px;
 }
@@ -412,19 +419,21 @@
 }
 
 .story__title {
+  line-height: 0.8;
   margin-top: 260px;
   margin-bottom: 43px;
 }
 
 .story__text {
   width: 455px;
-  height: 118px;
+  height: 130px;
   text-align: left;
   margin-bottom: 60px;
 }
 
 .story__btn {
   width: 301px;
+  line-height: 1.05;
   background-color: #0aa566;
   border-style: hidden;
   padding: 20px 147px 24px 30px;
@@ -451,6 +460,7 @@
 }
 
 .testimonials__title {
+  line-height: 0.8;
   margin-top: 117px;
 }
 
@@ -497,6 +507,7 @@
 
 .blog__title {
   width: 200px;
+  line-height: 0.8;
   margin-left: 360px;
   margin-top: 99px; 
   margin-bottom: 49px;
@@ -517,7 +528,7 @@
 
 .blog__heading {
   font-size: 30px;
-  line-height: 1, 33;
+  line-height: 1.33;
   letter-spacing: -0.6px;
   text-align: left;
   color: #f2612d;
@@ -537,7 +548,7 @@
 
 .blog__text {
   width: 416px;
-  height: 122px;
+  height: 130px;
   text-align: left;
   margin-top: 45px;
   margin-left: 124px;
@@ -548,6 +559,7 @@
 }
 
 .blog__strong {
+  font-weight: 800;
   font-style: italic;
 }
 
@@ -564,11 +576,13 @@
 }
 
 .instagram__title {
+  width: 182px;
   font-size: 24px;
-  letter-spacing: -0, 48px;
+  line-height: 1.67;
+  letter-spacing: -0.48px;
   color: #0aa566;
   margin: 0;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 .instagram__galery {

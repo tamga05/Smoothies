@@ -618,7 +618,6 @@
   width: 1214px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .footer__info {
@@ -641,6 +640,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin-top: 43px;
 }
 
 .footer__item {
@@ -671,6 +671,7 @@
   flex-wrap: wrap;
   gap: 19px;
   align-items: center;
+  margin-top: 32px;
 }
 
 .footer__pay-img {

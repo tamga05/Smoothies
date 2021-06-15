@@ -663,13 +663,11 @@
 }
 
 .footer__pay {
-  width: 210px;
-  height: 142px;
+  width: 250px;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
-  margin-top: 32px;
+  gap: 19px;
+  align-items: center;
 }
 
 .footer__pay-img {
@@ -713,13 +711,15 @@
   font-family: Muli-Regular;
   font-size: 18px;
   font-weight: 800;
+  line-height: 2.22;
   letter-spacing: -0.36px;
   color: #6d450c;
 }
 
 .footer__social-list {
   list-style-type: none;
-  margin-top: 27px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer__social-item {

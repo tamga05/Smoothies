@@ -69,8 +69,6 @@
 }
 
 .logo {
-  width: 211px;
-  height: 72px;
 }
 
 .header__logo {
@@ -103,18 +101,12 @@
 }
 
 .header__searh {
-  width: 20px;
-  height: 20px;
 }
 
 .header__user {
-  width: 20px;
-  height: 24px;
 }
 
 .header__cart {
-  width: 24px;
-  height: 22px;
 }
 
 .header__span {
@@ -159,18 +151,12 @@
 }
 
 .header__facebook {
-  width: 10px;
-  height: 17px;
 }
 
 .header__pinterest {
-  width: 16px;
-  height: 19px;
 }
 
 .header__instagram {
-  width: 18px;
-  height: 18px;
 }
 
 .btn {
@@ -443,8 +429,6 @@
 }
 
 .story__img {
-  width: 585px;
-  height: 601px;
   margin-top: 120px;
   margin-right: 310px;
 }
@@ -593,8 +577,6 @@
 }
 
 .instagram__img {
-  max-width: 384px;
-  min-height: 384px;
 }
 
 .footer {

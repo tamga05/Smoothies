@@ -269,14 +269,14 @@
 
 .about__wrap {
   width: 1920px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 
 .about__img {
   margin-left: 143px;
   margin-top: 64px;
+  position: absolute;
+  top: -2px;
 }
 
 .about__content {
@@ -286,6 +286,8 @@
   flex-direction: column;
   justify-content: space-between;
   margin-right: 365px;
+  margin-left: 960px;
+  margin-top: 98px;
 }
 
 .about__title {

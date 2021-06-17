@@ -95,6 +95,7 @@
 
 .header__personal-item {
   display: flex;
+  position: relative;
 }
 
 .header__personal-link {
@@ -123,6 +124,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 22px;
+  bottom: 17px;
 }
 
 .header__social {

@@ -98,7 +98,6 @@
 }
 
 .header__personal-item {
-  display: flex;
 }
 
 .header__personal-link {
@@ -115,7 +114,6 @@ position: relative;
 }
 
 .header__span {
-  display: block;
   font-family: Muli-Regular;
   font-size: 10px;
   line-height: 1.2;
@@ -129,7 +127,7 @@ position: relative;
   justify-content: center;
   align-items: center;
   position: absolute;
-  transform: translateX(23px) translateY(-9px);
+  transform: translateX(23px) translateY(-35px);
 }
 
 .header__social {

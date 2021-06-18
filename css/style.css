@@ -27,6 +27,7 @@
   background-size: cover;
   max-width: 1920px;
   min-height: 1080px;
+  margin: 0 auto;
 }
 
 .header__wrap {
@@ -190,6 +191,7 @@ position: relative;
 .smoothies {
   max-width: 1920px;
   min-height: 870px;
+  margin: 0 auto;
 }
 
 .smoothies__wrap {
@@ -266,6 +268,7 @@ position: relative;
   background-color: #12836f;
   max-width: 1920px;
   min-height: 800px;
+  margin: 0 auto;
 }
 
 .about__wrap {
@@ -337,6 +340,7 @@ position: relative;
 .products {
   max-width: 1920px;
   min-height: 719px;
+  margin: 0 auto;
 }
 
 .products__wrap {
@@ -399,6 +403,7 @@ position: relative;
 .story {
   max-width: 1920px;
   min-height: 881px;
+  margin: 0 auto;
 }
 
 .story__wrap {
@@ -444,6 +449,7 @@ position: relative;
   background-color: #6b2b20;
   max-width: 1920px;
   min-height: 720px;
+  margin: 0 auto;
 }
 
 .testimonials__wrap {
@@ -491,6 +497,7 @@ position: relative;
 .blog {
   max-width: 1920px;
   min-height: 796px;
+  margin: 0 auto;
 }
 
 .blog__wrap {
@@ -560,6 +567,7 @@ position: relative;
 .instagram {
   max-width: 1920px;
   min-height: 459px;
+  margin: 0 auto;
 }
 
 .instagram__wrap {
@@ -589,6 +597,7 @@ position: relative;
 .footer {
   max-width: 1920px;
   min-height: 437px;
+  margin: 0 auto;
 }
 
 .footer__wrap {

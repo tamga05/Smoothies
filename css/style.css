@@ -85,6 +85,10 @@
 .header__personal {
 }
 
+.header__personal::after {
+  content: url(../assets/img/head/line.png)
+}
+
 .header__personal-list {
   list-style-type: none;
   width: 172px;
@@ -95,10 +99,10 @@
 
 .header__personal-item {
   display: flex;
-  position: relative;
 }
 
 .header__personal-link {
+position: relative;
 }
 
 .header__searh {
@@ -125,8 +129,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 22px;
-  bottom: 17px;
+  transform: translateX(23px) translateY(-9px);
 }
 
 .header__social {
@@ -686,7 +689,6 @@
   height: 13px;
   margin: 23px 218px 24px 63px;
   border-style: hidden;
-
 }
 
 ::placeholder {

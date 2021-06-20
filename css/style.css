@@ -268,7 +268,7 @@ border-right: 2px solid #f6edde;
 border-bottom: 2px solid #f6edde;
 } 
 
-.smoothies__unit:nth-child(4) {
+.smoothies__unit:nth-child(4n+4) {
   border-right: none;
 } 
 
@@ -276,11 +276,7 @@ border-bottom: 2px solid #f6edde;
   border-bottom: none;
 } 
 
-.smoothies__unit:nth-child(8) {
-  border-right: none;
-} 
-
-smoothies__img {
+.smoothies__img {
 }
 
 .heading {
@@ -310,10 +306,9 @@ smoothies__img {
 }
 
 .about__img {
-  margin-left: 143px;
-  margin-top: 64px;
   position: absolute;
-  top: -2px;
+  left: 143px;
+  top: 64px;
 }
 
 .about__content {
@@ -324,19 +319,28 @@ smoothies__img {
   justify-content: space-between;
   margin-right: 365px;
   margin-left: 960px;
-  margin-top: 98px;
 }
 
 .about__title {
+  width: 588px;
   font-size: 55px;
   line-height: 1.2;
-  letter-spacing: -1.1px;
+  letter-spacing: 1.3px;
   color: #ffffff;
+  margin-top: 98px;
   margin-bottom: 68px;
+  position: relative;
 }
 
 .about__span {
   color: #cae941;
+}
+
+.about__title::after {
+  content: url(../assets/img/about/line.png);
+  position: absolute;
+  top: 85px;
+  left: 60px;
 }
 
 .about__list {
@@ -353,7 +357,7 @@ smoothies__img {
   list-style-image: url("../assets/img/about/icon.png");
   font-family: Muli-Regular;
   font-size: 21px;
-  line-height: 1.2;
+  line-height: 1.7;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
@@ -368,6 +372,14 @@ smoothies__img {
   line-height: 1.2;
   border: solid 2px #f8b231;
   padding: 16px 98px 23px 29px;
+  position: relative;
+}
+
+.about__btn::after {
+content: url(../assets/img/about/arrow.png);
+position: absolute;
+left: 295px;
+bottom: 15px;
 }
 
 .products {
@@ -431,6 +443,14 @@ smoothies__img {
   line-height: 1.2;
   padding: 16px 130px 24px 36px;
   margin-top: 65px;
+  position: relative;
+}
+
+.products__btn::after {
+  content: url(../assets/img/prod/arrow.png);
+  position: absolute;
+  left: 130px;
+  bottom: 15px;
 }
 
 .story {
@@ -471,6 +491,14 @@ smoothies__img {
   background-color: #0aa566;
   border-style: hidden;
   padding: 20px 147px 24px 30px;
+  position: relative;
+}
+
+.story__btn::after {
+  content: url(../assets/img/stor/arrow.png);
+  position: absolute;
+  left: 225px;
+  bottom: 15px;
 }
 
 .story__img {

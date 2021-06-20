@@ -797,6 +797,21 @@ section {
   border-style: hidden;
   background-color: #ffffff;
   margin-top: 35px;
+  position: relative;
+}
+
+.footer__input::before {
+  content: url(../assets/img/foot/foot-yel/mail.png);
+  position: absolute;
+  left: 23px;
+  top: 21px;
+}
+
+.footer__input::after {
+  content: url(../assets/img/foot/foot-yel/arrow-btn.png);
+  position: absolute;
+  left: 120px;
+  top: 72px;
 }
 
 .footer__input-text {

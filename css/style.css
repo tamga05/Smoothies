@@ -465,6 +465,13 @@
   position: relative;
 }
 
+.story__wrap::after {
+  content: url(../assets/img/stor/pseudo.png);
+  position: absolute;
+  right: 771px;
+  top: 142px;
+}
+
 .story__content {
   width: 511px;
   display: flex;
@@ -505,13 +512,6 @@
 .story__img {
   margin-top: 120px;
   margin-right: 310px;
-}
-
-.story__wrap::after {
-  content: url(../assets/img/stor/pseudo.png);
-  position: absolute;
-  right: 771px;
-  top: 142px;
 }
 
 .testimonials {
@@ -599,6 +599,14 @@
   width: 1920px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.blog__wrap::after {
+  content: url(../assets/img/blog/line.png);
+  position: absolute;
+  right: 360px;
+  top: 266px;
 }
 
 .blog__title {
@@ -617,6 +625,7 @@
 }
 
 .blog__img {
+  z-index: 1;
 }
 
 .blog__advice {
@@ -652,6 +661,13 @@
 
 .blog__link {
   text-decoration: none;
+  position: relative;
+}
+
+.blog__link::after {
+  content: url(../assets/img/blog/arrow.png);
+  position: absolute;
+  left: 97px;
 }
 
 .blog__strong {

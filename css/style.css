@@ -20,18 +20,21 @@
     url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
 }
 
+section {
+  margin: 0 auto;
+  max-width: 1920px;
+  box-sizing: border-box;
+}
+
 .header {
   background-image: url(../assets/img/head/bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1920px;
   min-height: 1080px;
-  margin: 0 auto;
 }
 
 .header__wrap {
-  max-width: 1920px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,13 +208,10 @@
 }
 
 .smoothies {
-  max-width: 1920px;
   min-height: 870px;
-  margin: 0 auto;
 }
 
 .smoothies__wrap {
-  width: 1920px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,13 +295,10 @@
 
 .about {
   background-color: #12836f;
-  max-width: 1920px;
   min-height: 800px;
-  margin: 0 auto;
 }
 
 .about__wrap {
-  width: 1920px;
   position: relative;
 }
 
@@ -383,13 +380,10 @@
 }
 
 .products {
-  max-width: 1920px;
   min-height: 719px;
-  margin: 0 auto;
 }
 
 .products__wrap {
-  width: 1920px;
   display: flex;
 }
 
@@ -454,13 +448,10 @@
 }
 
 .story {
-  max-width: 1920px;
   min-height: 881px;
-  margin: 0 auto;
 }
 
 .story__wrap {
-  max-width: 1920px;
   display: flex;
   position: relative;
 }
@@ -516,14 +507,10 @@
 
 .testimonials {
   background-color: #6b2b20;
-  max-width: 1920px;
   min-height: 720px;
-  margin: 0 auto;
 }
 
 .testimonials__wrap {
-  max-width: 1920px;
-  min-height: 720px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -590,13 +577,10 @@
 }
 
 .blog {
-  max-width: 1920px;
   min-height: 796px;
-  margin: 0 auto;
 }
 
 .blog__wrap {
-  width: 1920px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -676,9 +660,7 @@
 }
 
 .instagram {
-  max-width: 1920px;
   min-height: 459px;
-  margin: 0 auto;
 }
 
 .instagram__wrap {
@@ -695,6 +677,14 @@
   letter-spacing: -0.48px;
   color: #0aa566;
   margin-bottom: 45px;
+  position: relative;
+}
+
+.instagram__title::before {
+  content: url(../assets/img/insta/icon-green.png);
+  position: absolute;
+  left: -38px;
+  top: 4px;
 }
 
 .instagram__galery {
@@ -703,12 +693,19 @@
 }
 
 .instagram__img {
+  position: relative;
+}
+
+.instagram__img::after {
+  content: url(../assets/img/insta/icon-white.png);
+  position: absolute;
+  right: 22px;
+  bottom: 20px;
+  z-index: 1;
 }
 
 .footer {
-  max-width: 1920px;
   min-height: 437px;
-  margin: 0 auto;
 }
 
 .footer__wrap {
@@ -877,6 +874,9 @@
   letter-spacing: 0.26px;
   color: #af8a82;
 }
+
+
+
 
 .header__shop-btn {
   margin: 0;

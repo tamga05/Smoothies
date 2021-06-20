@@ -263,18 +263,18 @@
   align-items: center;
 }
 
-.smoothies__unit:nth-child(1n+1) {
-border-right: 2px solid #f6edde;
-border-bottom: 2px solid #f6edde;
-} 
+.smoothies__unit:nth-child(1n + 1) {
+  border-right: 2px solid #f6edde;
+  border-bottom: 2px solid #f6edde;
+}
 
-.smoothies__unit:nth-child(4n+4) {
+.smoothies__unit:nth-child(4n + 4) {
   border-right: none;
-} 
+}
 
-.smoothies__unit:nth-child(n+5) {
+.smoothies__unit:nth-child(n + 5) {
   border-bottom: none;
-} 
+}
 
 .smoothies__img {
 }
@@ -376,10 +376,10 @@ border-bottom: 2px solid #f6edde;
 }
 
 .about__btn::after {
-content: url(../assets/img/about/arrow.png);
-position: absolute;
-left: 295px;
-bottom: 15px;
+  content: url(../assets/img/about/arrow.png);
+  position: absolute;
+  left: 295px;
+  bottom: 15px;
 }
 
 .products {
@@ -504,6 +504,14 @@ bottom: 15px;
 .story__img {
   margin-top: 120px;
   margin-right: 310px;
+  position: relative;
+}
+
+.story__img::before {
+  content: url(../assets/img/stor/pseudo.png);
+  position: absolute;
+  left: 150px;
+  top: 50px;
 }
 
 .testimonials {
@@ -514,10 +522,13 @@ bottom: 15px;
 }
 
 .testimonials__wrap {
-  width: 1920px;
+  max-width: 1920px;
+  min-height: 720px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .testimonials__title {
@@ -529,19 +540,33 @@ bottom: 15px;
   color: #f2612d;
 }
 
-.testimonials__content {
+.testimonials__wrap::after {
+  content: url(../assets/img/test/pseudo.png);
+  position: absolute;
+  top: -80px;
+  right: 58px;
+}
+
+.testimonials__arrow {
   display: flex;
+  width: 158px;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .testimonials__post {
-  width: 410px;
+  position: absolute;
+  top: 350px;
+  left: 593px;
+  z-index: 1;
+  max-width: 410px;
   height: 130px;
   text-align: center;
-  margin-top: 183px;
 }
 
 .testimonials__quote {
   color: #ffffff;
+  line-height: 1.94;
 }
 
 .testimonials__cite {
@@ -551,8 +576,17 @@ bottom: 15px;
 }
 
 .testimonials__avatar {
-  margin-top: 118px;
-  margin-left: 59px;
+  position: absolute;
+  top: 285px;
+  right: 593px;
+  z-index: 1;
+}
+
+.testimonials__wrap::before {
+  content: url(../assets/img/test/saraha.png);
+  position: absolute;
+  top: 250px;
+  left: 438px;
 }
 
 .blog {

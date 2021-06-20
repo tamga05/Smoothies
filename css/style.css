@@ -263,7 +263,24 @@
   align-items: center;
 }
 
-.smoothies__img {
+.smoothies__unit:nth-child(1n+1) {
+border-right: 2px solid #f6edde;
+border-bottom: 2px solid #f6edde;
+} 
+
+.smoothies__unit:nth-child(4) {
+  border-right: none;
+} 
+
+.smoothies__unit:nth-child(n+5) {
+  border-bottom: none;
+} 
+
+.smoothies__unit:nth-child(8) {
+  border-right: none;
+} 
+
+smoothies__img {
 }
 
 .heading {

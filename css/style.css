@@ -40,7 +40,7 @@
 .header__top {
   width: 1920px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   padding: 69px 100px 105px 100px;
 }
@@ -79,15 +79,20 @@
 .header__buy {
   width: 418px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header__personal {
+  min-width: 171px;
+  position: relative;
 }
 
 .header__personal::after {
-  content: url(../assets/img/head/line.png)
+  content: url(../assets/img/head/line.png);
+  position: absolute;
+  left: 210px;
+  bottom: 12px;
 }
 
 .header__personal-list {
@@ -99,10 +104,10 @@
 }
 
 .header__personal-item {
+  position: relative;
 }
 
 .header__personal-link {
-position: relative;
 }
 
 .header__searh {
@@ -128,11 +133,14 @@ position: relative;
   justify-content: center;
   align-items: center;
   position: absolute;
-  transform: translateX(23px) translateY(-35px);
+  left: 22px;
+  bottom: 17px;
 }
 
 .header__social {
   min-width: 126px;
+  margin-right: 100px;
+  margin-left: 121px;
 }
 
 .header__social-list {
@@ -147,7 +155,7 @@ position: relative;
   width: 35px;
   height: 35px;
   border-radius: 50px;
-  background-color:  #ffffff;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,8 +193,16 @@ position: relative;
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: -0.48px;
-  padding: 15px 124px 28px 39px;
-  }
+  padding: 19px 124px 28px 39px;
+  position: relative;
+}
+
+.header__btn::after {
+  content: url(../assets/img/head/arrow.png);
+  position: absolute;
+  left: 200px;
+  top: 19px;
+}
 
 .smoothies {
   max-width: 1920px;
@@ -227,7 +243,7 @@ position: relative;
 .smoothies__text {
   width: 807px;
   margin-top: 57px;
-  margin-bottom: 61px
+  margin-bottom: 61px;
 }
 
 .smoothies__text-br {
@@ -510,7 +526,7 @@ position: relative;
   width: 200px;
   line-height: 1.2;
   margin-left: 360px;
-  margin-top: 99px; 
+  margin-top: 99px;
   margin-bottom: 49px;
 }
 
@@ -708,13 +724,13 @@ position: relative;
 }
 
 .footer__submit-social {
-width: 259px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-align-self: flex-end;
-margin-top: 27px;
-margin-right: 52px;
+  width: 259px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  margin-top: 27px;
+  margin-right: 52px;
 }
 
 .footer__submit {
@@ -766,15 +782,6 @@ margin-right: 52px;
   letter-spacing: 0.26px;
   color: #af8a82;
 }
-
-
-
-
-
-
-
-
-
 
 .header__shop-btn {
   margin: 0;

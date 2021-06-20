@@ -460,8 +460,9 @@
 }
 
 .story__wrap {
-  width: 1920px;
+  max-width: 1920px;
   display: flex;
+  position: relative;
 }
 
 .story__content {
@@ -504,14 +505,13 @@
 .story__img {
   margin-top: 120px;
   margin-right: 310px;
-  position: relative;
 }
 
-.story__img::before {
+.story__wrap::after {
   content: url(../assets/img/stor/pseudo.png);
   position: absolute;
-  left: 150px;
-  top: 50px;
+  right: 771px;
+  top: 142px;
 }
 
 .testimonials {
@@ -531,13 +531,11 @@
   position: relative;
 }
 
-.testimonials__title {
-  line-height: 1.2;
-  margin-top: 117px;
-}
-
-.testimonials__span {
-  color: #f2612d;
+.testimonials__wrap::before {
+  content: url(../assets/img/test/saraha.png);
+  position: absolute;
+  top: 250px;
+  left: 438px;
 }
 
 .testimonials__wrap::after {
@@ -545,6 +543,15 @@
   position: absolute;
   top: -80px;
   right: 58px;
+}
+
+.testimonials__title {
+  line-height: 1.2;
+  margin-top: 117px;
+}
+
+.testimonials__span {
+  color: #f2612d;
 }
 
 .testimonials__arrow {
@@ -580,13 +587,6 @@
   top: 285px;
   right: 593px;
   z-index: 1;
-}
-
-.testimonials__wrap::before {
-  content: url(../assets/img/test/saraha.png);
-  position: absolute;
-  top: 250px;
-  left: 438px;
 }
 
 .blog {

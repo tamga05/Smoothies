@@ -303,8 +303,8 @@ section {
 
 .about__img {
   position: absolute;
-  left: 143px;
-  top: 64px;
+  left: 0;
+  top: 0;
 }
 
 .about__content {
@@ -316,7 +316,6 @@ section {
   margin-right: 365px;
   margin-left: 960px;
 }
-
 .about__title {
   width: 588px;
   font-size: 55px;

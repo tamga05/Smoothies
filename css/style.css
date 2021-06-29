@@ -1,16 +1,36 @@
 @font-face {
-  font-family: "Muli";
+  font-family: "Muli-Bold";
   src: url("/assets/font/woff2/Muli-Bold.woff2") format("woff2"),
-    url("/assets/font/woff2/Muli-BoldItalic.woff2") format("woff2"),
-    url("/assets/font/woff2/Muli-ExtraBold.woff2") format("woff2"),
-    url("/assets/font/woff2/Muli-Italic.woff2") format("woff2"),
-    url("/assets/font/woff2/Muli-Regular.woff2") format("woff2"),
-    url("/assets/font/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
-    url("/assets/font/woff/Muli-Bold.woff") format("woff"),
-    url("/assets/font/woff/Muli-BoldItalic.woff") format("woff"),
-    url("/assets/font/woff/Muli-ExtraBold.woff") format("woff"),
-    url("/assets/font/woff/Muli-Italic.woff") format("woff"),
-    url("/assets/font/woff/Muli-Regular.woff") format("woff"),
+    url("/assets/font/woff/Muli-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muli-BoldItalic";
+  src: url("/assets/font/woff2/Muli-BoldItalic.woff2") format("woff2"),
+    url("/assets/font/woff/Muli-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muli-ExtraBold";
+  src: url("/assets/font/woff2/Muli-ExtraBold.woff2") format("woff2"),
+    url("/assets/font/woff/Muli-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muli-Italic";
+  src: url("/assets/font/woff2/Muli-Italic.woff2") format("woff2"),
+    url("/assets/font/woff/Muli-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muli-Regular";
+  src: url("/assets/font/woff2/Muli-Regular.woff2") format("woff2"),
+    url("/assets/font/woff/Muli-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muli-SemiBoldItalic";
+  src: url("/assets/font/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
     url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff");
 }
 
@@ -20,17 +40,17 @@
     url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
 }
 
-section {
+header, footer, section {
   margin: 0 auto;
-  max-width: 1920px;
   box-sizing: border-box;
+  max-width: 1920px;
 }
 
 .header {
   background-image: url(../assets/img/head/bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 1080px;
+  height: 1080px;
 }
 
 .header__wrap {
@@ -320,7 +340,7 @@ section {
   width: 588px;
   font-size: 55px;
   line-height: 1.2;
-  letter-spacing: 1.3px;
+  letter-spacing: -1.1px;
   color: #ffffff;
   margin-top: 98px;
   margin-bottom: 68px;
@@ -332,9 +352,12 @@ section {
 }
 
 .about__title::after {
-  content: url(../assets/img/about/line.png);
+  content: "";
+  background-image: url(../assets/img/about/line.png);
+  width: 430px;
+  height: 13px;
   position: absolute;
-  top: 85px;
+  top: 130px;
   left: 60px;
 }
 
@@ -509,7 +532,6 @@ section {
 }
 
 .testimonials__wrap {
-  min-height: 720px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -688,7 +710,6 @@ section {
 
 .instagram__galery {
   display: flex;
-  width: 1920px;
 }
 
 .instagram__img {
@@ -702,11 +723,11 @@ section {
   bottom: 20px;
 }
 
-.footer {
-  width: 1920px;
-  min-height: 437px;
-  margin: 0 auto;
+.instagram__pic {
+}
 
+.footer {
+  min-height: 437px;
 }
 
 .footer__wrap {
@@ -844,6 +865,7 @@ section {
   letter-spacing: -0.34px;
   text-align: left;
   color: #6d450c;
+  outline: none;
 }
 
 .footer__submit-social {
@@ -900,7 +922,7 @@ section {
 }
 
 .footer__bottom::before {
-  content:url(../assets/img/foot/foot-top/gotop.png);
+  content: url(../assets/img/foot/foot-top/gotop.png);
   position: absolute;
   right: 164px;
   top: 21px;
@@ -913,11 +935,6 @@ section {
   letter-spacing: 0.26px;
   color: #af8a82;
 }
-
-
-
-
-
 
 /*
 .header__shop-btn {

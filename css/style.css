@@ -753,7 +753,9 @@ header, footer, section {
   background-repeat: no-repeat;
   right: 101px;
   bottom: -22px;
-  position: absolute;
+  position: fixed;
+  right: 101px;
+  bottom: 38px;
   z-index: 1;
 }
 

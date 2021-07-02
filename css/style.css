@@ -48,6 +48,10 @@ section {
   max-width: 1920px;
 }
 
+.img {
+  max-width: 100%;
+}
+
 .header {
   background-image: url(../assets/img/head/bg.png);
   background-position: center;
@@ -74,6 +78,7 @@ section {
 }
 
 .header__nav-list {
+  max-width: 100%;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -515,7 +520,7 @@ section {
   line-height: 1.2;
   background-color: #0aa566;
   border-style: hidden;
-  padding: 20px 147px 24px 30px;
+  padding: 17px 147px 24px 30px;
   position: relative;
 }
 
@@ -542,9 +547,6 @@ section {
 .testimonials {
   background-color: #6b2b20;
   min-height: 720px;
-}
-
-.testimonials__wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -552,14 +554,7 @@ section {
   position: relative;
 }
 
-.testimonials__wrap::before {
-  content: url(../assets/img/test/saraha.png);
-  position: absolute;
-  top: 250px;
-  left: 438px;
-}
-
-.testimonials__wrap::after {
+.testimonials::after {
   content: url(../assets/img/test/pseudo.png);
   position: absolute;
   top: -80px;
@@ -571,25 +566,41 @@ section {
   margin-top: 117px;
 }
 
+.testimonials__comment {
+  max-width: 734px;
+  height: 218px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.testimonials__comment::before {
+  content: url(../assets/img/test/saraha.png);
+  position: absolute;
+  top: -35px;
+  left: -155px;
+}
+
 .testimonials__span {
   color: #f2612d;
 }
 
 .testimonials__arrow {
-  display: flex;
   width: 158px;
+  display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
 }
 
 .testimonials__post {
-  position: absolute;
-  top: 350px;
-  left: 593px;
-  z-index: 1;
-  max-width: 410px;
+  max-width: 455px;
   height: 130px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
 
 .testimonials__quote {
@@ -604,9 +615,8 @@ section {
 }
 
 .testimonials__avatar {
-  position: absolute;
-  top: 285px;
-  right: 593px;
+  max-width: 100%;
+  margin-left: 59px;
   z-index: 1;
 }
 
@@ -737,6 +747,7 @@ section {
 }
 
 .instagram__pic {
+  max-width: 100%;
 }
 
 .footer {

@@ -40,7 +40,9 @@
     url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
 }
 
-header, footer, section {
+header,
+footer,
+section {
   margin: 0 auto;
   box-sizing: border-box;
   max-width: 1920px;
@@ -51,27 +53,27 @@ header, footer, section {
   background-position: center;
   background-repeat: no-repeat;
   height: 1080px;
-}
-
-.header__wrap {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .header__top {
-  width: 1920px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 69px 100px 105px 100px;
+  margin-top: 69px;
+  margin-bottom: 123px;
+  position: relative;
 }
 
 .header__nav {
+  width: 31%;
 }
 
 .header__nav-list {
-  width: 540px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -95,41 +97,48 @@ header, footer, section {
 }
 
 .header__logo {
-  margin-right: 135px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .header__buy {
-  width: 418px;
+  width: 24%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header__personal {
-  min-width: 171px;
+  min-width: 41%;
   position: relative;
 }
 
 .header__personal::after {
   content: url(../assets/img/head/line.png);
   position: absolute;
-  left: 210px;
+  left: 205px;
   bottom: 12px;
 }
 
 .header__personal-list {
   list-style-type: none;
-  width: 172px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header__personal-item {
+  
+}
+
+.header__personal-item-cart {
   position: relative;
 }
 
 .header__personal-link {
+  
 }
 
 .header__searh {
@@ -160,14 +169,13 @@ header, footer, section {
 }
 
 .header__social {
-  min-width: 126px;
+  min-width: 30%;
   margin-right: 100px;
   margin-left: 121px;
 }
 
 .header__social-list {
   list-style-type: none;
-  width: 126px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,15 +223,15 @@ header, footer, section {
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: -0.48px;
-  padding: 19px 124px 28px 39px;
+  padding: 19px 124px 28px 44px;
   position: relative;
 }
 
 .header__btn::after {
   content: url(../assets/img/head/arrow.png);
   position: absolute;
-  left: 200px;
-  top: 19px;
+  left: 214px;
+  top: 20px;
 }
 
 .smoothies {
@@ -314,28 +322,33 @@ header, footer, section {
 
 .about {
   background-color: #12836f;
-  min-height: 800px;
+  height: 800px;
 }
 
 .about__wrap {
-  position: relative;
+  max-width: 1421px;
+  margin-left: 143px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about__img {
-  position: absolute;
-  left: 143px;
-  top: 64px;
+  max-width: 691px;
+  transform: translateY(64px);
+}
+
+.about__pic {
 }
 
 .about__content {
   width: 520px;
   height: 609px;
+  margin-left: 142px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 365px;
-  margin-left: 960px;
 }
+
 .about__title {
   width: 588px;
   font-size: 55px;
@@ -354,11 +367,11 @@ header, footer, section {
 .about__title::after {
   content: "";
   background-image: url(../assets/img/about/line.png);
-  width: 430px;
+  width: 400px;
   height: 13px;
   position: absolute;
   top: 130px;
-  left: 60px;
+  left: 65px;
 }
 
 .about__list {
@@ -855,9 +868,19 @@ header, footer, section {
 
 .footer__form-text {
   width: 214px;
-  height: 13px;
-  margin: 23px 218px 24px 63px;
-  border-style: hidden;
+  margin: 22px 218px 24px 63px;
+  border-style: none;
+}
+
+.footer__form-text:focus {
+  outline: none;
+  font-family: Muli-Regular;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: -0.34px;
+  line-height: 1.2;
+  text-align: left;
+  color: #6d450c;
 }
 
 ::placeholder {
@@ -865,9 +888,9 @@ header, footer, section {
   font-size: 17px;
   font-weight: bold;
   letter-spacing: -0.34px;
+  line-height: 1.2;
   text-align: left;
   color: #6d450c;
-  outline: none;
 }
 
 .footer__submit-social {
@@ -937,21 +960,3 @@ header, footer, section {
   letter-spacing: 0.26px;
   color: #af8a82;
 }
-
-/*
-.header__shop-btn {
-  margin: 0;
-  padding: 0;
-  width: 280px;
-  height: 70px;
-  border-radius: 35px;
-  border-color: transparent;
-  background-color: #0aa566;
-  transition: border 500ms ease;
-}
-
-.header__shop-btn:focus,
-.header__shop-btn:hover {
-  border: 1px solid #000;
-}
-*/

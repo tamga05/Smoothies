@@ -78,7 +78,6 @@ section {
 }
 
 .header__nav-list {
-  max-width: 100%;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -105,7 +104,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .header__buy {
@@ -117,14 +116,6 @@ section {
 
 .header__personal {
   min-width: 41%;
-  position: relative;
-}
-
-.header__personal::after {
-  content: url(../assets/img/head/line.png);
-  position: absolute;
-  left: 205px;
-  bottom: 12px;
 }
 
 .header__personal-list {
@@ -135,7 +126,6 @@ section {
 }
 
 .header__personal-item {
-  
 }
 
 .header__personal-item-cart {
@@ -143,7 +133,6 @@ section {
 }
 
 .header__personal-link {
-  
 }
 
 .header__searh {
@@ -175,8 +164,14 @@ section {
 
 .header__social {
   min-width: 30%;
-  margin-right: 100px;
-  margin-left: 121px;
+  position: relative;
+}
+
+.header__social::before {
+  content: url(../assets/img/head/line.png);
+  position: absolute;
+  left: -85px;
+  top: 5px;
 }
 
 .header__social-list {
@@ -240,12 +235,10 @@ section {
 }
 
 .smoothies {
-  min-height: 870px;
-}
-
-.smoothies__wrap {
+  height: 870px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -258,10 +251,9 @@ section {
 }
 
 .smoothies__title {
-  font-family: MyriadPro-Regular;
-  font-weight: normal;
-  line-height: 1.2;
+  line-height: 0.8;
   margin-top: 98px;
+  margin-bottom: 55px;
 }
 
 .text {
@@ -273,8 +265,8 @@ section {
 }
 
 .smoothies__text {
-  width: 807px;
-  margin-top: 57px;
+  max-width: 918px;
+  line-height: 1.75;
   margin-bottom: 61px;
 }
 
@@ -282,7 +274,7 @@ section {
 }
 
 .smoothies__block {
-  width: 1010px;
+  max-width: 1010px;
   height: 389px;
   display: flex;
   flex-wrap: wrap;
@@ -322,7 +314,7 @@ section {
   line-height: 1.2;
   letter-spacing: -0.5px;
   color: #f2612d;
-  padding-top: 31px;
+  margin-top: 27px;
 }
 
 .about {
@@ -545,7 +537,7 @@ section {
 }
 
 .testimonials {
-  background-color: #6b2b20;
+  background-color: #683119;
   min-height: 720px;
   display: flex;
   flex-direction: column;
@@ -556,6 +548,7 @@ section {
 
 .testimonials::after {
   content: url(../assets/img/test/pseudo.png);
+  max-width: 410px;
   position: absolute;
   top: -80px;
   right: 58px;
@@ -576,10 +569,18 @@ section {
 }
 
 .testimonials__comment::before {
-  content: url(../assets/img/test/saraha.png);
+  content: "Sarah A";
+  opacity: 0.6;
+  font-family: Muli-ExtraBold;
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 0.2;
+  letter-spacing: -4px;
+  text-align: center;
+  color: #5b210d;
   position: absolute;
-  top: -35px;
-  left: -155px;
+  top: 5px;
+  left: -150px;
 }
 
 .testimonials__span {
@@ -615,7 +616,7 @@ section {
 }
 
 .testimonials__avatar {
-  max-width: 100%;
+  max-width: 220px;
   margin-left: 59px;
   z-index: 1;
 }

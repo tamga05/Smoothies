@@ -319,15 +319,17 @@ section {
 
 .about {
   background-color: #12836f;
-  min-height: 800px;
+  height: 800px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
 .about__img {
-  width: 691px;
-  transform: translate(143px,84px);
+  max-width: 691px;
+  margin-left: 143px;
+  margin-top: 64px;
+  z-index: 1;
 }
 
 .about__pic {
@@ -341,8 +343,7 @@ section {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 97px;
-  margin-right: 356px;
-
+  margin-left: 142px;
 }
 
 .about__title {

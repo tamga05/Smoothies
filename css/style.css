@@ -319,7 +319,7 @@ section {
 
 .about {
   background-color: #12836f;
-  height: 800px;
+  min-height: 800px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -364,7 +364,7 @@ section {
   width: 400px;
   height: 13px;
   position: absolute;
-  top: 130px;
+  top: 118px;
   left: 65px;
 }
 
@@ -387,6 +387,7 @@ section {
   line-height: 1.7;
   text-align: left;
   color: #ffffff;
+  padding-left: 10px;
 }
 
 .about__strong {
@@ -479,33 +480,40 @@ section {
   min-height: 881px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.story__wrap {
+  width: 1302px;
+  display: flex;
+  justify-content: space-between;
   align-items: flex-start;
+  margin-top: 120px;
+  margin-bottom: 160px;
 }
 
 .story__content {
   max-width: 511px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 206px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .story__title {
   line-height: 0.8;
-  margin-top: 260px;
+  margin-top: 140px;
   margin-bottom: 43px;
 }
 
 .story__text {
-  width: 455px;
-  height: 130px;
+  max-width: 511px;
   text-align: left;
   margin-bottom: 60px;
 }
 
 .story__btn {
-  width: 301px;
+  max-width: 301px;
   line-height: 1.2;
   background-color: #0aa566;
   border-style: hidden;
@@ -517,16 +525,20 @@ section {
   content: url(../assets/img/stor/arrow.png);
   position: absolute;
   left: 225px;
-  bottom: 15px;
+  bottom: 17px;
 }
 
 .story__img {
-  width: 100%;
-  margin-top: 120px;
+  max-width: 585px;
   position: relative;
 }
 
+.story__pic {
+  width: 100%;
+}
+
 .story__img::before {
+  max-width: 100%;
   content: url(../assets/img/stor/pseudo.png);
   position: absolute;
   left: -166px;

@@ -639,7 +639,18 @@ section {
 }
 
 .blog__img {
-  z-index: 1;
+  position: relative;
+}
+
+.blog__img::after {
+  content: url(../assets/img/blog/line.png);
+  position: absolute;
+  top: 70px;
+  left: 513px;
+  z-index: -1;
+}
+
+.blog__pic {
 }
 
 .blog__advice {
@@ -653,14 +664,6 @@ section {
   color: #f2612d;
   margin-top: 132px;
   margin-left: 61px;
-  position: relative;
-}
-
-.blog__heading::after {
-  content: url(../assets/img/blog/line.png);
-  position: absolute;
-  right: -45px;
-  top: -50px;
 }
 
 .blog__time {

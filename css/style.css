@@ -59,6 +59,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .header__top {
@@ -68,7 +69,7 @@
   align-items: center;
   margin-top: 70px;
   margin-bottom: 123px;
-  position: relative;
+  
 }
 
 .header__nav {
@@ -106,9 +107,12 @@
 
 .header__logo {
   position: absolute;
-  top: 50%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.header__logo-link {
 }
 
 .header__buy {
@@ -227,13 +231,15 @@
 .header__btn {
   width: 280px;
   height: 70px;
-  border-style: hidden;
+  border: none;
   border-radius: 35px;
   background-color: #0aa566;
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: -0.48px;
-  padding: 20px 0 32px 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
   position: relative;
 }
 
@@ -284,11 +290,9 @@
 }
 
 .smoothies__text {
+  max-width: 915px;
   line-height: 1.75;
-  margin-bottom: 61px;
-}
-
-.smoothies__text-br {
+  margin-bottom: 60px;
 }
 
 .smoothies__block {
@@ -341,6 +345,14 @@
   min-height: 800px;
   display: flex;
   justify-content: space-between;
+}
+
+.about__container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 65px 10px;
+  display: flex;
+  align-items: center;
 }
 
 .about__img {
@@ -802,7 +814,12 @@
   z-index: 1;
 }
 
+.foooter__logo-link {
+
+}
+
 .footer__logo {
+
 }
 
 .footer__content {

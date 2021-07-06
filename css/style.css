@@ -45,7 +45,6 @@ footer,
 section,
 .container {
   margin: 0 auto;
-  /*max-width: 1920px;*/
 }
 
 .img {
@@ -200,7 +199,7 @@ section,
   align-items: center;
 }
 
-.header__social-item:nth-child(n+1) {
+.header__social-item:nth-child(n + 1) {
   margin-right: 10px;
 }
 
@@ -245,10 +244,15 @@ section,
 }
 
 .header__btn::after {
-  content: url(../assets/img/head/arrow.png); 
+  content: "";
+  background-image: url(../assets/img/head/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 210px;
-  top: 20px;
+  left: 80px;
+  top: 0;
 }
 
 .smoothies {
@@ -386,7 +390,7 @@ section,
 }
 
 .about__item {
-  list-style-image: url("../assets/img/about/icon.png");
+  list-style-image: url(../assets/img/about/icon.png);
   font-family: Muli-Regular;
   font-size: 21px;
   line-height: 2;

@@ -40,13 +40,6 @@
     url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
 }
 
-header,
-footer,
-section,
-.container {
-  margin: 0 auto;
-}
-
 .img {
   width: 100%;
 }
@@ -59,8 +52,9 @@ section,
   height: 100vh;
 }
 
-.container {
+.header__container {
   max-width: 1740px;
+  margin: 0 auto;
   padding: 0 10px;
   display: flex;
   flex-direction: column;
@@ -256,7 +250,12 @@ section,
 }
 
 .smoothies {
-  min-height: 870px;
+}
+
+.smoothies__container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 100px 10px 107px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,8 +270,8 @@ section,
 }
 
 .smoothies__title {
+  text-align: center;
   line-height: 0.8;
-  margin-top: 98px;
   margin-bottom: 55px;
 }
 
@@ -285,7 +284,6 @@ section,
 }
 
 .smoothies__text {
-  max-width: 918px;
   line-height: 1.75;
   margin-bottom: 61px;
 }
@@ -294,8 +292,6 @@ section,
 }
 
 .smoothies__block {
-  max-width: 1010px;
-  height: 389px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -321,6 +317,8 @@ section,
 }
 
 .smoothies__img {
+  max-width: 100%;
+  margin-top: 30px;
 }
 
 .heading {
@@ -335,6 +333,7 @@ section,
   letter-spacing: -0.5px;
   color: #f2612d;
   margin-top: 27px;
+  margin-bottom: 45px;
 }
 
 .about {

@@ -40,10 +40,6 @@
     url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
 }
 
-.img {
-  width: 100%;
-}
-
 .header {
   background-image: url(../assets/img/head/bg.png);
   background-position: center;
@@ -247,11 +243,11 @@
   content: "";
   background-image: url(../assets/img/head/arrow.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 80px;
+  right: 40px;
   top: 0;
 }
 
@@ -342,22 +338,19 @@
 
 .about {
   background-color: #12836f;
-  min-height: 800px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .about__container {
-  max-width: 1420px;
-  margin: 0 auto;
-  padding: 65px 10px;
+  max-width: 1440px;
+  padding: 0 10px;
+  margin-left: 135px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .about__img {
-  max-width: 691px;
-  transform: translate(143px, 87px);
+  transform: translateY(85px);
 }
 
 .about__pic {
@@ -365,10 +358,7 @@
 }
 
 .about__content {
-  max-width: 588px;
-  padding-top: 97px;
-  padding-bottom: 94px;
-  margin-right: 354px;
+  max-width: 590px;
 }
 
 .about__title {
@@ -376,6 +366,7 @@
   line-height: 1.09;
   letter-spacing: -1.1px;
   color: #ffffff;
+  margin-top: 100px;
   position: relative;
 }
 
@@ -383,18 +374,19 @@
   color: #cae941;
 }
 
-.about__title::after {
+.about__span::after {
   content: "";
   background-image: url(../assets/img/about/line.png);
-  width: 400px;
-  height: 13px;
+  background-repeat: no-repeat;
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 118px;
-  left: 65px;
+  left: 60px;
 }
 
 .about__list {
-  height: 329px;
   padding-left: 37px;
   margin-top: 68px;
   margin-bottom: 50px;
@@ -405,7 +397,6 @@
   font-family: Muli-Regular;
   font-size: 21px;
   line-height: 2;
-  text-align: left;
   color: #ffffff;
   padding-left: 10px;
 }
@@ -418,15 +409,22 @@
   max-width: 380px;
   line-height: 1.2;
   border: solid 2px #f8b231;
-  padding: 16px 98px 23px 29px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-bottom: 95px;
   position: relative;
 }
 
 .about__btn::after {
-  content: url(../assets/img/about/arrow.png);
+  content: "";
+  background-image: url(../assets/img/about/arrow.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 295px;
-  bottom: 15px;
+  right: 40px;
 }
 
 .products {
@@ -530,11 +528,13 @@
 }
 
 .story__btn {
-  max-width: 301px;
+  max-width: 300px;
   line-height: 1.2;
   background-color: #0aa566;
-  border-style: hidden;
-  padding: 17px 147px 24px 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
   position: relative;
 }
 

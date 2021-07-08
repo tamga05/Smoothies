@@ -267,8 +267,8 @@
 
 .title {
   font-family: Muli-ExtraBold;
-  font-weight: 800;
   font-size: 50px;
+  font-weight: 800;
   letter-spacing: -1px;
   color: #f7ae3b;
 }
@@ -380,6 +380,7 @@
   content: "";
   background-image: url(../assets/img/about/line.png);
   background-repeat: no-repeat;
+  max-width: 450px;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -574,13 +575,12 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  left: -165px;
+  left: -8.6vw;
   top: 20px;
 }
 
 .testimonials {
   background-color: #683119;
-  position: relative;
 }
 
 .testimonials__container {
@@ -593,6 +593,7 @@
   flex-wrap: wrap;
   padding-top: 115px;
   padding-bottom: 80px;
+  position: relative;
 }
 
 .testimonials__container::after {
@@ -604,7 +605,7 @@
   height: 100%;
   position: absolute;
   top: -80px;
-  right: 60px;
+  right: -27.3vw;
 }
 
 .testimonials__title {
@@ -677,48 +678,43 @@
 }
 
 .blog {
-  min-height: 796px;
-  display: flex;
-  justify-content: center;
 }
 
-.blog__wrap {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 99px;
+.blog__conteiner {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 100px 10px 200px;
 }
 
 .blog__title {
-  line-height: 1.2;
-  margin-bottom: 49px;
+  line-height: 0.8;
+  margin-bottom: 50px;
 }
 
 .blog__content {
-  max-width: 1200px;
-  height: 400px;
   display: flex;
 }
 
 .blog__img {
+  max-width: 555px;
   position: relative;
 }
 
-.blog__img::after {
-  content: "";
-  background-image: url(../assets/img/blog/line.png);
-background-repeat: no-repeat;
-  max-width: 615px;
-width: 100%;
-height: 100%;
-  position: absolute;
-  top: 70px;
-  left: 513px;
-  z-index: -1;
+.blog__pic {
+  width: 100%;
 }
 
-.blog__pic {
+.blog__img::after {
+  content: url(../assets/img/blog/line.png);
+  background-image: 
+  background-repeat: no-repeat;
+  max-width: 687px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 70px;
+  left: 26vw;
+  z-index: -1;
 }
 
 .blog__advice {
@@ -726,32 +722,30 @@ height: 100%;
 
 .blog__heading {
   font-size: 30px;
-  line-height: 1.2;
+  line-height: 1.33;
   letter-spacing: -0.6px;
   text-align: left;
   color: #f2612d;
-  margin-top: 132px;
-  margin-left: 61px;
+  margin-top: 130px;
+  margin-bottom: 20px;
+  margin-left: 60px;
 }
 
 .blog__time {
   font-family: Muli-Regular;
   font-size: 16px;
-  line-height: 2.2;
+  line-height: 2.19;
   text-align: left;
   color: #1e1e1e;
-  margin-top: 20px;
-  margin-left: 61px;
+  margin-bottom: 45px;
+  margin-left: 60px;
 }
 
 .blog__text {
-  
   max-width: 472px;
-  
   text-align: left;
   line-height: 1.94;
-  margin-top: 45px;
-  margin-left: 124px;
+  margin-left: 125px;
 }
 
 .blog__link {
@@ -760,13 +754,19 @@ height: 100%;
 }
 
 .blog__link::after {
-  content: url(../assets/img/blog/arrow.png);
+  content: "";
+  background-image: url(../assets/img/blog/arrow.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 107px;
+  top: 8px;
+  left: 95px;
 }
 
 .blog__strong {
   font-weight: 800;
+  font-family: Muli-ExtraBoldItalic;
   font-style: italic;
 }
 
@@ -778,7 +778,8 @@ height: 100%;
   align-items: center;
 }
 
-.instagram__wrap {
+.instagram__title-list {
+  text-decoration: none;
 }
 
 .instagram__title {
@@ -950,7 +951,7 @@ height: 100%;
 }
 
 .footer__form-text {
-  width: 214px;
+  
   margin: 22px 218px 24px 63px;
   border-style: none;
 }

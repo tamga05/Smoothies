@@ -63,7 +63,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 70px;
+  flex-wrap: wrap;
+  margin-top: 90px;
   margin-bottom: 123px;
   
 }
@@ -90,7 +91,7 @@
 
 .header__nav-link {
   text-decoration: none;
-  font-family: Muli-Regular;
+  font-family: Muli-Bold;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
@@ -103,9 +104,10 @@
 
 .header__logo {
   position: absolute;
-  top: 28%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: -70px;
 }
 
 .header__logo-link {
@@ -218,7 +220,7 @@
   text-decoration: none;
   height: 60px;
   border-radius: 30px;
-  font-family: Muli-Regular;
+  font-family: Muli-ExtraBold;
   font-weight: 800;
   font-size: 21px;
   color: #ffffff;
@@ -264,7 +266,7 @@
 }
 
 .title {
-  font-family: Muli-Regular;
+  font-family: Muli-ExtraBold;
   font-weight: 800;
   font-size: 50px;
   letter-spacing: -1px;
@@ -287,7 +289,7 @@
 
 .smoothies__text {
   max-width: 915px;
-  line-height: 1.75;
+  line-height: 1.94;
   margin-bottom: 60px;
 }
 
@@ -322,7 +324,7 @@
 }
 
 .heading {
-  font-family: Muli-Regular;
+  font-family: Muli-ExtraBold;
   font-weight: 800;
   letter-spacing: normal;
 }
@@ -343,10 +345,10 @@
 .about__container {
   max-width: 1440px;
   padding: 0 10px;
-  margin-left: 135px;
+  margin-left: 7.45vw;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about__img {
@@ -366,35 +368,34 @@
   line-height: 1.09;
   letter-spacing: -1.1px;
   color: #ffffff;
-  margin-top: 100px;
-  position: relative;
+  margin-top: 95px;
 }
 
 .about__span {
   color: #cae941;
+  position: relative;
 }
 
 .about__span::after {
   content: "";
   background-image: url(../assets/img/about/line.png);
   background-repeat: no-repeat;
-  display: block;
-  max-width: 400px;
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 65px;
+  left: 0;
+  top: 60px;
 }
 
 .about__list {
-  padding-left: 37px;
+  margin-left: 37px;
   margin-top: 68px;
   margin-bottom: 50px;
 }
 
 .about__item {
   list-style-image: url(../assets/img/about/icon.png);
-  font-family: Muli-Regular;
+  font-family: MuliMuli-ExtraBold;
   font-size: 21px;
   line-height: 2;
   color: #ffffff;
@@ -462,6 +463,7 @@
 
 .products__heading {
   font-size: 24px;
+  font-family: Muli-Bold;
   font-weight: bold;
   line-height: 0.92;
   color: #ffffff;
@@ -470,6 +472,7 @@
 
 .products__capacity {
   font-size: 21px;
+  font-family: Muli-Italic;
   font-weight: normal;
   font-style: italic;
   line-height: 1.52;
@@ -508,12 +511,13 @@
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 120px;
   padding-bottom: 160px;
 }
 
 .story__content {
-  max-width: 511px;
+  max-width: 510px;
 }
 
 .story__title {
@@ -524,6 +528,7 @@
 
 .story__text {
   text-align: left;
+  line-height: 1.94;
   letter-spacing: -0.1px;
   margin-bottom: 60px;
 }
@@ -575,33 +580,43 @@
 
 .testimonials {
   background-color: #683119;
-  min-height: 720px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
 }
 
-.testimonials::after {
-  content: url(../assets/img/test/pseudo.png);
+.testimonials__container {
+  max-width: 755px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 115px;
+  padding-bottom: 80px;
+}
+
+.testimonials__container::after {
+  content: "";
+  background-image: url(../assets/img/test/pseudo.png);
+  background-repeat: no-repeat;
   max-width: 410px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: -80px;
-  right: 58px;
+  right: 60px;
 }
 
 .testimonials__title {
-  line-height: 1.2;
-  margin-top: 117px;
+  font-family: Muli-ExtraBold;
+  line-height: 0.8;
 }
 
 .testimonials__comment {
-  max-width: 734px;
-  height: 218px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  margin-bottom: 120px;
   position: relative;
 }
 
@@ -628,25 +643,26 @@
   width: 158px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
 }
 
 .testimonials__post {
   max-width: 455px;
-  height: 130px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   z-index: 1;
 }
 
 .testimonials__quote {
   color: #ffffff;
-  line-height: 1.94;
+  line-height: 2.1;
+  letter-spacing: -0.1px;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
 .testimonials__cite {
+  font-family: Muli-SemiBoldItalic;
   font-weight: 600;
   line-height: 1.2;
   color: #f7ae3b;
@@ -654,6 +670,8 @@
 
 .testimonials__avatar {
   max-width: 220px;
+  width: 100%;
+  height: 100%;
   margin-left: 59px;
   z-index: 1;
 }
@@ -668,11 +686,11 @@
   max-width: 1200px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 99px;
 }
 
 .blog__title {
-  max-width: 200px;
   line-height: 1.2;
   margin-bottom: 49px;
 }
@@ -688,7 +706,12 @@
 }
 
 .blog__img::after {
-  content: url(../assets/img/blog/line.png);
+  content: "";
+  background-image: url(../assets/img/blog/line.png);
+background-repeat: no-repeat;
+  max-width: 615px;
+width: 100%;
+height: 100%;
   position: absolute;
   top: 70px;
   left: 513px;
@@ -712,9 +735,9 @@
 }
 
 .blog__time {
-  font-family: Muli;
+  font-family: Muli-Regular;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 2.2;
   text-align: left;
   color: #1e1e1e;
   margin-top: 20px;
@@ -722,9 +745,11 @@
 }
 
 .blog__text {
+  
   max-width: 472px;
-  height: 130px;
+  
   text-align: left;
+  line-height: 1.94;
   margin-top: 45px;
   margin-left: 124px;
 }

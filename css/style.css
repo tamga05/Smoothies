@@ -66,7 +66,6 @@
   flex-wrap: wrap;
   margin-top: 90px;
   margin-bottom: 123px;
-  
 }
 
 .header__nav {
@@ -547,7 +546,7 @@
 }
 
 .story__btn::after {
-  content: ""; 
+  content: "";
   background-image: url(../assets/img/stor/arrow.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -706,8 +705,10 @@
 
 .blog__img::after {
   content: url(../assets/img/blog/line.png);
-  background-image: 
-  background-repeat: no-repeat;
+
+  /*background-image: 
+  background-repeat: no-repeat;*/
+
   max-width: 687px;
   width: 100%;
   height: 100%;
@@ -774,7 +775,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .instagram__title-list {
@@ -804,9 +805,11 @@
 
 .instagram__galery {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .instagram__img {
+  width: 20%;
   position: relative;
 }
 
@@ -818,12 +821,12 @@
   content: url(../assets/img/insta/shadow.png);
   position: absolute;
   right: 0;
-  bottom: -442px;
+  bottom: -440px;
   z-index: 1;
 }
 
 .instagram__img::after {
-  content: url(../assets/img/insta/icon-white.png); 
+  content: url(../assets/img/insta/icon-white.png);
   /*background-image: url(../assets/img/insta/icon-white.png);
   background-repeat: no-repeat;
   width: 100%;
@@ -836,19 +839,11 @@
 }
 
 .footer {
-  min-height: 437px;
-}
-
-.footer__wrap {
-  padding-top: 5px;
 }
 
 .footer__top {
   background-color: #f6a839;
-  min-height: 377px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  margin-top: 5px;
   position: relative;
 }
 
@@ -860,52 +855,52 @@
   background-image: url(../assets/img/foot/foot-top/arrow-top.png);
   background-position: center;
   background-repeat: no-repeat;
-  right: 101px;
-  bottom: -22px;
   position: fixed;
-  right: 101px;
+  right: 100px;
   bottom: 38px;
   z-index: 1;
 }
 
-.foooter__logo-link {
+.footer__top-container {
+  max-width: 1740px;
+  margin: 0 auto;
+  padding: 80px 10px 95px;
+  display: flex;
+  align-items: center;
+}
 
+.footer__logo-link {
+  margin-right: 15.45vw;
 }
 
 .footer__logo {
-
 }
 
 .footer__content {
-  width: 1214px;
-  height: 200px;
+  width: 1215px;
   display: flex;
-  justify-content: space-between;
 }
 
 .footer__info {
-  width: 160px;
-  height: 185px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-right: 7.92vw;
 }
 
 .footer__title {
   font-size: 26px;
+  line-height: 1.54;
   letter-spacing: -0.52px;
   color: #ffffff;
 }
 
 .footer__list {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  margin-top: 43px;
+  margin-top: 40px;
 }
 
 .footer__item {
-  font-family: Muli;
+  font-family: Muli-Bold;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.7;
@@ -919,11 +914,10 @@
 }
 
 .footer__payment {
-  height: 241px;
-  height: 199px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 8.65vw;
 }
 
 .footer__pay {
@@ -932,7 +926,7 @@
   flex-wrap: wrap;
   gap: 18px;
   align-items: center;
-  margin-top: 32px;
+  margin-top: 35px;
 }
 
 .footer__pay-img {
@@ -944,10 +938,10 @@
 }
 
 .footer__form {
-  max-width: 495px;
+  max-width: 25.78vw;
   height: 60px;
   border-radius: 30px;
-  border-style: hidden;
+  border: none;
   background-color: #ffffff;
   margin-top: 35px;
   position: relative;
@@ -968,24 +962,23 @@
 }
 
 .footer__form-text {
-  
   margin: 22px 218px 24px 63px;
   border-style: none;
 }
 
 .footer__form-text:focus {
   outline: none;
-  font-family: Muli-Regular;
+  font-family: Muli-Bold;
   font-size: 17px;
   font-weight: bold;
   letter-spacing: -0.34px;
-  line-height: 1.2;
+  line-height: 2.06;
   text-align: left;
   color: #6d450c;
 }
 
 ::placeholder {
-  font-family: Muli-Regular;
+  font-family: Muli-Bold;
   font-size: 17px;
   font-weight: bold;
   letter-spacing: -0.34px;
@@ -995,41 +988,29 @@
 }
 
 .footer__submit-social {
-  width: 259px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: flex-end;
-  margin-top: 27px;
-  margin-right: 52px;
-}
-
-.footer__submit {
+  transform: translate(17.45vw, 30px);
 }
 
 .footer__submit-btn {
-  background-color: transparent;
-  border-style: hidden;
-  outline: none;
-  transform: translateX(5px);
-}
-
-.footer__submit-btn:hover {
-  border: 1px solid #6d450c;
-}
-
-.footer-span {
   font-family: Muli-Regular;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.36px;
   color: #6d450c;
+  background-color: transparent;
+  border-style: hidden;
+  outline: none;
+  transform: translate(185px, 35px);
+}
+
+.footer__submit-btn:hover {
+  border: 1px solid #6d450c;
 }
 
 .footer__social-list {
   list-style-type: none;
-  width: 110px;
+  max-width: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1054,39 +1035,26 @@
 }
 
 .footer__bottom::before {
-  content: url(../assets/img/foot/foot-top/gotop.png);
+  content: "Go top";
+  font-family: Muli-Bold;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2.5;
+  letter-spacing: -0.32px;
+  text-align: left;
+  color: #ffffff;
   position: absolute;
-  right: 164px;
-  top: 21px;
+  right: 165px;
+  top: 10px;
 }
 
 .footer__copyright {
-  font-family: Muli;
+  font-family: MuliMuli-Regular;
   font-size: 13px;
-  line-height: 1.2;
+  line-height: 2.69;
   letter-spacing: 0.26px;
   color: #af8a82;
 }
 
 /*@media screen and (max-width: 359px) {
-
-  .header__btn {
-    max-width: 60%;
-    height: 2.2rem;
-    border-style: hidden;
-    border-radius: 35px;
-    background-color: #0aa566;
-    font-size: 0.5rem;
-    line-height: 1.2;
-    letter-spacing: -0.48px;
-    padding: 0.6rem 2rem 0.6rem 1rem;
-    position: relative;
-  }
-  
-  .header__btn::after {
-    content: url(../assets/img/head/arrow.png);
-    position: absolute;
-    left: 70%;
-    top: 0.7rem;
-  }
 }*/

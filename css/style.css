@@ -911,6 +911,7 @@
 }
 
 .footer__payment { 
+  max-width: 240px;
   margin-right: 8.65vw;
 }
 
@@ -927,6 +928,10 @@
 
 .footer__subscribe {
 }
+
+
+
+
 
 .footer__form {
   width: 25.78vw;
@@ -979,7 +984,8 @@
   color: #6d450c;
 }*/
 
-/*input::placeholder {
+/*::placeholder {
+  width: 215px;
   font-family: Muli-Bold;
   font-size: 17px;
   font-weight: bold;
@@ -988,6 +994,15 @@
   text-align: left;
   color: #6d450c;
 }*/
+
+
+
+
+
+
+
+
+
 
 .footer__form-btn {
   font-family: Muli-ExtraBold;
@@ -1008,7 +1023,7 @@
 
 .footer__social {
   max-width: 110px;
-  transform: translate(17.45vw, 30px);
+  transform: translate(330px,25px);
 }
 
 .footer__social-list {
@@ -1032,8 +1047,7 @@
 }
 
 .footer__bottom {
-  background-color: #682819;
-  min-height: 60px;
+  background-color: #682819;  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1055,7 +1069,7 @@
 }
 
 .footer__copyright {
-  font-family: MuliMuli-Regular;
+  font-family: Muli-Regular;
   font-size: 13px;
   line-height: 2.69;
   letter-spacing: 0.26px;

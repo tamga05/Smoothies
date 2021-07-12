@@ -856,7 +856,7 @@
   background-repeat: no-repeat;
   position: fixed;
   right: 100px;
-  bottom: 50px;
+  bottom: 70px;
   z-index: 1;
 }
 
@@ -996,10 +996,8 @@
   letter-spacing: -0.36px;
   color: #6d450c;
   background-color: transparent;
-  border-style: none;
-  transform: translate(-75px, 70px);
-  margin-right: 45px;
- 
+  border: none;
+  transform: translate(-95px, 70px);
 }
 
 .footer__form-btn:hover {
@@ -1032,7 +1030,7 @@
 }
 
 .footer__bottom {
-  background-color: #682819;  height: 60px;
+  background-color: #682819;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1050,7 +1048,7 @@
   color: #ffffff;
   position: absolute;
   right: 165px;
-  top: 10px;
+  top: 20px;
 }
 
 .footer__copyright {
@@ -1059,6 +1057,8 @@
   line-height: 2.69;
   letter-spacing: 0.26px;
   color: #af8a82;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 /*@media screen and (max-width: 359px) {

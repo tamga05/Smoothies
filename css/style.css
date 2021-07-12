@@ -929,10 +929,6 @@
 .footer__subscribe {
 }
 
-
-
-
-
 .footer__form {
   width: 25.78vw;
   height: 60px;
@@ -970,11 +966,19 @@
 }
 
 .footer__form-text {
-  border-style: none;
+  border: none;
+  outline: none;
+  width: 11.2vw;
+  font-family: Muli-Bold;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: -0.34px;
+  line-height: 2.06;
+  text-align: left;
+  color: #6d450c;
 }
 
-/*.footer__form-text:focus {
-  outline: none;
+::placeholder {
   font-family: Muli-Bold;
   font-size: 17px;
   font-weight: bold;
@@ -982,27 +986,7 @@
   line-height: 2.06;
   text-align: left;
   color: #6d450c;
-}*/
-
-/*::placeholder {
-  width: 215px;
-  font-family: Muli-Bold;
-  font-size: 17px;
-  font-weight: bold;
-  letter-spacing: -0.34px;
-  line-height: 2.06;
-  text-align: left;
-  color: #6d450c;
-}*/
-
-
-
-
-
-
-
-
-
+}
 
 .footer__form-btn {
   font-family: Muli-ExtraBold;
@@ -1015,6 +999,7 @@
   border-style: none;
   transform: translate(-75px, 70px);
   margin-right: 45px;
+ 
 }
 
 .footer__form-btn:hover {

@@ -780,7 +780,6 @@
 
 .instagram__title-list {
   text-decoration: none;
-  z-index: 4;
 }
 
 .instagram__title {
@@ -817,13 +816,13 @@
   max-width: 100%;
 }
 
-.instagram__img::before {
+/*.instagram__img::before {
   content: url(../assets/img/insta/shadow.png);
   position: absolute;
   right: 0;
   bottom: -440px;
   z-index: 1;
-}
+}*/
 
 .instagram__img::after {
   content: url(../assets/img/insta/icon-white.png);

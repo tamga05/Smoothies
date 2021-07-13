@@ -49,8 +49,9 @@
 }
 
 .header__container {
-  width: 1740px;
-  max-width: 100%;
+  
+  max-width: 1740px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
   display: flex;
@@ -257,8 +258,8 @@
 }
 
 .smoothies__container {
-  width: 1030px;
-  max-width: 100%;
+  max-width: 1030px;
+  width: 100%;
   margin: 0 auto;
   padding: 100px 10px 107px;
   display: flex;
@@ -344,8 +345,8 @@
 }
 
 .about__container {
-  width: 1440px;
-  max-width: 100%;
+  max-width: 1440px;
+  width: 100%;
   padding: 0 10px;
   margin-left: 7.45vw;
   display: flex;
@@ -509,8 +510,8 @@
 }
 
 .story__container {
-  width: 1320px;
-  max-width: 100%;
+  max-width: 1320px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
   display: flex;
@@ -587,8 +588,8 @@
 }
 
 .testimonials__container {
-  width: 755px;
-  max-width: 100%;
+  max-width: 755px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
   display: flex;
@@ -685,8 +686,8 @@
 }
 
 .blog__conteiner {
-  width: 1260px;
-  max-width: 100%;
+  max-width: 1260px;
+  width: 100%;
   margin: 0 auto;
   padding: 100px 10px 200px;
 }
@@ -778,11 +779,8 @@
 }
 
 .instagram {
-}
-
-.instagram__container {
-  width: 1920px;
-  max-width: 100%;
+  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -820,13 +818,12 @@
 }
 
 .instagram__img {
-  width: 20%;
-  
+  max-width: 20%;
   position: relative;
 }
 
 .instagram__pic {
-  max-width: 100%;
+  width: 100%;
 }
 
 /*.instagram__img::before {
@@ -873,8 +870,8 @@
 }
 
 .footer__top-container {
-  width: 1740px;
-  max-width: 100%;
+  max-width: 1740px;
+  width: 100%;
   margin: 0 auto;
   padding: 80px 10px 95px;
   display: flex;
@@ -1074,5 +1071,14 @@
   margin-bottom: 20px;
 }
 
-/*@media screen and (max-width: 359px) {
-}*/
+/*
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 35px;
+    padding: 5px auto;
+  }
+  .text {
+    font-size: 15px;
+  }
+}
+*/

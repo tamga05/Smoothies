@@ -603,13 +603,11 @@
 .testimonials__container::after {
   content: "";
   background-image: url(../assets/img/test/pseudo.png);
-  background-repeat: no-repeat;
-  max-width: 410px;
-  width: 100%;
-  height: 100%;
+  width: 410px;
+  height: 300px;
   position: absolute;
   top: -80px;
-  right: -27.3vw;
+  right: -520px;
 }
 
 .testimonials__title {
@@ -821,25 +819,24 @@
   width: 100%;
 }
 
-/*.instagram__img::before {
-  content: url(../assets/img/insta/shadow.png);
+.instagram__img::before {
+  content: "";
+  background-image: url(../assets/img/insta/shadow.png);
+  width: 384px;
+  height:384px;
   position: absolute;
-  right: 0;
-  bottom: -440px;
-  z-index: 1;
-}*/
+  left: 0;
+  top: 0;
+}
 
 .instagram__img::after {
-  content: url(../assets/img/insta/icon-white.png);
-  /*background-image: url(../assets/img/insta/icon-white.png);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;*/
-  max-width: 100%;
+  content: "";
+  background-image: url(../assets/img/insta/icon-white.png);
+  width: 26px;
+  height: 26px;
   position: absolute;
   right: 20px;
   bottom: 20px;
-  z-index: 2;
 }
 
 .footer {

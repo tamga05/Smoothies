@@ -356,6 +356,7 @@
 }
 
 .about__img {
+  max-width: 690px;
   transform: translateY(85px);
 }
 
@@ -392,7 +393,7 @@
 
 .about__list {
   margin-left: 37px;
-  margin-top: 68px;
+  margin-top: 70px;
   margin-bottom: 50px;
 }
 
@@ -1065,17 +1066,20 @@
 
 
 
+
+
+
 @media screen and (max-width: 768px) {
 
 
 /* Секция Smoothie */
 
-/*.smoothies__container {
-    padding: 40px 5px 40px;
+.smoothies__container {
+    padding: 40px 10px 40px;
   }
 
   .title {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .smoothies__title {
@@ -1083,31 +1087,76 @@
   }
 
   .text {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .smoothies__text {
     margin-bottom: 30px;
   }
 
+  .smoothies__unit {
+    width: 50%;
+  }
+
+  .smoothies__unit:nth-child(1n + 1) {
+    border-right: 2px solid #f6edde;
+    border-bottom: 2px solid #f6edde;
+  }
+  
+  .smoothies__unit:nth-child(2n + 2) {
+    border-right: none;
+  }
+  
+  .smoothies__unit:nth-child(n + 7) {
+    border-bottom: none;
+  }
+
   .smoothies__img {
-    max-width: 55px;
-    width: 100%;
     margin-top: 25px;
   }
 
   .smoothies__heading {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 20px;
     margin-bottom: 35px;
 }
-*/
 
+
+/* Секция About */
+
+.about__container {
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+
+.about__img {
+  max-width: 80%;
+}
+
+.about__title {
+  font-size: 45px;
+  margin-top: 130px;
+  margin-bottom: 25px;
+}
+
+.about__btn {
+  max-width: 380px;
+  padding-left: 30px;
+  margin-bottom: 80px;
+}
+
+.about__span::after {
+  display: none;
+}
+
+.about__list {
+  margin-top: 40px;
+}
 
 
 /* Секция Products */
 
-/*
+
 .products__cart {
   width: 25%;
   
@@ -1133,7 +1182,7 @@
   padding-left: 35px;
   margin-bottom: 80px;
 }
-*/
+
 
 }
 

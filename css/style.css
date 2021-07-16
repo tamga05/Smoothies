@@ -42,8 +42,8 @@
 
 .container {
   max-width: 1740px;
-  padding: 0 10px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header {
@@ -355,28 +355,20 @@
 }
 
 .about__wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 
 .about__img {
-  max-width: 100%;
-  position: relative;
-  top: 85px;
-  left: -135px;
-  
-}
-
-.about__pic {
+  max-width: 690px;
   width: 100%;
+  transform: translateY(85px);
 }
 
 .about__content {
+  margin-left: 140px;
+  margin-right: 145px;
 }
 
 .about__title {
@@ -418,12 +410,9 @@
   padding-left: 10px;
 }
 
-.about__strong {
-  font-weight: 800;
-}
-
 .about__btn {
   max-width: 380px;
+  
   line-height: 1.2;
   border: solid 2px #f8b231;
   display: flex;
@@ -1086,19 +1075,9 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
-  .about__container {
-  flex-wrap: wrap;
-  }
-}
-
 @media screen and (max-width: 1100px) {
   .testimonials__comment::before {
-    
-    
-    
     font-size: 150px;
-    
     text-align: center;
     color: #5b210d;
     position: absolute;
@@ -1174,12 +1153,12 @@
 
 
 .about__img {
-  max-width: 80%;
+  max-width: 75%;
 }
 
 .about__title {
-  font-size: 40px;
-  margin-top: 130px;
+  font-size: 35px;
+  margin-top: 150px;
   margin-bottom: 25px;
 }
 
@@ -1187,17 +1166,22 @@
   display: none;
 }
 
-.about__btn {
-  max-width: 380px;
-  font-size: 18px;
-  padding-left: 30px;
-  margin-bottom: 80px;
-}
-
 .about__list {
   margin-top: 40px;
 }
 
+.about__btn {
+  max-width: 380px;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 80px;
+}
+
+.about__btn::after {
+  right: 25px;
+  width: 70%;
+  height: 70%;
+}
 
 /* Секция Products */
 

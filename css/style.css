@@ -40,6 +40,12 @@
     url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
 }
 
+.container {
+  max-width: 1740px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .header {
   background-image: url(../assets/img/head/bg.png);
   background-position: center;
@@ -348,22 +354,26 @@
   background-color: #12836f;
 }
 
-.about__container {
+.about__wrapper {
   max-width: 1440px;
-  width: 100%;
+  margin: 0 auto;
   padding: 0 10px;
-  margin-left: 7.45vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
 
 .about__img {
-  max-width: 690px;
-  transform: translateY(85px);
+  max-width: 100%;
+  position: relative;
+  top: 85px;
+  left: -135px;
+  
 }
 
 .about__pic {
-  max-width: 100%;
+  width: 100%;
 }
 
 .about__content {
@@ -389,7 +399,7 @@
   width: 450px;
   height: 13px;
   position: absolute;
-  left: -15px;
+  left: -10px;
   top: 60px;
 }
 
@@ -822,6 +832,7 @@
   width: 100%;
 }
 
+/*
 .instagram__img::before {
   content: "";
   background-image: url(../assets/img/insta/shadow.png);
@@ -831,6 +842,7 @@
   left: 0;
   top: 0;
 }
+*/
 
 .instagram__img::after {
   content: "";
@@ -1068,11 +1080,30 @@
 
 
 
-
+@media screen and (max-width: 1820px) {
+  .testimonials__container::after {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1600px) {
   .about__container {
   flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .testimonials__comment::before {
+    
+    
+    
+    font-size: 150px;
+    
+    text-align: center;
+    color: #5b210d;
+    position: absolute;
+    top: 5px;
+    left: -150px;
   }
 }
 
@@ -1088,7 +1119,7 @@
 /* Секция Smoothie */
 
 .smoothies__container {
-    padding: 40px 10px 40px;
+    padding: 50px 10px 40px;
   }
 
   .title {
@@ -1141,23 +1172,24 @@
 
 /* Секция About */
 
-.about__container {
-  padding: 0 10px;
-  
-}
 
 .about__img {
   max-width: 80%;
 }
 
 .about__title {
-  font-size: 45px;
+  font-size: 40px;
   margin-top: 130px;
   margin-bottom: 25px;
 }
 
+.about__span::after {
+  display: none;
+}
+
 .about__btn {
   max-width: 380px;
+  font-size: 18px;
   padding-left: 30px;
   margin-bottom: 80px;
 }
@@ -1219,7 +1251,7 @@
 
   /* Секция Smoothie */
   
-  /*.smoothies__container {
+  .smoothies__container {
     padding: 25px 5px 25px;
   }
   .smoothies__title {
@@ -1264,6 +1296,21 @@
     margin-top: 15px;
     margin-bottom: 25px;
 }
-*/
+
+/* Секция About */
+
+.about__title {
+  font-size: 35px;
+  margin-top: 130px;
+  margin-bottom: 25px;
+}
+
+.about__btn {
+  max-width: 380px;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
+
 
 }

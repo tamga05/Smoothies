@@ -367,12 +367,12 @@
 }
 
 .about__content {
+  max-width: 590px;
   margin-left: 140px;
   margin-right: 145px;
 }
 
 .about__title {
-  max-width: 590px;
   font-size: 55px;
   line-height: 1.09;
   letter-spacing: -1.1px;
@@ -412,7 +412,6 @@
 
 .about__btn {
   max-width: 380px;
-  
   line-height: 1.2;
   border: solid 2px #f8b231;
   display: flex;
@@ -434,7 +433,11 @@
 }
 
 .products {
+}
+
+.products__wrapper {
   display: flex;
+  overflow-x: auto;
 }
 
 .products__cart {
@@ -1156,6 +1159,11 @@
   max-width: 75%;
 }
 
+.about__content {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 .about__title {
   font-size: 35px;
   margin-top: 150px;
@@ -1170,8 +1178,11 @@
   margin-top: 40px;
 }
 
+.about__item {
+  font-size: 20px;
+}
+
 .about__btn {
-  max-width: 380px;
   font-size: 16px;
   padding-left: 30px;
   margin-bottom: 80px;
@@ -1268,7 +1279,6 @@
     border-bottom: none;
   }
   
-
   .smoothies__img {
     max-width: 45px;
     width: 100%;
@@ -1283,18 +1293,25 @@
 
 /* Секция About */
 
+.about__content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .about__title {
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 130px;
   margin-bottom: 25px;
 }
 
-.about__btn {
-  max-width: 380px;
-  font-size: 16px;
-  padding-left: 30px;
-  margin-bottom: 50px;
+.about__item {
+  font-size: 19px;
 }
 
+.about__btn {
+  font-size: 15px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+}
 
 }

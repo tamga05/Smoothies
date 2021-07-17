@@ -412,6 +412,7 @@
 
 .about__btn {
   max-width: 380px;
+  width: 100%;
   line-height: 1.2;
   border: solid 2px #f8b231;
   display: flex;
@@ -437,15 +438,15 @@
 
 .products__wrapper {
   display: flex;
-  overflow-x: auto;
 }
 
 .products__cart {
-  width: 25%;
+  max-width: 480px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 10px;
+  padding: 130px 5px 80px;
 }
 
 .products__cart--brown {
@@ -465,7 +466,8 @@
 }
 
 .products__img {
-  margin-top: 130px;
+  max-width: 120px;
+  width: 100%;
   margin-bottom: 35px;
 }
 
@@ -489,14 +491,13 @@
 }
 
 .products__btn {
-  max-width: 204px;
+  max-width: 205px;
   width: 100%;
   border: solid 2px #ffffff;
   line-height: 1.2;
   display: flex;
   align-items: center;
   padding-left: 35px;
-  margin-bottom: 80px;
   position: relative;
 }
 
@@ -514,13 +515,13 @@
 .story {
 }
 
-.story__container {
+.story__wrapper {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding-top: 120px;
   padding-bottom: 160px;
@@ -528,6 +529,7 @@
 
 .story__content {
   max-width: 510px;
+  margin-right: 205px;
 }
 
 .story__title {
@@ -1078,16 +1080,19 @@
   }
 }
 
+@media screen and (max-width: 1134px) {
+  .story__img::before { 
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .testimonials__comment::before {
     font-size: 150px;
-    text-align: center;
-    color: #5b210d;
-    position: absolute;
-    top: 5px;
-    left: -150px;
   }
 }
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -1151,9 +1156,7 @@
     margin-bottom: 35px;
 }
 
-
 /* Секция About */
-
 
 .about__img {
   max-width: 75%;
@@ -1196,11 +1199,14 @@
 
 /* Секция Products */
 
+.products__wrapper {
+  overflow-x: scroll;
+}
 
 .products__cart {
-  width: 25%;
-  
-  padding: 0 10px;
+  min-width: 280px;
+  width: 100%;
+  padding: 50px 5px 50px;
 }
 
 .products__heading {
@@ -1209,7 +1215,6 @@
 }
 
 .products__img {
-  margin-top: 65px;
 }
 
 .products__capacity {
@@ -1218,22 +1223,22 @@
 }
 
 .products__btn {
-  width: 204px;
   padding-left: 35px;
-  margin-bottom: 80px;
+}
+
+/* Секция Story */
+
+
+
 }
 
 
-}
 
 
-/*
-@media screen and (max-width: 550px) {
-  .smoothies__heading {
-    font-size: 16px;
-  }
-}
-*/
+
+
+
+
 
 
 @media screen and (max-width: 360px) {

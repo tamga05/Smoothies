@@ -589,7 +589,7 @@
   background-color: #683119;
 }
 
-.testimonials__container {
+.testimonials__wrapper {
   max-width: 755px;
   width: 100%;
   margin: 0 auto;
@@ -1088,9 +1088,6 @@
   }
 }
 
-
-
-
 @media screen and (max-width: 768px) {
 
 /* Секция Header */
@@ -1099,7 +1096,7 @@
   display: none;
 }
 
-/* Секция Smoothie */
+/* Секция Smoothies */
 
 .smoothies__container {
     padding: 50px 10px 40px;
@@ -1153,10 +1150,6 @@
 }
 
 /* Секция About */
-
-.about__img {
-  max-width: 75%;
-}
 
 .about__content {
   margin-left: 25px;

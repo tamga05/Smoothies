@@ -516,15 +516,10 @@
 }
 
 .story__wrapper {
-  max-width: 1320px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 120px;
-  padding-bottom: 160px;
+  padding: 120px 0 160px;
 }
 
 .story__content {
@@ -547,6 +542,7 @@
 
 .story__btn {
   max-width: 300px;
+  width: 100%;
   line-height: 1.2;
   background-color: #0aa566;
   margin-bottom: 130px;
@@ -571,11 +567,11 @@
 }
 
 .story__img {
-  max-width: 585px;
   position: relative;
 }
 
 .story__pic {
+  max-width: 585px;
   width: 100%;
 }
 
@@ -1080,7 +1076,7 @@
   }
 }
 
-@media screen and (max-width: 1134px) {
+@media screen and (max-width: 935px) {
   .story__img::before { 
     display: none;
   }
@@ -1228,7 +1224,26 @@
 
 /* Секция Story */
 
+.story__wrapper {
+  padding: 50px 0 50px;
+}
 
+.story__content {
+  margin-right: 0;
+}
+
+.story__title {
+  margin-top: 20px;
+}
+
+.story__btn {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.story__img {
+  margin-top: 50px;
+}
 
 }
 

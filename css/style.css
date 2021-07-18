@@ -265,7 +265,7 @@
 .smoothies {
 }
 
-.smoothies__container {
+.smoothies__wrapper {
   max-width: 1030px;
   width: 100%;
   margin: 0 auto;
@@ -590,27 +590,22 @@
 }
 
 .testimonials__wrapper {
-  max-width: 755px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 115px;
-  padding-bottom: 80px;
+  padding: 115px 0 80px;
   position: relative;
 }
 
-.testimonials__container::after {
+.testimonials__wrapper::after {
   content: "";
   background-image: url(../assets/img/test/pseudo.png);
   width: 410px;
   height: 300px;
   position: absolute;
   top: -80px;
-  right: -520px;
+  right: -40px;
 }
 
 .testimonials__title {
@@ -619,10 +614,11 @@
 }
 
 .testimonials__comment {
+  max-width: 735px;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  margin: 120px 0;
   position: relative;
 }
 
@@ -645,17 +641,12 @@
   color: #f2612d;
 }
 
-.testimonials__arrow {
-  width: 158px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .testimonials__post {
   max-width: 455px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 60px;
   z-index: 1;
 }
 
@@ -677,32 +668,39 @@
 .testimonials__avatar {
   max-width: 220px;
   width: 100%;
-  height: 100%;
-  margin-left: 59px;
   z-index: 1;
+}
+
+.testimonials__arrow {
+  width: 158px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .blog {
 }
 
-.blog__conteiner {
-  max-width: 1260px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 100px 10px 200px;
+.blog__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 200px;
 }
 
 .blog__title {
   line-height: 0.8;
-  margin-bottom: 50px;
 }
 
 .blog__content {
+  max-width: 1170px;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .blog__img {
   max-width: 555px;
+  width: 100%;
   position: relative;
 }
 
@@ -1071,7 +1069,19 @@
 
 
 @media screen and (max-width: 1820px) {
-  .testimonials__container::after {
+  .testimonials__wrapper::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .blog__img::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .testimonials__comment::before {
     display: none;
   }
 }
@@ -1082,13 +1092,15 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .testimonials__comment::before {
-    font-size: 150px;
-  }
-}
-
 @media screen and (max-width: 768px) {
+
+  .text {
+    font-size: 17px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
 
 /* Секция Header */
 
@@ -1102,16 +1114,8 @@
     padding: 50px 10px 40px;
   }
 
-  .title {
-    font-size: 35px;
-  }
-
   .smoothies__title {
     margin-bottom: 25px;
-  }
-
-  .text {
-    font-size: 16px;
   }
 
   .smoothies__text {
@@ -1189,7 +1193,7 @@
 /* Секция Products */
 
 .products__wrapper {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .products__cart {
@@ -1238,6 +1242,52 @@
   margin-top: 50px;
 }
 
+/* Секция Testimonials */
+
+.testimonials__wrapper {
+  padding: 80px 0 60px;
+}
+
+.testimonials__comment {
+  margin: 80px 0;
+}
+
+.testimonials__title {
+  text-align: center;
+}
+
+/*
+.testimonials__post {
+  margin-right: 0;
+}
+*/
+
+/* Секция Blog */
+
+.blog__wrapper {
+  padding: 80px 0 100px;
+}
+
+.blog__heading {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.blog__time {
+  margin-left: 0;
+}
+
+.blog__text {
+  margin-left: 70px;
+}
+
+/*
+.block-img {
+  max-width: none;
+}
+*/
+
 }
 
 
@@ -1251,6 +1301,13 @@
 
 @media screen and (max-width: 360px) {
   
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
 
 /* Секция Products */
 
@@ -1265,12 +1322,7 @@
   .smoothies__title {
     margin-bottom: 15px;
   }
-  .title {
-    font-size: 20px;
-  }
-  .text {
-    font-size: 13px;
-  }
+  
   .smoothies__text {
     margin-bottom: 20px;
   }

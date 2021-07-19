@@ -55,7 +55,6 @@
 }
 
 .header__wrapper {
-  
   height: 315px;
 
   display: flex;
@@ -805,11 +804,11 @@
 }
 
 .instagram__img {
+  max-width: 20%;
   position: relative;
 }
 
 .instagram__pic {
-  max-width: 20%;
   width: 100%;
 }
 
@@ -908,7 +907,7 @@
   text-decoration: none;
 }
 
-.footer__payment { 
+.footer__payment {
   max-width: 240px;
   margin-right: 8.65vw;
 }
@@ -933,14 +932,14 @@
   border-radius: 30px;
   background-color: #ffffff;
   margin-top: 35px;
-  display:flex;
+  display: flex;
   align-items: center;
   padding-left: 65px;
   position: relative;
 }
 
 .footer__form::before {
-  content: ""; 
+  content: "";
   background-image: url(../assets/img/foot/foot-top/mail.png);
   background-repeat: no-repeat;
   max-width: 25px;
@@ -1004,7 +1003,7 @@
 
 .footer__social {
   max-width: 110px;
-  transform: translate(330px,25px);
+  transform: translate(330px, 25px);
 }
 
 .footer__social-list {
@@ -1059,8 +1058,6 @@
   margin-bottom: 20px;
 }
 
-
-
 @media screen and (max-width: 1820px) {
   .testimonials__wrapper::after {
     display: none;
@@ -1080,13 +1077,12 @@
 }
 
 @media screen and (max-width: 935px) {
-  .story__img::before { 
+  .story__img::before {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-
   .text {
     font-size: 17px;
   }
@@ -1096,13 +1092,13 @@
     line-height: 1.2;
   }
 
-/* Секция Header */
+  /* Секция Header */
 
-.header__top {
-  display: none;
-}
+  .header__top {
+    display: none;
+  }
 
-/* Секция Smoothies */
+  /* Секция Smoothies */
 
   .smoothies__wrapper {
     padding: 50px 10px 50px;
@@ -1128,11 +1124,11 @@
     border-right: 2px solid #f6edde;
     border-bottom: 2px solid #f6edde;
   }
-  
+
   .smoothies__unit:nth-child(2n + 2) {
     border-right: none;
   }
-  
+
   .smoothies__unit:nth-child(n + 7) {
     border-bottom: none;
   }
@@ -1250,7 +1246,6 @@
     text-align: center;
   }
 
-  
   .testimonials__post {
     margin-right: 0;
   }
@@ -1291,24 +1286,12 @@
     overflow-x: auto;
   }
 
-  .instagram__pic {
+  .instagram__img {
     min-width: 280px;
-    width: 100%;
   }
-
 }
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 360px) {
-  
   .title {
     font-size: 30px;
   }
@@ -1317,20 +1300,17 @@
     font-size: 15px;
   }
 
-/* Секция Products */
-
-
-
+  /* Секция Products */
 
   /* Секция Smoothie */
-  
+
   .smoothies__container {
     padding: 25px 5px 25px;
   }
   .smoothies__title {
     margin-bottom: 15px;
   }
-  
+
   .smoothies__text {
     margin-bottom: 20px;
   }
@@ -1343,15 +1323,15 @@
     border-right: 2px solid #f6edde;
     border-bottom: 2px solid #f6edde;
   }
-  
+
   .smoothies__unit:nth-child(2n + 2) {
     border-right: none;
   }
-  
+
   .smoothies__unit:nth-child(n + 7) {
     border-bottom: none;
   }
-  
+
   .smoothies__img {
     max-width: 45px;
     width: 100%;
@@ -1362,35 +1342,34 @@
     font-size: 14px;
     margin-top: 15px;
     margin-bottom: 25px;
-}
+  }
 
-/* Секция About */
+  /* Секция About */
 
-.about__content {
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  .about__content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-.about__title {
-  font-size: 30px;
-  margin-top: 130px;
-  margin-bottom: 25px;
-}
+  .about__title {
+    font-size: 30px;
+    margin-top: 130px;
+    margin-bottom: 25px;
+  }
 
-.about__item {
-  font-size: 19px;
-}
+  .about__item {
+    font-size: 19px;
+  }
 
-.about__btn {
-  font-size: 15px;
-  padding-left: 20px;
-  margin-bottom: 50px;
-}
+  .about__btn {
+    font-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+  }
 
-/* Секция Instagram */
+  /* Секция Instagram */
 
-.instagram__title {
-  font-size: 22px;
-}
-
+  .instagram__title {
+    font-size: 22px;
+  }
 }

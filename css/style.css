@@ -589,7 +589,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   padding: 115px 0 80px;
   position: relative;
 }
@@ -610,7 +609,6 @@
 }
 
 .testimonials__comment {
-  max-width: 735px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap-reverse;
@@ -819,14 +817,16 @@
     rgba(0, 0, 0, 0.7),
     rgba(255, 255, 255)
   );
+  opacity: 15%;
+  
 
 
   max-width: 384px;
   width: 100%;
   height: 384px;
-  opacity: 15%;
-
   
+
+
   position: absolute;
   left: 0;
   top: 0;
@@ -865,29 +865,34 @@
   z-index: 1;
 }
 
-.footer__top-container {
-  max-width: 1740px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 80px 10px 95px;
+.footer__top-wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 0 95px;
 }
 
 .footer__logo-link {
-  margin-right: 15.45vw;
+  margin-right: 297px;
 }
 
 .footer__logo {
+  max-width: 207px;
+  width: 100%;
 }
 
 .footer__content {
+  /*
   max-width: 1215px;
+  */
   display: flex;
+  
+  flex-wrap: wrap;
 }
 
 .footer__info {
-  margin-right: 7.92vw;
+  margin-right: 152px;
 }
 
 .footer__title {
@@ -918,7 +923,7 @@
 
 .footer__payment {
   max-width: 240px;
-  margin-right: 8.65vw;
+  margin-right: 166px;
 }
 
 .footer__pay {
@@ -936,7 +941,9 @@
 }
 
 .footer__form {
-  width: 25.78vw;
+  width: 495px;
+
+  
   height: 60px;
   border-radius: 30px;
   background-color: #ffffff;
@@ -974,7 +981,7 @@
 .footer__form-text {
   border: none;
   outline: none;
-  width: 11.2vw;
+  max-width: 214px;
   font-family: Muli-Bold;
   font-size: 17px;
   font-weight: bold;
@@ -1073,6 +1080,15 @@
   }
 }
 
+@media screen and (max-width: 1223px) {
+  .footer__logo-link {
+    margin-right: 0;
+}
+  .footer__content {
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1205px) {
   .blog__img::after {
     display: none;
@@ -1092,13 +1108,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .text {
-    font-size: 17px;
-  }
 
   .title {
     font-size: 45px;
     line-height: 1.2;
+  }
+
+  .text {
+    font-size: 17px;
   }
 
   /* Секция Header */
@@ -1299,6 +1316,7 @@
     min-width: 280px;
   }
 }
+
 
 @media screen and (max-width: 360px) {
   .title {

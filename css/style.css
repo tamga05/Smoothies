@@ -949,19 +949,21 @@
 }
 
 .footer__subscribe {
+  width: 495px; 
+  
 }
 
 .footer__form {
-  width: 495px;
-
-  
+  width: 100%;
+  /*
+  width: auto;
+  */
   height: 60px;
   border-radius: 30px;
   background-color: #ffffff;
   margin-top: 35px;
   display: flex;
   align-items: center;
-  padding-left: 65px;
   position: relative;
 }
 
@@ -990,7 +992,10 @@
 }
 
 .footer__form-text {
+  /*
   max-width: 214px;
+  */
+  margin-left: 65px;
   font-family: Muli-Bold;
   font-size: 17px;
   font-weight: bold;
@@ -1136,11 +1141,11 @@
     margin-top: 50px;
   }
 
-  .footer__infopay {
+.footer__infopay {
     /*
     flex-direction: column;
     */
-  }
+}
 
   .footer__payment {
     margin-right: 0;
@@ -1322,15 +1327,24 @@
   }
 
   .testimonials__comment {
-    margin: 80px 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
 
   .testimonials__title {
+    /*
     text-align: center;
+    */
   }
 
   .testimonials__post {
     margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .testimonials__avatar {
+    margin-bottom: 50px;
   }
 
   /* Секция Blog */
@@ -1384,6 +1398,16 @@
 @media screen and (max-width: 610px) {
   .footer__bottom::before {
     display: none;
+    }
+}
+
+@media screen and (max-width: 556px) {
+  .footer__info-pay {
+    flex-direction: column;
+    }
+    .footer__info {
+      margin-right: 0;
+      margin-bottom: 50px;
     }
 }
 

@@ -611,7 +611,7 @@
 .testimonials__comment {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   margin: 120px 0;
   position: relative;
 }
@@ -1327,7 +1327,7 @@
   }
 
   .testimonials__comment {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     margin: 0;
   }
@@ -1342,7 +1342,7 @@
   }
 
   .testimonials__avatar {
-    margin-bottom: 50px;
+    margin-top: 50px;
   }
 
   /* Секция Blog */

@@ -902,9 +902,8 @@
 }
 
 .footer__content {
-  /*
   max-width: 1215px;
-  */
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -960,17 +959,21 @@
 }
 
 .footer__subscribe {
+  max-width: 495px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*
+  width: 495px;
+  */
+  /*
+  width: 100%;
+  */
 }
 
 .footer__form {
-  
-  width: 495px;
-  
-  /*
+/*
   max-width: 495px;
-  width: 100%;
-  */
-  /*
   width: 100%;
   */
   height: 60px;
@@ -994,18 +997,6 @@
   top: 20px;
 }
 
-.footer__form::after {
-  content: "";
-  background-image: url(../assets/img/foot/foot-top/arrow-down-right.png);
-  background-repeat: no-repeat;
-  max-width: 50px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 120px;
-  top: 70px;
-}
-
 .footer__form-text {
   max-width: 215px;
   width: 100%;
@@ -1021,17 +1012,46 @@
   outline: none;
 }
 
+.footer__btn-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .footer__form-btn {
+  /*
+  max-width: 105px;
+  width: 100%;
+  height: 12px;
+  */
   font-family: Muli-ExtraBold;
   font-size: 18px;
   font-weight: 800;
-  line-height: 2.22;
+  line-height: 1.4;
   letter-spacing: -0.36px;
   color: #6d450c;
   background-color: transparent;
   border: none;
+  
+  margin-top: 35px;
+  margin-right: 40px;
+  position: relative;
+  /*
   transform: translate(-95px, 70px);
+  */
 }
+
+.footer__form-btn::before {
+  content: "";
+  background-image: url(../assets/img/foot/foot-top/arrow-down-right.png)
+  background-repeat: no-repeat;
+  max-width: 50px;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: -65px;
+  top: 0;
+}
+
 
 .footer__form-btn:hover {
   border: 1px solid #6d450c;
@@ -1039,7 +1059,20 @@
 
 .footer__social {
   max-width: 110px;
+  /*
+  width: 100%;
+  */
+  align-self: flex-end;
+  /*
+  display: flex;
+  width: 100%;
+  /*
   transform: translate(330px, 25px);
+  
+  justify-content: flex-end;
+  */
+  margin-top: 25px;
+  margin-right: 50px;
 }
 
 .footer__social-list {
@@ -1398,7 +1431,11 @@
   .footer__title {
     font-size: 26px; 
   }
-
+/*
+  .footer__social {
+    margin-right: 2.6%;
+  }
+  */
 }
 
 @media screen and (max-width: 610px) {

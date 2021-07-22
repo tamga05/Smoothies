@@ -55,6 +55,7 @@
 }
 
 .header__wrapper {
+
   height: 315px;
 
   display: flex;
@@ -818,7 +819,16 @@
     rgba(255, 255, 255)
   );
   opacity: 15%;
-  
+
+  max-width: 384px;
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+/*
+  display: block;
 
 
   max-width: 384px;
@@ -830,6 +840,7 @@
   position: absolute;
   left: 0;
   top: 0;
+*/
 
 }
 
@@ -1079,7 +1090,7 @@
   color: #ffffff;
   position: fixed;
   right: 165px;
-  bottom: 35px;
+  bottom: 33px;
 }
 
 .footer__copyright {
@@ -1366,6 +1377,10 @@
     margin-left: 70px;
   }
 
+  .blog__link::after {
+    display: none;
+  }
+
   .blog__img {
     max-width: 100%;
   }
@@ -1399,7 +1414,7 @@
     }
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 560px) {
   .footer__info-pay {
     flex-direction: column;
     }
@@ -1486,6 +1501,12 @@
     margin-bottom: 50px;
   }
 
+  /* Секция Blog */
+
+  .blog__link::after {
+    display: initial;
+  }
+
   /* Секция Instagram */
 
   .instagram__title {
@@ -1494,4 +1515,4 @@
 
   /* Секция Footer */
 
-}
+

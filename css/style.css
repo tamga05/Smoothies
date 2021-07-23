@@ -1042,14 +1042,14 @@
 
 .footer__form-btn::before {
   content: "";
-  background-image: url(../assets/img/foot/foot-top/arrow-down-right.png)
+  background-image: url(../assets/img/foot/foot-top/arrow-down-right.png);
   background-repeat: no-repeat;
   max-width: 50px;
   width: 100%;
   height: 50px;
   position: absolute;
   left: -65px;
-  top: 0;
+  top: -20px;
 }
 
 
@@ -1454,6 +1454,13 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+  .footer__social {
+    margin-right: 25px;
+  }
+}
+
+
 @media screen and (max-width: 360px) {
   .title {
     font-size: 30px;
@@ -1544,4 +1551,12 @@
 
   /* Секция Footer */
 
+  .footer__social {
+    margin-right: 0;
+  }
 
+  .footer__form-btn {
+    margin-right: 20px;
+  }
+
+}

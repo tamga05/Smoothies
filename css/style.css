@@ -259,6 +259,15 @@
   top: 0;
 }
 
+.header__btn:hover::after {
+  transform: translateX(10px);
+}
+
+.header__btn:hover {
+  background-color: #179b17;
+
+}
+
 .smoothies {
 }
 

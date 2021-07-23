@@ -1458,10 +1458,15 @@
   .footer__social {
     margin-right: 25px;
   }
+
+  .footer__top-wrapper {
+    padding-bottom: 60px;
 }
 
+}
 
 @media screen and (max-width: 360px) {
+
   .title {
     font-size: 30px;
   }
@@ -1557,6 +1562,21 @@
 
   .footer__form-btn {
     margin-right: 20px;
+  }
+
+}
+
+  @media screen and (max-width: 315px) {
+    .footer__form-btn::before {
+      display: none;
+  }
+    .footer__btn-icon {
+      justify-content: center;
+  }
+
+    .footer__form-text {
+      margin-left: 60px;
+      font-size: 15px;
   }
 
 }

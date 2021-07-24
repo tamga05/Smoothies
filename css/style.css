@@ -92,6 +92,30 @@
   align-items: center;
 }
 
+.header__burger-btn {
+  
+  max-width: 50px;
+  width: 100%;
+  padding: 2px;
+  
+  
+  /*
+  background-color: transparent;
+  */
+  border: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+  background-color: #0aa566;
+  display: none;
+}
+
+
+.header__burger-btn-icon {
+  width: 100%;
+}
+
 .header__nav {
 }
 
@@ -1189,9 +1213,16 @@
 }
 
 @media screen and (max-width: 1400px) {
+  /* Секция Header */
   .header__nav-bay {
     display: none;
   }
+
+  .header__burger-btn {
+    display: initial;
+  }
+
+
 }
 
 @media screen and (max-width: 1223px) {
@@ -1498,6 +1529,10 @@
     padding-bottom: 60px;
 }
 
+.header__logo {
+  top: 100px;
+}
+
 }
 
 @media screen and (max-width: 360px) {
@@ -1511,7 +1546,8 @@
   }
 
   /* Секция Header */
-  
+
+
   /* Секция Products */
 
   /* Секция Smoothie */

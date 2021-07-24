@@ -55,23 +55,41 @@
 }
 
 .header__wrapper {
-
+  max-width: 1720px;
+  width: 100%;
   height: 315px;
-
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
 .header__top {
+  max-width: 1720px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*
   flex-wrap: wrap;
+  */
+  /*
   margin-top: 90px;
-  margin-bottom: 120px;
+  */
+  /*
+  margin-bottom: 125px;
+  */
+  
+}
+
+.header__nav-bay {
+  max-width: 1720px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__nav {
@@ -105,14 +123,19 @@
 }
 
 .logo {
+  max-width: 270px;
+  width: 100%;
 }
 
 .header__logo {
+
   position: absolute;
-  top: 50%;
+  top: 70px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: -70px;
+  transform: translateX(-50%);
+  /*
+  margin-bottom: 110px;
+  */
 }
 
 .header__logo-link {
@@ -235,6 +258,7 @@
   max-width: 280px;
   width: 100%;
   height: 70px;
+  
   border: none;
   border-radius: 35px;
   background-color: #0aa566;
@@ -264,7 +288,7 @@
 }
 
 .header__btn:hover {
-  background-color: #179b17;
+  background-color: #30aa30;
 
 }
 
@@ -1162,9 +1186,13 @@
 .footer__infopay {
   flex-direction: row;
 }
-
 }
 
+@media screen and (max-width: 1400px) {
+  .header__nav-bay {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1223px) {
 
@@ -1228,9 +1256,7 @@
 
   /* Секция Header */
 
-  .header__top {
-    display: none;
-  }
+  
 
   /* Секция Smoothies */
 
@@ -1484,6 +1510,8 @@
     font-size: 15px;
   }
 
+  /* Секция Header */
+  
   /* Секция Products */
 
   /* Секция Smoothie */
@@ -1586,6 +1614,19 @@
     .footer__form-text {
       margin-left: 60px;
       font-size: 15px;
+  }
+
+  @media screen and (max-width: 250px) {
+
+  .header__btn {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+  
+  .header__btn::after {
+    right: 30px;
+}
+
   }
 
 }

@@ -93,12 +93,9 @@
 }
 
 .header__burger-btn {
-  
   max-width: 50px;
   width: 100%;
   padding: 2px;
-  
-  
   /*
   background-color: transparent;
   */
@@ -108,6 +105,7 @@
   right: 30px;
   border-radius: 50%;
   background-color: #0aa566;
+  z-index: 2;
   display: none;
 }
 
@@ -117,6 +115,8 @@
 }
 
 .header__nav {
+  max-width: 540px;
+  width: 100%;
 }
 
 .header__nav-list {
@@ -166,6 +166,8 @@
 }
 
 .header__buy {
+  max-width: 420px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1286,8 +1288,75 @@
   }
 
   /* Секция Header */
+  /*
+  .header__nav-bay {
+    display: initial;
+    background-color: #0aa566;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  */
+  
+  .header__nav-bay {
+    display: initial;
+    background-color: #0aa566;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
 
   
+  .header__buy {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  }
+
+  .header__nav {
+    flex-direction: column;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+  }
+  /*
+  .header__nav-item {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  */
+
+  .header__nav-item:nth-child(n + 1) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .header__personal {
+    margin-bottom: 0;
+  }
+
+  .header__personal-item-cart {
+    margin-right: 0;
+  }
+
+  .header__burger-btn {
+    background-color: #7dc2a5;
+    z-index: 2;
+  }
+
 
   /* Секция Smoothies */
 
@@ -1520,6 +1589,23 @@
     }
 }
 
+@media screen and (max-width: 430px) {
+.header__buy {
+  flex-direction: column;
+}
+}
+  
+.header__social::before {
+  display: none;
+}
+
+.header__personal {
+  margin-bottom: 50px;
+}
+
+}
+
+
 @media screen and (max-width: 400px) {
   .footer__social {
     margin-right: 25px;
@@ -1547,6 +1633,7 @@
 
   /* Секция Header */
 
+  
 
   /* Секция Products */
 

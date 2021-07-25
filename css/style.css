@@ -95,7 +95,7 @@
 .header__burger-btn {
   max-width: 50px;
   width: 100%;
-  padding: 2px;
+  padding: 8px;
   /*
   background-color: transparent;
   */
@@ -1214,7 +1214,7 @@
 }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1415px) {
   /* Секция Header */
   .header__nav-bay {
     display: none;
@@ -1248,11 +1248,11 @@
     margin-top: 50px;
   }
 
-.footer__infopay {
+  .footer__infopay {
     /*
     flex-direction: column;
     */
-}
+  }
 
   .footer__payment {
     margin-right: 0;
@@ -1288,22 +1288,8 @@
   }
 
   /* Секция Header */
-  /*
-  .header__nav-bay {
-    display: initial;
-    background-color: #0aa566;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
 
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  */
+  /*
   
   .header__nav-bay {
     display: initial;
@@ -1319,10 +1305,9 @@
     justify-content: flex-end;
   }
 
-  
   .header__buy {
-  margin-top: 150px;
-  margin-bottom: 100px;
+    margin-top: 200px;
+    margin-bottom: 120px;
   }
 
   .header__nav {
@@ -1330,17 +1315,11 @@
   }
 
   .header__nav-list {
-    flex-direction: column;
+  flex-direction: column;
   }
-  /*
-  .header__nav-item {
-    margin-right: 0;
-    margin-bottom: 50px;
-  }
-  */
 
   .header__nav-item:nth-child(n + 1) {
-    margin-right: 0;
+  margin-right: 0;
     margin-bottom: 50px;
   }
 
@@ -1352,10 +1331,23 @@
     margin-right: 0;
   }
 
+  .header__social::before {
+    content: "";
+    background-color: #ffffff;
+    max-width: 47px;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: -85px;
+    top: 15px;
+  }
+
   .header__burger-btn {
     background-color: #7dc2a5;
     z-index: 2;
   }
+  
+  */
 
 
   /* Секция Smoothies */
@@ -1589,11 +1581,11 @@
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 440px) {
 .header__buy {
   flex-direction: column;
 }
-}
+
   
 .header__social::before {
   display: none;

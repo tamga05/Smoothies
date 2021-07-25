@@ -438,6 +438,7 @@
 
 .about__img:hover {
   transform: rotate(-7deg);
+  opacity: 0;
   transition: 1.5s;
 }
 

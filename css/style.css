@@ -151,6 +151,14 @@
   width: 100%;
 }
 
+.logo:hover {
+  opacity: 0;
+  transition: 2s;
+  /*
+  box-shadow: 0px 0px 30px 20px #f1f2f5;
+  */
+}
+
 .header__logo {
 
   position: absolute;
@@ -371,6 +379,11 @@
   align-items: center;
 }
 
+.smoothies__img:hover {
+  transform: scale(1.4);
+  transition: 1.5s;
+}
+
 .smoothies__unit:nth-child(1n + 1) {
   border-right: 2px solid #f6edde;
   border-bottom: 2px solid #f6edde;
@@ -420,6 +433,7 @@
   max-width: 690px;
   width: 100%;
   transform: translateY(85px);
+  z-index: 1;
 }
 
 .about__img:hover {
@@ -508,6 +522,11 @@
   flex-direction: column;
   align-items: center;
   padding: 130px 5px 80px;
+}
+
+.products__cart:hover {
+  transform: rotateY(360deg);
+  transition: 4s;
 }
 
 .products__cart--brown {
@@ -646,6 +665,12 @@
   top: 20px;
 }
 
+.story__img:hover::before {
+  transform: translateX(-130px) translateY(-130px) scale(0.65);
+  transition: 4s;
+}
+
+
 .testimonials {
   background-color: #683119;
 }
@@ -730,6 +755,11 @@
   z-index: 1;
 }
 
+.testimonials__avatar:hover {
+  transform: scale(1.4) rotate(360deg);
+  transition: 3s;
+}
+
 .testimonials__arrow {
   width: 158px;
   display: flex;
@@ -759,6 +789,11 @@
   max-width: 555px;
   width: 100%;
   position: relative;
+}
+
+.blog__img:hover {
+  opacity: 0.2;
+  transition: 3s;
 }
 
 .blog__pic {
@@ -871,6 +906,14 @@
   position: relative;
 }
 
+.instagram__img:hover {
+  transform: rotateX(360deg);
+  /*
+  transform: scale(1.1);
+  */
+  transition: 4s;
+}
+
 .instagram__pic {
   width: 100%;
 }
@@ -941,6 +984,11 @@
   right: 5.21%;
   bottom: 70px;
   z-index: 1;
+}
+
+.footer__top-btn:hover {
+  box-shadow: 0px 0px 30px 20px #535FED;
+  animation: glowShadow 1.5s linear infinite alternate;
 }
 
 .footer__top-wrapper {
@@ -1304,7 +1352,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
@@ -1349,7 +1397,7 @@
 
   .header__burger-btn {
     background-color: #7dc2a5;
-    z-index: 2;
+    z-index: 10;
   }
   
   */

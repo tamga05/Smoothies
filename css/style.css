@@ -284,7 +284,6 @@
   max-width: 280px;
   width: 100%;
   height: 70px;
-  
   border: none;
   border-radius: 35px;
   background-color: #0aa566;
@@ -310,12 +309,13 @@
 }
 
 .header__btn:hover::after {
-  transform: translateX(10px);
+  transform: translate(20px);
+  transition: 1.2s;
 }
 
 .header__btn:hover {
   background-color: #30aa30;
-
+  border: 2px solid white;
 }
 
 .smoothies {
@@ -420,6 +420,11 @@
   max-width: 690px;
   width: 100%;
   transform: translateY(85px);
+}
+
+.about__img:hover {
+  transform: rotate(-7deg);
+  transition: 1.5s;
 }
 
 .about__content {
@@ -1315,11 +1320,11 @@
   }
 
   .header__nav-list {
-  flex-direction: column;
+    flex-direction: column;
   }
 
   .header__nav-item:nth-child(n + 1) {
-  margin-right: 0;
+    margin-right: 0;
     margin-bottom: 50px;
   }
 

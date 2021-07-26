@@ -852,6 +852,7 @@
 .instagram__img {
   max-width: 20%;
   position: relative;
+  object-position: center;
   object-fit: cover;
 }
 

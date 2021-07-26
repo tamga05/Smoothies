@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAAA,KACI,yBAAiC,AACjC,UAAY,CCCf,AAED,EACI,SAAW,CACd","file":"style.min.css","sourcesContent":["body {\r\n    background-color: rgb(37, 37, 37);\r\n    color: white;\r\n}\r\n\r\n@import './style2.scss'","body {\n    background-color: #252525;\n    color: white;\n}\n\np {\n    color: red;\n}\n"]}

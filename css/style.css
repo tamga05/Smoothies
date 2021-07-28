@@ -1264,6 +1264,8 @@
 
   /*
   
+  ! Подключать Зеленый экран меню с помощью обработчика событий JS
+  
   .header__nav-bay {
     display: initial;
     background-color: #0aa566;

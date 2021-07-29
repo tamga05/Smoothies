@@ -56,8 +56,8 @@
     content: "";
     background: linear-gradient(
       to top left,
-      rgba(0, 0, 0, 0.7),
-      rgba(255, 255, 255)
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.8)
     );
     opacity: 15%;
     max-width: 384px;

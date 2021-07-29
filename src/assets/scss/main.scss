@@ -1,43 +1,43 @@
 @font-face {
     font-family: "Muli-Bold";
-    src: url("/assets/font/woff2/Muli-Bold.woff2") format("woff2"),
-      url("/assets/font/woff/Muli-Bold.woff") format("woff");
+    src: url("/assets/fonts/woff2/Muli-Bold.woff2") format("woff2"),
+      url("/assets/fonts/woff/Muli-Bold.woff") format("woff");
   }
   
   @font-face {
     font-family: "Muli-BoldItalic";
-    src: url("/assets/font/woff2/Muli-BoldItalic.woff2") format("woff2"),
-      url("/assets/font/woff/Muli-BoldItalic.woff") format("woff");
+    src: url("/assets/fonts/woff2/Muli-BoldItalic.woff2") format("woff2"),
+      url("/assets/fonts/woff/Muli-BoldItalic.woff") format("woff");
   }
   
   @font-face {
     font-family: "Muli-ExtraBold";
-    src: url("/assets/font/woff2/Muli-ExtraBold.woff2") format("woff2"),
-      url("/assets/font/woff/Muli-ExtraBold.woff") format("woff");
+    src: url("/assets/fonts/woff2/Muli-ExtraBold.woff2") format("woff2"),
+      url("/assets/fonts/woff/Muli-ExtraBold.woff") format("woff");
   }
   
   @font-face {
     font-family: "Muli-Italic";
-    src: url("/assets/font/woff2/Muli-Italic.woff2") format("woff2"),
-      url("/assets/font/woff/Muli-Italic.woff") format("woff");
+    src: url("/assets/fonts/woff2/Muli-Italic.woff2") format("woff2"),
+      url("/assets/fonts/woff/Muli-Italic.woff") format("woff");
   }
   
   @font-face {
     font-family: "Muli-Regular";
-    src: url("/assets/font/woff2/Muli-Regular.woff2") format("woff2"),
-      url("/assets/font/woff/Muli-Regular.woff") format("woff");
+    src: url("/assets/fonts/woff2/Muli-Regular.woff2") format("woff2"),
+      url("/assets/fonts/woff/Muli-Regular.woff") format("woff");
   }
   
   @font-face {
     font-family: "Muli-SemiBoldItalic";
-    src: url("/assets/font/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
-      url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff");
+    src: url("/assets/fonts/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
+      url("/assets/fonts/woff/Muli-SemiBoldItalic.woff") format("woff");
   }
   
   @font-face {
     font-family: "MyriadPro";
-    src: url("/assets/font/woff2/MyriadPro-Regular.woff2") format("woff2"),
-      url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
+    src: url("/assets/fonts/woff2/MyriadPro-Regular.woff2") format("woff2"),
+      url("/assets/fonts/woff/MyriadPro-Regular.woff") format("woff");
   }
 
   * {
@@ -111,14 +111,5 @@
 @import './layout/blog.scss';
 @import './layout/instagram.scss';
 @import './layout/footer.scss';
-@import './components/media-query.scss';
 
-
-
-body {
-  background-color: rgb(37, 37, 37);
-  color: white;
-}
-
-
-
+@import './components/media-querys.scss';

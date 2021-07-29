@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Muli-Bold";
+    src: url("/assets/font/woff2/Muli-Bold.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-Bold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-BoldItalic";
+    src: url("/assets/font/woff2/Muli-BoldItalic.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-BoldItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-ExtraBold";
+    src: url("/assets/font/woff2/Muli-ExtraBold.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-ExtraBold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-Italic";
+    src: url("/assets/font/woff2/Muli-Italic.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-Italic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-Regular";
+    src: url("/assets/font/woff2/Muli-Regular.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-Regular.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-SemiBoldItalic";
+    src: url("/assets/font/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "MyriadPro";
+    src: url("/assets/font/woff2/MyriadPro-Regular.woff2") format("woff2"),
+      url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+    border: 1px solid red;
+    */
+  }
+
+  .container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .logo {
+    max-width: 270px;
+    width: 100%;
+  }
+  
+  .logo:hover {
+    opacity: 0;
+    transition: 2s;
+    /*
+    box-shadow: 0px 0px 30px 20px #f1f2f5;
+    */
+  }
+  
+  .btn {
+    display: block;
+    text-decoration: none;
+    height: 60px;
+    border-radius: 30px;
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    font-size: 21px;
+    color: #ffffff;
+  }
+
+.title {
+    font-family: Muli-ExtraBold;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #f7ae3b;
+  }
+  
+  .text {
+    font-family: Muli-Regular;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #1e1e1e;
+  }
+  
+  .heading {
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+@import './layout/header.scss';
+@import './layout/smoothies.scss';
+@import './layout/about.scss';
+@import './layout/products.scss';
+@import './layout/story.scss';
+@import './layout/testimonials.scss';
+@import './layout/blog.scss';
+@import './layout/instagram.scss';
+@import './layout/footer.scss';
+@import './components/media-query.scss';
+
+
+
+body {
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+
+

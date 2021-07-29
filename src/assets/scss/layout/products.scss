@@ -1,0 +1,81 @@
+.products__wrapper {
+    display: flex;
+  }
+  
+  .products__cart {
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 5px 80px;
+  }
+  
+  .products__cart:hover {
+    transform: rotateY(360deg);
+    transition: 4s;
+  }
+  
+  .products__cart--brown {
+    background-color: #672816;
+  }
+  
+  .products__cart--green {
+    background-color: #198370;
+  }
+  
+  .products__cart--yellow {
+    background-color: #f3b139;
+  }
+  
+  .products__cart--orange {
+    background-color: #c04519;
+  }
+
+  
+.products__img {
+    max-width: 120px;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  
+  .products__heading {
+    font-size: 24px;
+    font-family: Muli-Bold;
+    font-weight: bold;
+    line-height: 0.92;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .products__capacity {
+    font-size: 21px;
+    font-family: Muli-Italic;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.52;
+    color: #ffffff;
+    margin-bottom: 65px;
+  }
+
+  .products__btn {
+    max-width: 205px;
+    width: 100%;
+    border: solid 2px #ffffff;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    position: relative;
+  }
+  
+  .products__btn::after {
+    content: "";
+    background-image: url(../assets/img/prod/arrow.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 35px;
+  }

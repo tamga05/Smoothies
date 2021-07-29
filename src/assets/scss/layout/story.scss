@@ -1,0 +1,75 @@
+.story__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 120px 0 160px;
+  }
+  
+  .story__content {
+    max-width: 510px;
+    margin-right: 205px;
+  }
+  
+  .story__title {
+    line-height: 0.8;
+    margin-top: 140px;
+    margin-bottom: 45px;
+  }
+  
+  .story__text {
+    text-align: left;
+    line-height: 1.94;
+    letter-spacing: -0.1px;
+    margin-bottom: 60px;
+  }
+
+  
+.story__btn {
+    max-width: 300px;
+    width: 100%;
+    line-height: 1.2;
+    background-color: #0aa566;
+    margin-bottom: 130px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    position: relative;
+  }
+  
+  .story__btn::after {
+    content: "";
+    background-image: url(../assets/img/stor/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    position: absolute;
+  }
+  
+  .story__img {
+    position: relative;
+  }
+
+  .story__pic {
+    max-width: 585px;
+    width: 100%;
+  }
+  
+  .story__img::before {
+    content: "";
+    background-image: url(../assets/img/stor/pseudo.png);
+    width: 290px;
+    height: 215px;
+    position: absolute;
+    left: -165px;
+    top: 20px;
+  }
+  
+  .story__img:hover::before {
+    transform: translateX(-130px) translateY(-130px) scale(0.65);
+    transition: 4s;
+  }

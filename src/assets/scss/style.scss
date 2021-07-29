@@ -1,15 +1,658 @@
-body {
-    background-color: rgb(37, 37, 37);
-    color: white;
-}
+@font-face {
+    font-family: "Muli-Bold";
+    src: url("/assets/font/woff2/Muli-Bold.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-Bold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-BoldItalic";
+    src: url("/assets/font/woff2/Muli-BoldItalic.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-BoldItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-ExtraBold";
+    src: url("/assets/font/woff2/Muli-ExtraBold.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-ExtraBold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-Italic";
+    src: url("/assets/font/woff2/Muli-Italic.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-Italic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-Regular";
+    src: url("/assets/font/woff2/Muli-Regular.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-Regular.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Muli-SemiBoldItalic";
+    src: url("/assets/font/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
+      url("/assets/font/woff/Muli-SemiBoldItalic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "MyriadPro";
+    src: url("/assets/font/woff2/MyriadPro-Regular.woff2") format("woff2"),
+      url("/assets/font/woff/MyriadPro-Regular.woff") format("woff");
+  }
 
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /*
     border: 1px solid red;
     */
+  }
+
+  .container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .logo {
+    max-width: 270px;
+    width: 100%;
+  }
+  
+  .logo:hover {
+    opacity: 0;
+    transition: 2s;
+    /*
+    box-shadow: 0px 0px 30px 20px #f1f2f5;
+    */
+  }
+  
+  .btn {
+    display: block;
+    text-decoration: none;
+    height: 60px;
+    border-radius: 30px;
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    font-size: 21px;
+    color: #ffffff;
+  }
+
+  
+.title {
+    font-family: Muli-ExtraBold;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #f7ae3b;
+  }
+  
+  .text {
+    font-family: Muli-Regular;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #1e1e1e;
+  }
+  
+  .heading {
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1820px) {
+    .testimonials__wrapper::after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1727px) {
+    .footer__logo-link {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+  
+    .footer__top-wrapper {
+      padding: 50px 0 50px;
+  
+      flex-direction: column;
+    }
+  
+    .footer__infopay {
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (max-width: 1415px) {
+    /* Секция Header */
+    .header__nav-bay {
+      display: none;
+    }
+  
+    .header__burger-btn {
+      display: initial;
+    }
+  }
+
+  @media screen and (max-width: 1223px) {
+    .footer__logo-link {
+      margin-right: 0;
+    }
+  
+    .footer__content {
+      flex-direction: column;
+      /*
+      justify-content: center;
+      */
+      align-items: center;
+    }
+  
+    .footer__top-wrapper {
+      padding-bottom: 80px;
+    }
+  
+    .footer__subscribe {
+      margin-top: 50px;
+    }
+  
+    .footer__payment {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 1205px) {
+    .blog__img::after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .testimonials__comment::before {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 935px) {
+    .story__img::before {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 45px;
+      line-height: 1.2;
+    }
+  
+    .text {
+      font-size: 17px;
+    }
+  
+    /* Секция Header */
+  
+    /*
+    
+    ! Подключать Зеленый экран меню с помощью обработчика событий JS
+  
+    .header__nav-bay {
+    display: initial;
+    background-color: #0aa566;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .header__buy {
+    margin-top: 200px;
+    margin-bottom: 120px;
+  }
+
+  .header__nav {
+    flex-direction: column;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+  }
+
+  .header__nav-item:nth-child(n + 1) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .header__personal {
+    margin-bottom: 0;
+  }
+
+  .header__personal-item-cart {
+    margin-right: 0;
+  }
+
+  .header__social::before {
+    content: "";
+    background-color: #ffffff;
+    max-width: 47px;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: -85px;
+    top: 15px;
+  }
+
+  .header__burger-btn {
+    background-color: #7dc2a5;
+    z-index: 10;
+  }
+  
+  */
+
+
+
+  /* Секция Smoothies */
+
+  .smoothies__wrapper {
+    padding: 50px 10px 50px;
+  }
+
+  .smoothies__title {
+    margin-bottom: 25px;
+  }
+
+  .smoothies__text {
+    margin-bottom: 30px;
+  }
+
+  .smoothies__block {
+    max-width: 505px;
+  }
+
+  .smoothies__unit {
+    width: 50%;
+  }
+
+  .smoothies__unit:nth-child(1n + 1) {
+    border-right: 2px solid #f6edde;
+    border-bottom: 2px solid #f6edde;
+  }
+
+  .smoothies__unit:nth-child(2n + 2) {
+    border-right: none;
+  }
+
+  .smoothies__unit:nth-child(n + 7) {
+    border-bottom: none;
+  }
+
+  .smoothies__img {
+    margin-top: 25px;
+  }
+
+  .smoothies__heading {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  /* Секция About */
+
+  .about__content {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .about__title {
+    font-size: 35px;
+    margin-top: 150px;
+    margin-bottom: 25px;
+  }
+
+  .about__span::after {
+    display: none;
+  }
+
+  .about__list {
+    margin-top: 40px;
+  }
+
+  .about__item {
+    font-size: 20px;
+  }
+
+  .about__btn {
+    font-size: 16px;
+    padding-left: 30px;
+    margin-bottom: 60px;
+  }
+
+  .about__btn::after {
+    right: 25px;
+    width: 70%;
+    height: 70%;
+  }
+
+  /* Секция Products */
+
+  .products__wrapper {
+    overflow-x: auto;
+  }
+
+  .products__cart {
+    min-width: 280px;
+    width: 100%;
+    padding: 50px 5px 50px;
+  }
+
+  .products__heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .products__capacity {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+
+  .products__btn {
+    padding-left: 35px;
+  }
+
+  /* Секция Story */
+
+  .story__wrapper {
+    padding: 50px 0 50px;
+  }
+
+  .story__content {
+    margin-right: 0;
+  }
+
+  .story__title {
+    margin-top: 0;
+  }
+
+  .story__btn {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .story__img {
+    margin-top: 50px;
+  }
+
+  /* Секция Testimonials */
+
+  .testimonials__wrapper {
+    padding: 50px 0 50px;
+  }
+
+  .testimonials__comment {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+  }
+
+  .testimonials__title {
+    text-align: center;
+  }
+
+  .testimonials__post {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .testimonials__avatar {
+    margin-top: 50px;
+  }
+
+  /* Секция Blog */
+
+  .blog__wrapper {
+    padding: 50px 0 50px;
+  }
+
+  .blog__heading {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .blog__time {
+    margin-left: 0;
+  }
+
+  .blog__text {
+    margin-left: 70px;
+  }
+
+  .blog__link::after {
+    display: none;
+  }
+
+  .blog__img {
+    max-width: 100%;
+  }
+
+  /* Секция Instagram */
+
+  .instagram__title {
+    line-height: 1.67;
+    font-size: 22px;
+  }
+
+  .instagram__galery {
+    overflow-x: auto;
+  }
+
+  .instagram__img {
+    min-width: 280px;
+  }
+
+  /* Секция Footer */
+
+  .footer__title {
+    font-size: 26px;
+  }
+  /*
+  .footer__social {
+    margin-right: 2.6%;
+  }
+  */
 }
+
+@media screen and (max-width: 610px) {
+  .footer__bottom::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .footer__info-pay {
+    flex-direction: column;
+  }
+  .footer__info {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .header__buy {
+    flex-direction: column;
+  }
+
+  .header__social::before {
+    display: none;
+  }
+
+  .header__personal {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer__social {
+    margin-right: 25px;
+  }
+
+  .footer__top-wrapper {
+    padding-bottom: 60px;
+  }
+
+  .header__logo {
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  /* Секция Smoothie */
+
+  .smoothies__container {
+    padding: 25px 5px 25px;
+  }
+
+  .smoothies__title {
+    margin-bottom: 15px;
+  }
+
+  .smoothies__text {
+    margin-bottom: 20px;
+  }
+
+  .smoothies__unit {
+    width: 50%;
+  }
+
+  .smoothies__unit:nth-child(1n + 1) {
+    border-right: 2px solid #f6edde;
+    border-bottom: 2px solid #f6edde;
+  }
+
+  .smoothies__unit:nth-child(2n + 2) {
+    border-right: none;
+  }
+
+  .smoothies__unit:nth-child(n + 7) {
+    border-bottom: none;
+  }
+
+  .smoothies__img {
+    max-width: 45px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .smoothies__heading {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  /* Секция About */
+
+  .about__content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .about__title {
+    font-size: 30px;
+    margin-top: 130px;
+    margin-bottom: 25px;
+  }
+
+  .about__item {
+    font-size: 19px;
+  }
+
+  .about__btn {
+    font-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+  }
+
+  /* Секция Blog */
+
+  .blog__link::after {
+    display: initial;
+  }
+
+  /* Секция Instagram */
+
+  .instagram__title {
+    font-size: 22px;
+  }
+
+  /* Секция Footer */
+
+  .footer__social {
+    margin-right: 0;
+  }
+
+  .footer__form-btn {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .footer__form-btn::before {
+    display: none;
+  }
+
+  .footer__btn-icon {
+    justify-content: center;
+  }
+
+  .footer__form-text {
+    margin-left: 60px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .header__btn {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+
+  .header__btn::after {
+    right: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+
 
 @import './style2.scss'

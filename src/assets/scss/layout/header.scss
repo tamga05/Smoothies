@@ -97,19 +97,6 @@ p {
     color: #ffffff;
   }
   
-  .logo {
-    max-width: 270px;
-    width: 100%;
-  }
-  
-  .logo:hover {
-    opacity: 0;
-    transition: 2s;
-    /*
-    box-shadow: 0px 0px 30px 20px #f1f2f5;
-    */
-  }
-  
   .header__logo {
     position: absolute;
     top: 70px;
@@ -195,17 +182,6 @@ p {
   
   .header__social-item:last-child {
     margin-right: 0;
-  }
-  
-  .btn {
-    display: block;
-    text-decoration: none;
-    height: 60px;
-    border-radius: 30px;
-    font-family: Muli-ExtraBold;
-    font-weight: 800;
-    font-size: 21px;
-    color: #ffffff;
   }
   
   .header__btn {

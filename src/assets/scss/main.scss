@@ -1,44 +1,22 @@
-@font-face {
-    font-family: "Muli-Bold";
-    src: url("/assets/fonts/woff2/Muli-Bold.woff2") format("woff2"),
-      url("/assets/fonts/woff/Muli-Bold.woff") format("woff");
-  }
-  
-  @font-face {
-    font-family: "Muli-BoldItalic";
-    src: url("/assets/fonts/woff2/Muli-BoldItalic.woff2") format("woff2"),
-      url("/assets/fonts/woff/Muli-BoldItalic.woff") format("woff");
-  }
-  
-  @font-face {
-    font-family: "Muli-ExtraBold";
-    src: url("/assets/fonts/woff2/Muli-ExtraBold.woff2") format("woff2"),
-      url("/assets/fonts/woff/Muli-ExtraBold.woff") format("woff");
-  }
-  
-  @font-face {
-    font-family: "Muli-Italic";
-    src: url("/assets/fonts/woff2/Muli-Italic.woff2") format("woff2"),
-      url("/assets/fonts/woff/Muli-Italic.woff") format("woff");
-  }
-  
-  @font-face {
-    font-family: "Muli-Regular";
-    src: url("/assets/fonts/woff2/Muli-Regular.woff2") format("woff2"),
-      url("/assets/fonts/woff/Muli-Regular.woff") format("woff");
-  }
-  
-  @font-face {
-    font-family: "Muli-SemiBoldItalic";
-    src: url("/assets/fonts/woff2/Muli-SemiBoldItalic.woff2") format("woff2"),
-      url("/assets/fonts/woff/Muli-SemiBoldItalic.woff") format("woff");
-  }
-  
-  @font-face {
-    font-family: "MyriadPro";
-    src: url("/assets/fonts/woff2/MyriadPro-Regular.woff2") format("woff2"),
-      url("/assets/fonts/woff/MyriadPro-Regular.woff") format("woff");
-  }
+@import "./base/normalize.scss";
+
+@import "./abstracts/fonts";
+
+
+@import './layout/header';
+@import './layout/smoothies';
+@import './layout/about';
+@import './layout/products';
+@import './layout/story';
+@import './layout/testimonials';
+@import './layout/blog';
+@import './layout/instagram';
+@import "./layout/footer";
+
+
+@import './components/media-querys';
+
+
 
   * {
     margin: 0;
@@ -79,7 +57,7 @@
     color: #ffffff;
   }
 
-.title {
+  .title {
     font-family: Muli-ExtraBold;
     font-size: 50px;
     font-weight: 800;
@@ -102,14 +80,3 @@
     text-align: center;
   }
 
-@import './layout/header.scss';
-@import './layout/smoothies.scss';
-@import './layout/about.scss';
-@import './layout/products.scss';
-@import './layout/story.scss';
-@import './layout/testimonials.scss';
-@import './layout/blog.scss';
-@import './layout/instagram.scss';
-@import './layout/footer.scss';
-
-@import './components/media-querys.scss';

@@ -164,7 +164,7 @@ function js(cb) {
         }))
         .pipe(concat('script.js'))
         // .pipe(uglify({ //расскомментируй, если надо будет минифицировать js
-        //     toplevel: true //(опция модуля uglify) - как сильно сжимать. Есть три уговня, это самый сильный.
+        //     toplevel: true //(опция модуля uglify) - как сильно сжимать. Есть три уровня, это самый сильный.
         // }))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(path.build.js))
@@ -188,7 +188,7 @@ function jsWatch(cb) {
         }))
         .pipe(concat('script.js'))
         // .pipe(uglify({ //расскомментируй, если надо будет минифицировать js
-        //     toplevel: true //(опция модуля uglify) - как сильно сжимать. Есть три уговня, это самый сильный.
+        //     toplevel: true //(опция модуля uglify) - как сильно сжимать. Есть три уровня, это самый сильный.
         // }))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(path.build.js))
@@ -243,7 +243,7 @@ function watchFiles() {
 
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build
-const watch = gulp.parallel(build, watchFiles, serve); // Будет запускаться по дефолтной команде gulp 
+const watch = gulp.series(build, gulp.parallel(watchFiles, serve)); // Будет запускаться по дефолтной команде gulp 
 
 
 // Экспорты тасок

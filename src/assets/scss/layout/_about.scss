@@ -44,7 +44,7 @@
 
 .about__span::after {
   content: "";
-  background-image: url(../assets/images/about/line.png);
+  background-image: url(./assets/images/about/line.png);
   width: 450px;
   height: 13px;
   position: absolute;
@@ -59,7 +59,7 @@
 }
 
 .about__item {
-  list-style-image: url(../assets/img/about/icon.png);
+  list-style-image: url(./assets/images/about/icon.png);
   font-family: MuliMuli-ExtraBold;
   font-size: 21px;
   line-height: 2;
@@ -81,7 +81,7 @@
 
 .about__btn::after {
   content: "";
-  background-image: url(../assets/img/about/arrow.png);
+  background-image: url(./assets/images/about/arrow.png);
   background-position: right;
   background-repeat: no-repeat;
   width: 100%;

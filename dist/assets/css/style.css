@@ -393,6 +393,59 @@ template {
   src: url("/assets/fonts/woff2/MyriadPro-Regular.woff2") format("woff2"), url("/assets/fonts/woff/MyriadPro-Regular.woff") format("woff");
 }
 
+.container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    max-width: 270px;
+    width: 100%;
+}
+
+.logo:hover {
+    opacity: 0;
+    transition: 2s;
+  /*
+    box-shadow: 0px 0px 30px 20px #f1f2f5;
+    */
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    height: 60px;
+    border-radius: 30px;
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.title {
+    font-family: Muli-ExtraBold;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #f7ae3b;
+}
+
+.text {
+    font-family: Muli-Regular;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #1e1e1e;
+}
+
+.heading {
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    letter-spacing: normal;
+    text-align: center;
+}
+
 p {
     color: red;
 }
@@ -776,7 +829,7 @@ p {
 
 .about__span::after {
     content: "";
-    background-image: url(../assets/images/about/line.png);
+    background-image: url(./assets/images/about/line.png);
     width: 450px;
     height: 13px;
     position: absolute;
@@ -791,7 +844,7 @@ p {
 }
 
 .about__item {
-    list-style-image: url(../assets/img/about/icon.png);
+    list-style-image: url(./assets/images/about/icon.png);
     font-family: MuliMuli-ExtraBold;
     font-size: 21px;
     line-height: 2;
@@ -815,7 +868,7 @@ p {
 
 .about__btn::after {
     content: "";
-    background-image: url(../assets/img/about/arrow.png);
+    background-image: url(./assets/images/about/arrow.png);
     background-position: right;
     background-repeat: no-repeat;
     width: 100%;
@@ -1309,7 +1362,7 @@ p {
     height: 50px;
     border-radius: 5px;
     background-color: #f2662f;
-    background-image: url(../assets/img/foot/foot-top/arrow-top.png);
+    background-image: url(./assets/images/foot/foot-top/arrow-top.png);
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
@@ -1982,10 +2035,11 @@ p {
         font-size: 15px;
     }
   /* Секция Smoothie */
-    .smoothies__container {
-        padding: 25px 5px 25px;
-    }
-
+  /*
+  .smoothies__container {
+    padding: 25px 5px 25px;
+  }
+  */
     .smoothies__title {
         margin-bottom: 15px;
     }
@@ -2086,66 +2140,4 @@ p {
     .header__btn::after {
         right: 30px;
     }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  /*
-    border: 1px solid red;
-    */
-}
-
-.container {
-    max-width: 1740px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-.logo {
-    max-width: 270px;
-    width: 100%;
-}
-
-.logo:hover {
-    opacity: 0;
-    transition: 2s;
-  /*
-    box-shadow: 0px 0px 30px 20px #f1f2f5;
-    */
-}
-
-.btn {
-    display: block;
-    text-decoration: none;
-    height: 60px;
-    border-radius: 30px;
-    font-family: Muli-ExtraBold;
-    font-weight: 800;
-    font-size: 21px;
-    color: #ffffff;
-}
-
-.title {
-    font-family: Muli-ExtraBold;
-    font-size: 50px;
-    font-weight: 800;
-    letter-spacing: -1px;
-    color: #f7ae3b;
-}
-
-.text {
-    font-family: Muli-Regular;
-    font-size: 18px;
-    line-height: 1.2;
-    text-align: center;
-    color: #1e1e1e;
-}
-
-.heading {
-    font-family: Muli-ExtraBold;
-    font-weight: 800;
-    letter-spacing: normal;
-    text-align: center;
 }

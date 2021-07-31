@@ -1,82 +1,31 @@
 @import "./base/normalize.scss";
 
-@import "./abstracts/fonts";
+
+@import "./components/fonts";
+
+@import "./components/container";
+
+@import "./components/logo";
+
+@import "./components/btn";
+
+@import "./components/title";
+
+@import "./components/text";
+
+@import "./components/heading";
 
 
-@import './layout/header';
-@import './layout/smoothies';
-@import './layout/about';
-@import './layout/products';
-@import './layout/story';
-@import './layout/testimonials';
-@import './layout/blog';
-@import './layout/instagram';
+@import "./layout/header";
+@import "./layout/smoothies";
+@import "./layout/about";
+@import "./layout/products";
+@import "./layout/story";
+@import "./layout/testimonials";
+@import "./layout/blog";
+@import "./layout/instagram";
 @import "./layout/footer";
 
 
-@import './components/media-querys';
-
-
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*
-    border: 1px solid red;
-    */
-  }
-
-  .container {
-    max-width: 1740px;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  
-  .logo {
-    max-width: 270px;
-    width: 100%;
-  }
-  
-  .logo:hover {
-    opacity: 0;
-    transition: 2s;
-    /*
-    box-shadow: 0px 0px 30px 20px #f1f2f5;
-    */
-  }
-  
-  .btn {
-    display: block;
-    text-decoration: none;
-    height: 60px;
-    border-radius: 30px;
-    font-family: Muli-ExtraBold;
-    font-weight: 800;
-    font-size: 21px;
-    color: #ffffff;
-  }
-
-  .title {
-    font-family: Muli-ExtraBold;
-    font-size: 50px;
-    font-weight: 800;
-    letter-spacing: -1px;
-    color: #f7ae3b;
-  }
-  
-  .text {
-    font-family: Muli-Regular;
-    font-size: 18px;
-    line-height: 1.2;
-    text-align: center;
-    color: #1e1e1e;
-  }
-  
-  .heading {
-    font-family: Muli-ExtraBold;
-    font-weight: 800;
-    letter-spacing: normal;
-    text-align: center;
-  }
+@import "./components/media-querys"; 
 

@@ -31,7 +31,7 @@
 
   .blog__img::after {
     content: "";
-    background-image: url(../assets/img/blog/line.png);
+    background-image: url(./../images/blog/line.png);
     width: 687px;
     height: 12px;
     position: absolute;
@@ -75,7 +75,7 @@
   
   .blog__link::after {
     content: "";
-    background-image: url(../assets/img/blog/arrow.png);
+    background-image: url(./../images/blog/arrow.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;

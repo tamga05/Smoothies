@@ -1,9 +1,5 @@
-p {
-    color: red;
-}
-
 .header {
-    background-image: url(./assets/images/head/bg.png);
+    background-image: url(./../images/head/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,7 +149,7 @@ p {
   }
   
   .header__social::before {
-    content: url(../assets/img/head/line.png);
+    content: url(./../images/head/line.png);
     position: absolute;
     left: -85px;
     top: 5px;
@@ -202,7 +198,7 @@ p {
   
   .header__btn::after {
     content: "";
-    background-image: url(./assets/images/head/arrow.png);
+    background-image: url(./../images/head/arrow.png);
     background-repeat: no-repeat;
     background-position: right;
     width: 100%;

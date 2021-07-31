@@ -18,7 +18,7 @@
     height: 50px;
     border-radius: 5px;
     background-color: #f2662f;
-    background-image: url(./assets/images/foot/foot-top/arrow-top.png);
+    background-image: url(./../images/foot/foot-top/arrow-top.png);
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
@@ -132,7 +132,7 @@
   
   .footer__form::before {
     content: "";
-    background-image: url(../assets/img/foot/foot-top/mail.png);
+    background-image: url(./../images/foot/foot-top/mail.png);
     background-repeat: no-repeat;
     max-width: 25px;
     width: 100%;
@@ -187,7 +187,7 @@
 
   .footer__form-btn::before {
     content: "";
-    background-image: url(../assets/img/foot/foot-top/arrow-down-right.png);
+    background-image: url(./../images/foot/foot-top/arrow-down-right.png);
     background-repeat: no-repeat;
     max-width: 50px;
     width: 100%;
@@ -254,7 +254,7 @@
     color: #ffffff;
     position: fixed;
     right: 165px;
-    bottom: 33px;
+    bottom: 20px;
   }
   
   .footer__copyright {

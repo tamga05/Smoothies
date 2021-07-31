@@ -358,6 +358,12 @@ template {
     display: none;
 }
 
+.container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 @font-face {
     font-family: "Muli-Bold";
   src: url("/assets/fonts/woff2/Muli-Bold.woff2") format("woff2"), url("/assets/fonts/woff/Muli-Bold.woff") format("woff");
@@ -391,12 +397,6 @@ template {
 @font-face {
     font-family: "MyriadPro";
   src: url("/assets/fonts/woff2/MyriadPro-Regular.woff2") format("woff2"), url("/assets/fonts/woff/MyriadPro-Regular.woff") format("woff");
-}
-
-.container {
-    max-width: 1740px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 
 .logo {

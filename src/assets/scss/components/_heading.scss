@@ -1,5 +1,10 @@
+$fontFamily1: Muli-ExtraBold;
+
+$fontFamily2: Gothic;
+
+
 .heading {
-    font-family: Muli-ExtraBold;
+    font-family: $fontFamily2;
     font-weight: 800;
     letter-spacing: normal;
     text-align: center;

@@ -39,3 +39,11 @@
     src: url("/assets/fonts/woff2/MyriadPro-Regular.woff2") format("woff2"),
       url("/assets/fonts/woff/MyriadPro-Regular.woff") format("woff");
   }
+
+
+
+  @font-face {
+    font-family: "schwabacher";
+    src: url("/assets/fonts/woff2/schwabacher.woff2") format("woff2"),
+      url("/assets/fonts/woff/schwabacher.woff") format("woff");
+  }

@@ -1,58 +1,57 @@
 .testimonials {
     background-color: #683119;
-  }
-  
-  .testimonials__wrapper {
+
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 115px 0 80px;
     position: relative;
-  }
-  
-  .testimonials__wrapper::after {
-    content: "";
-    background-image: url(./../images/test/pseudo.png);
-    width: 410px;
-    height: 300px;
-    position: absolute;
-    top: -80px;
-    right: -40px;
+
+    &__wrapper::after {
+      content: "";
+      background-image: url(./../images/test/pseudo.png);
+      width: 410px;
+      height: 300px;
+      position: absolute;
+      top: -80px;
+      right: -40px;
+    }
   }
 
-  .testimonials__title {
+  &__title {
     font-family: Muli-ExtraBold;
     line-height: 0.8;
   }
-  
-  .testimonials__comment {
+
+  &__comment {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 120px 0;
     position: relative;
-  }
-  
-  .testimonials__comment::before {
-    content: "Sarah A";
-    opacity: 0.6;
-    font-family: Muli-ExtraBold;
-    font-size: 200px;
-    font-weight: 800;
-    line-height: 0.2;
-    letter-spacing: -4px;
-    text-align: center;
-    color: #5b210d;
-    position: absolute;
-    top: 5px;
-    left: -150px;
+
+    &::before {
+      content: "Sarah A";
+      opacity: 0.6;
+      font-family: Muli-ExtraBold;
+      font-size: 200px;
+      font-weight: 800;
+      line-height: 0.2;
+      letter-spacing: -4px;
+      text-align: center;
+      color: #5b210d;
+      position: absolute;
+      top: 5px;
+      left: -150px;
+    }
   }
 
-  .testimonials__span {
+  &__span {
     color: #f2612d;
   }
-  
-  .testimonials__post {
+
+  &__post {
     max-width: 455px;
     display: flex;
     flex-direction: column;
@@ -60,35 +59,36 @@
     margin-right: 60px;
     z-index: 1;
   }
-  
-  .testimonials__quote {
+
+  &__quote {
     color: #ffffff;
     line-height: 2.1;
     letter-spacing: -0.1px;
     margin-top: 50px;
     margin-bottom: 15px;
   }
-  
-  .testimonials__cite {
+
+  &__cite {
     font-family: Muli-SemiBoldItalic;
     font-weight: 600;
     line-height: 1.2;
     color: #f7ae3b;
   }
 
-  .testimonials__avatar {
+  &__avatar {
     max-width: 220px;
     width: 100%;
     z-index: 1;
+
+    &:hover {
+      transform: scale(1.4) rotate(360deg);
+      transition: 3s;
+    }
   }
-  
-  .testimonials__avatar:hover {
-    transform: scale(1.4) rotate(360deg);
-    transition: 3s;
-  }
-  
-  .testimonials__arrow {
+
+  &__arrow {
     width: 158px;
     display: flex;
     justify-content: space-between;
   }
+}

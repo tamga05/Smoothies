@@ -473,13 +473,13 @@ template {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-  /*
+    /*
     flex-wrap: wrap;
     */
-  /*
+    /*
     margin-top: 90px;
     */
-  /*
+    /*
     margin-bottom: 125px;
     */
 }
@@ -499,7 +499,7 @@ template {
     width: 50px;
     height: 50px;
     padding: 8px;
-  /*
+    /*
     background-color: transparent;
     */
     border: none;
@@ -553,7 +553,7 @@ template {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-  /*
+    /*
     margin-bottom: 110px;
     */
 }
@@ -611,7 +611,7 @@ template {
     position: relative;
 }
 
-.header__social::before {
+.header::before {
     content: url(./../images/head/line.png);
     position: absolute;
     left: -85px;

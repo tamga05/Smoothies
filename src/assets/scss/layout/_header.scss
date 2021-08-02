@@ -4,9 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-  }
-  
-  .header__wrapper {
+
+  &__wrapper {
     max-width: 1720px;
     width: 100%;
     height: 315px;
@@ -17,8 +16,8 @@
     align-items: center;
     position: relative;
   }
-  
-  .header__top {
+
+  &__top {
     max-width: 1720px;
     width: 100%;
     display: flex;
@@ -34,16 +33,16 @@
     margin-bottom: 125px;
     */
   }
-  
-  .header__nav-bay {
+
+  &__nav-bay {
     max-width: 1720px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .header__burger-btn {
+
+  &__burger-btn {
     width: 50px;
     height: 50px;
     padding: 8px;
@@ -59,31 +58,31 @@
     z-index: 2;
     display: none;
   }
-  
-  .header__burger-btn-icon {
+
+  &__burger-btn-icon {
     width: 100%;
   }
-  
-  .header__nav {
+
+  &__nav {
     max-width: 540px;
     width: 100%;
   }
-  
-  .header__nav-list {
+
+  &__nav-list {
     list-style-type: none;
     display: flex;
     align-items: center;
   }
-  
-  .header__nav-item:nth-child(n + 1) {
+
+  &__nav-item:nth-child(n + 1) {
     margin-right: 35px;
   }
-  
-  .header__nav-item:last-child {
+
+  &__nav-item:last-child {
     margin-right: 0;
   }
-  
-  .header__nav-link {
+
+  &__nav-link {
     text-decoration: none;
     font-family: Muli-Bold;
     font-size: 16px;
@@ -92,8 +91,8 @@
     letter-spacing: 0.32px;
     color: #ffffff;
   }
-  
-  .header__logo {
+
+  &__logo {
     position: absolute;
     top: 70px;
     left: 50%;
@@ -102,31 +101,31 @@
     margin-bottom: 110px;
     */
   }
-  
-  .header__buy {
+
+  &__buy {
     max-width: 420px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .header__personal-list {
+
+  &__personal-list {
     list-style-type: none;
     display: flex;
     align-items: center;
   }
-  
-  .header__personal-item:nth-child(n + 1) {
+
+  &__personal-item:nth-child(n + 1) {
     margin-right: 45px;
   }
-  
-  .header__personal-item-cart {
+
+  &__personal-item-cart {
     margin-right: 135px;
     position: relative;
   }
-  
-  .header__span {
+
+  &__span {
     font-family: Muli-Regular;
     font-size: 10px;
     line-height: 1.2;
@@ -143,26 +142,26 @@
     left: 22px;
     bottom: 17px;
   }
-  
-  .header__social {
+
+  &__social {
     position: relative;
   }
-  
-  .header__social::before {
-    content: url(./../images/head/line.png);
-    position: absolute;
-    left: -85px;
-    top: 5px;
-  }
-  
-  .header__social-list {
+
+    &::before {
+      content: url(./../images/head/line.png);
+      position: absolute;
+      left: -85px;
+      top: 5px;
+    }
+
+  &__social-list {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .header__social-item {
+
+  &__social-item {
     width: 35px;
     height: 35px;
     border-radius: 50px;
@@ -171,23 +170,23 @@
     justify-content: center;
     align-items: center;
   }
-  
-  .header__social-item:nth-child(n + 1) {
+
+  &__social-item:nth-child(n + 1) {
     margin-right: 10px;
   }
-  
-  .header__social-item:last-child {
+
+  &__social-item:last-child {
     margin-right: 0;
   }
-  
-  .header__btn {
+
+  &__btn {
 
     @include btn;
 
 
     // Этот миксин Делает Готический шрифт в большой кнопке.
 
-    //@include headerBtn; 
+    //@include headerBtn;
 
     max-width: 280px;
     width: 100%;
@@ -202,26 +201,29 @@
     align-items: center;
     padding-left: 40px;
     position: relative;
+
+    &::after {
+      content: "";
+      background-image: url(./../images/head/arrow.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 40px;
+      top: 0;
+    }
+
+    &:hover {
+      &::after {
+        transform: translate(20px);
+        transition: 1.2s;
+      }
+    }
+    
+    &:hover {
+      background-color: #30aa30;
+      border: 2px solid white;
+    }
   }
-  
-  .header__btn::after {
-    content: "";
-    background-image: url(./../images/head/arrow.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 40px;
-    top: 0;
-  }
-  
-  .header__btn:hover::after {
-    transform: translate(20px);
-    transition: 1.2s;
-  }
-  
-  .header__btn:hover {
-    background-color: #30aa30;
-    border: 2px solid white;
-  }
+}

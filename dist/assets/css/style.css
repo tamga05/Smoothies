@@ -1047,9 +1047,10 @@ template {
     position: relative;
 }
 
-.story__pic {
-    max-width: 585px;
-    width: 100%;
+.story__img:hover::before {
+    -webkit-transform: translateX(-130px) translateY(-130px) scale(0.65);
+    transform: translateX(-130px) translateY(-130px) scale(0.65);
+    transition: 4s;
 }
 
 .story__img::before {
@@ -1062,10 +1063,9 @@ template {
     top: 20px;
 }
 
-.story__img:hover::before {
-    -webkit-transform: translateX(-130px) translateY(-130px) scale(0.65);
-    transform: translateX(-130px) translateY(-130px) scale(0.65);
-    transition: 4s;
+.story .story__pic {
+    max-width: 585px;
+    width: 100%;
 }
 
 .testimonials {

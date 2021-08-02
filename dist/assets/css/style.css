@@ -417,17 +417,6 @@ template {
     */
 }
 
-.btn {
-    display: block;
-    text-decoration: none;
-    height: 60px;
-    border-radius: 30px;
-    font-family: Muli-ExtraBold;
-    font-weight: 800;
-    font-size: 21px;
-    color: #ffffff;
-}
-
 .title {
     font-family: Muli-ExtraBold;
     font-size: 50px;
@@ -661,6 +650,14 @@ template {
 }
 
 .header__btn {
+    display: block;
+    text-decoration: none;
+    height: 60px;
+    border-radius: 30px;
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    font-size: 21px;
+    color: #ffffff;
     max-width: 280px;
     width: 100%;
     height: 70px;
@@ -854,6 +851,14 @@ template {
 }
 
 .about__btn {
+    display: block;
+    text-decoration: none;
+    height: 60px;
+    border-radius: 30px;
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    font-size: 21px;
+    color: #ffffff;
     max-width: 380px;
     width: 100%;
     line-height: 1.2;
@@ -943,6 +948,14 @@ template {
 }
 
 .products__btn {
+    display: block;
+    text-decoration: none;
+    height: 60px;
+    border-radius: 30px;
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    font-size: 21px;
+    color: #ffffff;
     max-width: 205px;
     width: 100%;
     border: solid 2px #ffffff;
@@ -995,6 +1008,14 @@ template {
 }
 
 .story__btn {
+    display: block;
+    text-decoration: none;
+    height: 60px;
+    border-radius: 30px;
+    font-family: Muli-ExtraBold;
+    font-weight: 800;
+    font-size: 21px;
+    color: #ffffff;
     max-width: 300px;
     width: 100%;
     line-height: 1.2;

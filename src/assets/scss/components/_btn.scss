@@ -1,10 +1,5 @@
-.btn {
-    display: block;
-    text-decoration: none;
-    height: 60px;
-    border-radius: 30px;
-    font-family: Muli-ExtraBold;
-    font-weight: 800;
-    font-size: 21px;
-    color: #ffffff;
-}
+// .btn {
+     // Из всех свойств этого класса .btn сделал @mixin, находящийся в файле _mixins.scss,
+     // и подключил это @mixin в файлы (в классы), где есть продолговатые кнопки со стрелкой.
+     // При необходимости можно всё вернуть обратно сюда!!!
+// }

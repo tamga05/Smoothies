@@ -59,6 +59,9 @@
   }
 
   .products__btn {
+
+    @include btn;
+
     max-width: 205px;
     width: 100%;
     border: solid 2px #ffffff;

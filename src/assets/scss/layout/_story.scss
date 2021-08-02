@@ -25,6 +25,9 @@
 
   
 .story__btn {
+
+    @include btn;
+
     max-width: 300px;
     width: 100%;
     line-height: 1.2;

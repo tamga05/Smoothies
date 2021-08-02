@@ -68,6 +68,9 @@
 }
 
 .about__btn {
+  
+  @include btn;
+
   max-width: 380px;
   width: 100%;
   line-height: 1.2;

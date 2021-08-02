@@ -181,6 +181,14 @@
   }
   
   .header__btn {
+
+    @include btn;
+
+
+    // Этот миксин Делает Готический шрифт в большой кнопке.
+
+    //@include headerBtn; 
+
     max-width: 280px;
     width: 100%;
     height: 70px;

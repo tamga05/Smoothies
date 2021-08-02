@@ -412,9 +412,9 @@ template {
 .logo:hover {
     opacity: 0;
     transition: 2s;
-  /*
-    box-shadow: 0px 0px 30px 20px #f1f2f5;
-    */
+    /*
+        box-shadow: 0px 0px 30px 20px #f1f2f5;
+        */
 }
 
 .title {
@@ -800,7 +800,7 @@ template {
 .about__img:hover {
     -webkit-transform: rotate(-7deg);
     transform: rotate(-7deg);
-  /*
+      /*
     opacity: 0;
     */
     transition: 1.5s;

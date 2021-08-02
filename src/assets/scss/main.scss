@@ -4,9 +4,9 @@
 @import "./common/container";
 
 
-@import "./abstracts/functions";
-@import "./abstracts/mixins";
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
 
 
 @import "./components/fonts";
@@ -28,4 +28,4 @@
 @import "./layout/footer";
 
 
-@import "./media/media-querys"; 
+@import "./media/media-querys";

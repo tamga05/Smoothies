@@ -1,7 +1,12 @@
-$fontFamily1: Muli-Regular;
+
+// В этом Файле _variables.scss Можно изменить ЗНАЧЕНИЕ переменной $fontFamilyText или $fontFamilyTitle, 
+// на Тестовое значение шрифта Schwabacher и во Всём макете изменится шрифт Текста или Заголовков//
 
 
-$fontFamily2: Schwabacher;
+// Тестовый шрифт    $fontFamily: Schwabacher;
 
 
-$fontFamily3: Muli-ExtraBold;
+$fontFamilyText: Muli-Regular;
+
+
+$fontFamilyTitle: Muli-ExtraBold;

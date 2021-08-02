@@ -1204,10 +1204,6 @@ template {
     transition: 3s;
 }
 
-.blog__pic {
-    width: 100%;
-}
-
 .blog__img::after {
     content: "";
     background-image: url(./../images/blog/line.png);
@@ -1217,6 +1213,10 @@ template {
     top: 70px;
     left: 510px;
     z-index: -1;
+}
+
+.blog__pic {
+    width: 100%;
 }
 
 .blog__heading {

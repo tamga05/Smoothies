@@ -1,71 +1,73 @@
-.smoothies__wrapper {
-    max-width: 1030px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 100px 10px 107px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.smoothies {
 
-  .smoothies__title {
-    text-align: center;
-    line-height: 0.8;
-    margin-bottom: 55px;
-  }
+    &__wrapper {
+        max-width: 1030px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 100px 10px 107px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .smoothies__text {
-    max-width: 915px;
-    line-height: 1.94;
-    margin-bottom: 60px;
-  }
-  
-  .smoothies__block {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .smoothies__unit {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .smoothies__img:hover {
-    transform: scale(1.4);
-    transition: 1.5s;
-  }
-  
-  .smoothies__unit:nth-child(1n + 1) {
-    border-right: 2px solid #f6edde;
-    border-bottom: 2px solid #f6edde;
-  }
-  
-  .smoothies__unit:nth-child(4n + 4) {
-    border-right: none;
-  }
-  
-  .smoothies__unit:nth-child(n + 5) {
-    border-bottom: none;
-  }
-  
-  .smoothies__img {
-    max-width: 75px;
-    width: 100%;
-    margin-top: 30px;
-  }
+    &__title {
+        text-align: center;
+        line-height: 0.8;
+        margin-bottom: 55px;
+    }
 
-  .smoothies__heading {
+    &__text {
+        max-width: 915px;
+        line-height: 1.94;
+        margin-bottom: 60px;
+    }
 
-    
-    //font-family: $fontFamily2;
-    
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-    font-size: 25px;
-    line-height: 1.2;
-    letter-spacing: -0.5px;
-    color: #f2612d;
-    margin-top: 27px;
-    margin-bottom: 45px;
-  }
+    &__unit {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(1n + 1) {
+            border-right: 2px solid #f6edde;
+            border-bottom: 2px solid #f6edde;
+        }
+
+        &:nth-child(4n + 4) {
+            border-right: none;
+        }
+
+        &:nth-child(n + 5) {
+            border-bottom: none;
+        }
+
+    }
+
+    &__img {
+        max-width: 75px;
+        width: 100%;
+        margin-top: 30px;
+
+        &:hover {
+          transform: scale(1.4);
+          transition: 1.5s;
+        }
+
+    }
+
+    &__heading {
+        font-size: 25px;
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+        color: #f2612d;
+        margin-top: 27px;
+        margin-bottom: 45px;
+    }
+
+}

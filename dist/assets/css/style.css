@@ -742,12 +742,6 @@ template {
     align-items: center;
 }
 
-.smoothies__img:hover {
-    -webkit-transform: scale(1.4);
-    transform: scale(1.4);
-    transition: 1.5s;
-}
-
 .smoothies__unit:nth-child(1n + 1) {
     border-right: 2px solid #f6edde;
     border-bottom: 2px solid #f6edde;
@@ -765,6 +759,12 @@ template {
     max-width: 75px;
     width: 100%;
     margin-top: 30px;
+}
+
+.smoothies__img:hover {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    transition: 1.5s;
 }
 
 .smoothies__heading {

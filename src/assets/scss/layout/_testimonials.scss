@@ -80,6 +80,7 @@
     &__avatar {
         max-width: 220px;
         width: 100%;
+        object-fit: cover;
         z-index: 1;
 
         &:hover {

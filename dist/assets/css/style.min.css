@@ -896,6 +896,7 @@ template {
   .testimonials__avatar {
     max-width: 220px;
     width: 100%;
+    object-fit: cover;
     z-index: 1; }
     .testimonials__avatar:hover {
       transform: scale(1.4) rotate(360deg);

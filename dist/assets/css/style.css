@@ -1158,6 +1158,8 @@ template {
 .testimonials__avatar {
     max-width: 220px;
     width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
     z-index: 1;
 }
 

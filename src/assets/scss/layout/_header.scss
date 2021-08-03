@@ -199,7 +199,7 @@
         height: 70px;
         border: none;
         border-radius: 35px;
-        background-color: #0aa566;
+        background-color: $colorHeaderBtn;
         font-size: 24px;
         line-height: 1.2;
         letter-spacing: -0.48px;
@@ -221,7 +221,7 @@
         }
 
         &:hover {
-            
+
             &::after {
                 transform: translate(20px);
                 transition: 1.2s;

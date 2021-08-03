@@ -74,7 +74,7 @@
         align-items: center;
     }
 
-    .header__nav-item {
+    &__nav-item {
 
         &:nth-child(n + 1) {
             margin-right: 35px;
@@ -151,12 +151,12 @@
         position: relative;
     }
 
-      &::before {
-          content: url(./../images/head/line.png);
-          position: absolute;
-          left: -85px;
-          top: 5px;
-      }
+    &::before {
+        content: url(./../images/head/line.png);
+        position: absolute;
+        left: -85px;
+        top: 5px;
+    }
 
     &__social-list {
         list-style-type: none;
@@ -221,6 +221,7 @@
         }
 
         &:hover {
+            
             &::after {
                 transform: translate(20px);
                 transition: 1.2s;

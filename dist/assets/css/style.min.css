@@ -561,7 +561,7 @@ template {
       transform: translate(20px);
       transition: 1.2s; }
     .header__btn:hover {
-      background-color: #30aa30;
+      background-color: #0eed93;
       border: 2px solid white; }
 
 .smoothies__wrapper {

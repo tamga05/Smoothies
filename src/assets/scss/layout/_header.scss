@@ -230,7 +230,8 @@
         }
 
         &:hover {
-            background-color: #30aa30;
+            //background-color: #30aa30;
+            background-color: lighten($colorHeaderBtn, 15%);
             border: 2px solid white;
         }
 

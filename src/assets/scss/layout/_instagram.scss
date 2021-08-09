@@ -53,9 +53,9 @@
         &::before {
             content: "";
             background: linear-gradient(
-              to top left,
-              rgba(51, 50, 50, 0),
-              rgba(255, 255, 255, 0.8)
+            to top left,
+            rgba(51, 50, 50, 0),
+            rgba(255, 255, 255, 0.8)
             );
             opacity: 15%;
             max-width: 384px;

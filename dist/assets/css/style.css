@@ -407,11 +407,11 @@ template {
 .logo {
     max-width: 270px;
     width: 100%;
+    -webkit-animation: blink 0.2s linear 10;
+    animation: blink 0.2s linear 10;
 }
 
 .logo:hover {
-    -webkit-animation: blink 0.2s linear 5 backwards;
-    animation: blink 0.2s linear 5 backwards;
     /*
         box-shadow: 0px 0px 30px 20px #f1f2f5;
         */

@@ -43,11 +43,12 @@
         object-fit: cover;
 
         &:hover {
-            transform: rotateZ(-360deg);
+            //transform: rotateZ(-360deg);
+            //transition: 4s;
             /*
             transform: scale(1.1);
             */
-            transition: 4s;
+            animation: animat-insta 5s 1 forwards;
         }
 
         &::before {
@@ -89,6 +90,15 @@
 
     &__pic {
         width: 100%;
+    }
+
+    @keyframes animat-insta {
+        0% {}
+        20% {transform: rotateZ(-90deg);}
+        40% {transform: rotateX(90deg);}
+        60% {transform: rotateY(-270deg);}
+        80% {transform: rotateX(90deg);}
+        100% {transform: rotateZ(-360deg)}
     }
 
 }

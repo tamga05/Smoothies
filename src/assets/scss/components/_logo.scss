@@ -1,9 +1,10 @@
 .logo {
     max-width: 270px;
     width: 100%;
+    animation: blink 0.2s linear 10;
 
     &:hover {
-        animation: blink 0.2s linear 5 backwards;
+        //: blink 0.2s linear 5;
         //opacity: 0;
         //transition: 2s;
         /*

@@ -6,7 +6,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./assets/css/style.min.css"/>
-    <link rel="icon" href="./assets/images/favicon/strawberry.svg"/>
+    <!--<link rel="stylesheet" href="./assets/libraries/wow-master/css/libs/animate.css"/>-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./assets/images/favicon/strawber/ry./svg"/>
     <title>Smoothies</title>
 </head>
 
@@ -124,7 +126,11 @@
 
                 </div>
 
-                <a class="btn header__btn" href="#">Shop Now</a>
+                <a class="btn header__btn" href="#"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                >Shop Now</a>
 
             </div>
 
@@ -269,28 +275,33 @@
                 <img class="products__img" src="./assets/images/prod/choco.png" alt="chocolate" />
                 <h3 class="heading products__heading">Dark Chocolate Smoothie</h3>
                 <em class="heading products__capacity">100 ml</em>
-                <a class="btn products__btn" href="#">Buy</a>
+                <a class="btn products__btn" href="#" data-aos="flip-up">Buy</a>
             </div>
 
             <div class="products__cart products__cart--green">
                 <img class="products__img" src="./assets/images/prod/lettuce.png" alt="lettuce" />
                 <h3 class="heading products__heading">Vegan Letucce Smoothie</h3>
                 <em class="heading products__capacity">100 ml</em>
-                <a class="btn products__btn" href="#">Buy</a>
+                <a class="btn products__btn" href="#" data-aos="fade-up-right">Buy</a>
             </div>
 
             <div class="products__cart products__cart--yellow">
                 <img class="products__img" src="./assets/images/prod/ginger.png" alt="ginger" />
                 <h3 class="heading products__heading">Lemon Ginger Smoothie</h3>
                 <em class="heading products__capacity">100 ml</em>
-                <a class="btn products__btn" href="#">Buy</a>
+                <a class="btn products__btn" href="#"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">Buy</a>
             </div>
 
             <div class="products__cart products__cart--orange">
                 <img class="products__img" src="./assets/images/prod/garlic.png" alt="garlic" />
                 <h3 class="heading products__heading">Turmeric Garlic Smoothie</h3>
                 <em class="heading products__capacity">100 ml</em>
-                <a class="btn products__btn" href="#">Buy</a>
+                <a class="btn products__btn" href="#"
+                data-aos="fade-up"
+                data-aos-duration="3000">Buy</a>
             </div>
 
         </div>
@@ -418,11 +429,14 @@
             <div class="instagram__galery">
 
                 <div class="instagram__img">
-                    <img class="instagram__pic" src="./assets/images/insta/img1.png" alt="smoothie">
+                    <img class="instagram__pic" src="./assets/images/insta/img1.png" alt="smoothie" data-aos="zoom-in">
                 </div>
 
                 <div class="instagram__img">
-                    <img class="instagram__pic" src="./assets/images/insta/Img2.png" alt="smoothie">
+                    <img class="instagram__pic" src="./assets/images/insta/Img2.png" alt="smoothie"
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                 </div>
 
                 <div class="instagram__img">
@@ -434,7 +448,9 @@
                 </div>
 
                 <div class="instagram__img">
-                    <img class="instagram__pic" src="./assets/images/insta/img5.png" alt="smoothie">
+                    <img class="instagram__pic" src="./assets/images/insta/img5.png" alt="smoothie"
+                    data-aos="fade-up"
+                    data-aos-duration="3000">
                 </div>
 
             </div>
@@ -570,6 +586,16 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
+
+<!--<script type="text/javascript" src="./assets/libraries/wow-master/dist/wow.min.js"></script>
+
+    <script>new WOW().init();</script>-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

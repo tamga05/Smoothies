@@ -11,12 +11,14 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding-top: 65px;
     }
 
     &__img {
         max-width: 690px;
         width: 100%;
-        transform: translateY(85px);
+        //transform: translateY(85px);
+        margin-bottom: -85px;
         z-index: 1;
 
         //&:hover {

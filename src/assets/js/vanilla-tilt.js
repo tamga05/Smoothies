@@ -5,7 +5,7 @@
  * Version 1.7.1
  */
 
-export default class VanillaTilt {
+  class VanillaTilt {
   constructor(element, settings = {}) {
     if (!(element instanceof Node)) {
       throw ("Can't initialize VanillaTilt because " + element + " is not a Node.");

@@ -884,13 +884,13 @@ template {
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding-top: 65px;
 }
 
 .about__img {
     max-width: 690px;
     width: 100%;
-    -webkit-transform: translateY(85px);
-    transform: translateY(85px);
+    margin-bottom: -85px;
     z-index: 1;
     /*
             opacity: 0;

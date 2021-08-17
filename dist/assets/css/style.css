@@ -885,6 +885,7 @@ template {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 65px;
+    margin-left: -65px;
 }
 
 .about__img {
@@ -908,7 +909,7 @@ template {
     line-height: 1.09;
     letter-spacing: -1.1px;
     color: #ffffff;
-    margin-top: 95px;
+    margin-top: 30px;
 }
 
 .about__span {

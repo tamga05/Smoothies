@@ -646,7 +646,8 @@ template {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 65px; }
+    padding-top: 65px;
+    margin-left: -50px; }
   .about__img {
     max-width: 690px;
     width: 100%;

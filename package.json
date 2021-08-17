@@ -28,7 +28,9 @@
   ],
   "main": "gulpfile.js",
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "tilt.js": "^1.2.1",
+    "vanilla-tilt": "^1.7.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

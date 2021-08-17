@@ -1,13 +1,3 @@
-
-
-function test(a, b) {
-    return a + b
-}
-
-console.log(test(5, 2));
-console.log(test(2, 4));
-console.log(test(9, 1));
-
 /**
  * Created by Sergiu Șandor (micku7zu) on 1/27/2017.
  * Original idea: https://github.com/gijsroge/tilt.js
@@ -15,7 +5,7 @@ console.log(test(9, 1));
  * Version 1.7.1
  */
 
-  class VanillaTilt {
+class VanillaTilt {
   constructor(element, settings = {}) {
     if (!(element instanceof Node)) {
       throw ("Can't initialize VanillaTilt because " + element + " is not a Node.");
@@ -511,4 +501,4 @@ if (typeof document !== "undefined") {
   VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
 }
 
-//# sourceMappingURL=script.js.map
+export default VanillaTilt;

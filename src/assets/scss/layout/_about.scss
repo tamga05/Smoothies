@@ -19,13 +19,13 @@
         transform: translateY(85px);
         z-index: 1;
 
-        &:hover {
-            transform: rotate(-7deg);
+        //&:hover {
+            //transform: rotate(-7deg);
             /*
             opacity: 0;
             */
-            transition: 1.5s;
-        }
+            //transition: 1.5s;
+        //}
 
     }
 
@@ -100,5 +100,5 @@
         }
 
     }
-    
+
 }

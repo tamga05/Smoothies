@@ -1,12 +1,5 @@
-
-
-function test(a, b) {
-    return a + b
-}
-
-console.log(test(5, 2));
-console.log(test(2, 4));
-console.log(test(9, 1));
+var VanillaTilt = (function () {
+'use strict';
 
 /**
  * Created by Sergiu Șandor (micku7zu) on 1/27/2017.
@@ -15,7 +8,7 @@ console.log(test(9, 1));
  * Version 1.7.1
  */
 
-  class VanillaTilt {
+class VanillaTilt {
   constructor(element, settings = {}) {
     if (!(element instanceof Node)) {
       throw ("Can't initialize VanillaTilt because " + element + " is not a Node.");
@@ -62,7 +55,6 @@ console.log(test(9, 1));
     }
 
     this.addEventListeners();
-    this.reset();
     this.updateInitialPosition();
   }
 
@@ -511,4 +503,6 @@ if (typeof document !== "undefined") {
   VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
 }
 
-//# sourceMappingURL=script.js.map
+return VanillaTilt;
+
+}());

@@ -892,15 +892,9 @@ template {
     -webkit-transform: translateY(85px);
     transform: translateY(85px);
     z-index: 1;
-}
-
-.about__img:hover {
-    -webkit-transform: rotate(-7deg);
-    transform: rotate(-7deg);
-      /*
+    /*
             opacity: 0;
             */
-    transition: 1.5s;
 }
 
 .about__content {

@@ -12,6 +12,7 @@
         justify-content: center;
         flex-wrap: wrap;
         padding-top: 65px;
+        margin-left: -65px;
     }
 
     &__img {
@@ -42,7 +43,7 @@
         line-height: 1.09;
         letter-spacing: -1.1px;
         color: #ffffff;
-        margin-top: 95px;
+        margin-top: 30px;
     }
 
     &__span {

@@ -885,7 +885,6 @@ template {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 65px;
-    margin-left: -65px;
 }
 
 .about__img {

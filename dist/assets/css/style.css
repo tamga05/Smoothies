@@ -1826,6 +1826,12 @@ template {
     }
 }
 
+@media screen and (max-width: 1584px) {
+    .about__img {
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (max-width: 1415px) {
   /* Секция Header */
     .header__nav-bay {
@@ -1894,9 +1900,9 @@ template {
     }
   /* Секция Header */
   /*
-    
+
     ! Подключать Зеленый экран меню с помощью обработчика событий JS
-  
+
     .header__nav-bay {
     display: initial;
     background-color: #0aa566;
@@ -1952,7 +1958,7 @@ template {
     background-color: #7dc2a5;
     z-index: 10;
   }
-  
+
   */
   /* Секция Smoothies */
     .smoothies__wrapper {
@@ -2005,12 +2011,16 @@ template {
 
     .about__title {
         font-size: 35px;
-        margin-top: 150px;
+        margin-top: 50px;
         margin-bottom: 25px;
     }
 
     .about__span::after {
         display: none;
+    }
+
+    .about__img {
+        margin-bottom: 0px;
     }
 
     .about__list {
@@ -2258,7 +2268,7 @@ template {
 
     .about__title {
         font-size: 30px;
-        margin-top: 130px;
+        margin-top: 30px;
         margin-bottom: 25px;
     }
 

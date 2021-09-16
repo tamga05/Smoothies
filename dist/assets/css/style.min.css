@@ -1258,7 +1258,7 @@ template {
     left: -65px;
     top: -20px; }
   .footer__form-btn:hover {
-    border: 1px solid #6d450c; }
+    color: white; }
 
 .footer__social {
   max-width: 110px;

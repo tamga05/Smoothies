@@ -366,42 +366,42 @@ template {
 
 @font-face {
     font-family: "Muli-Bold";
-  src: url("../fonts/woff2/Muli-Bold.woff2") format("woff2"), url("../fonts/woff/Muli-Bold.woff") format("woff");
+  src: url("./../fonts/woff2/Muli-Bold.woff2") format("woff2"), url("./../fonts/woff/Muli-Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Muli-BoldItalic";
-  src: url("../fonts/woff2/Muli-BoldItalic.woff2") format("woff2"), url("../fonts/woff/Muli-BoldItalic.woff") format("woff");
+  src: url("./../fonts/woff2/Muli-BoldItalic.woff2") format("woff2"), url("./../fonts/woff/Muli-BoldItalic.woff") format("woff");
 }
 
 @font-face {
     font-family: "Muli-ExtraBold";
-  src: url("../fonts/woff2/Muli-ExtraBold.woff2") format("woff2"), url("../fonts/woff/Muli-ExtraBold.woff") format("woff");
+  src: url("./../fonts/woff2/Muli-ExtraBold.woff2") format("woff2"), url("./../fonts/woff/Muli-ExtraBold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Muli-Italic";
-  src: url("../fonts/woff2/Muli-Italic.woff2") format("woff2"), url("../fonts/woff/Muli-Italic.woff") format("woff");
+  src: url("./../fonts/woff2/Muli-Italic.woff2") format("woff2"), url("./../fonts/woff/Muli-Italic.woff") format("woff");
 }
 
 @font-face {
     font-family: "Muli-Regular";
-  src: url("../fonts/woff2/Muli-Regular.woff2") format("woff2"), url("../fonts/woff/Muli-Regular.woff") format("woff");
+  src: url("./../fonts/woff2/Muli-Regular.woff2") format("woff2"), url("./../fonts/woff/Muli-Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: "Muli-SemiBoldItalic";
-  src: url("../fonts/woff2/Muli-SemiBoldItalic.woff2") format("woff2"), url("../fonts/woff/Muli-SemiBoldItalic.woff") format("woff");
+  src: url("./../fonts/woff2/Muli-SemiBoldItalic.woff2") format("woff2"), url("./../fonts/woff/Muli-SemiBoldItalic.woff") format("woff");
 }
 
 @font-face {
     font-family: "MyriadPro";
-  src: url("../fonts/woff2/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/woff/MyriadPro-Regular.woff") format("woff");
+  src: url("./../fonts/woff2/MyriadPro-Regular.woff2") format("woff2"), url("./../fonts/woff/MyriadPro-Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: "Schwabacher";
-  src: url("../fonts/woff2/Schwabacher.woff2") format("woff2"), url("../fonts/woff/Schwabacher.woff") format("woff");
+  src: url("./../fonts/woff2/Schwabacher.woff2") format("woff2"), url("./../fonts/woff/Schwabacher.woff") format("woff");
 }
 
 .logo {
@@ -1727,7 +1727,7 @@ template {
 }
 
 .footer__form-btn:hover {
-    border: 1px solid #6d450c;
+    color: white;
 }
 
 .footer__social {

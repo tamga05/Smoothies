@@ -1727,7 +1727,7 @@ template {
 }
 
 .footer__form-btn:hover {
-    border: 1px solid #6d450c;
+    color: white;
 }
 
 .footer__social {

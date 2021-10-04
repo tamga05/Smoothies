@@ -1489,7 +1489,8 @@ template {
     height: 70%; }
   /* Секция Products */
   .products__wrapper {
-    overflow-x: auto; }
+    overflow-x: auto;
+    overflow-y: hidden; }
   .products__cart {
     min-width: 280px;
     width: 100%;

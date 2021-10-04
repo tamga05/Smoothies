@@ -16,8 +16,8 @@ const plumber = require('gulp-plumber'); // для обработки ошибо
 const imagemin = require('gulp-imagemin'); //для минификации изображений
 const del = require('del'); // для удаления файлов и папок
 const notify = require('gulp-notify'); //предоставляет информацию об ошибке
-const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
-
+const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений.
+const ghPages = require('gulp-gh-pages'); // для Создания Сайта на gh-pages и "Деплоя" на этот сайт моего проекта.
 
 // Пути
 const srcPath = 'src/';
@@ -57,9 +57,14 @@ const jsFiles = [
     srcPath + 'assets/js/vanilla-tilt.js'
 ]
 
-
 // TASKS
 // объявляем функции под сборки (все пути относительные)
+
+// таска для Создания Сайта на gh-pages и "Деплоя" на этот сайт моего проекта.
+gulp.task('deploy', function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
 
 // Локальный сервер
 function serve() {

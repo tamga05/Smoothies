@@ -1,5 +1,5 @@
 # Smoothies
 
-My first project...))) Flexbox, animations - full adaptive layout.
+This is my FIRST project ... Do not judge strictly ... !!!)))
 
 This project is about smoothies - delicious and healthy drinks ...

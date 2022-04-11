@@ -977,6 +977,8 @@ template {
 .products__wrapper {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .products__cart {
@@ -1398,6 +1400,8 @@ template {
 .instagram__galery {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .instagram__img {
@@ -2045,6 +2049,7 @@ template {
   /* Секция Products */
     .products__wrapper {
         overflow-x: auto;
+        overflow-y: hidden;
     }
 
     .products__cart {

@@ -14,8 +14,8 @@
         padding: 130px 5px 80px;
 
         &:hover {
-            transform: rotateY(360deg);
-            transition: 4s;
+            rotate: 3.1416rad;
+            transition: 1s;
         }
 
         &--brown {
